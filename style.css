@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100hv;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 160px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+.menu-icon {
+  width: 25px;
+  cursor: pointer;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+nav ul li a:hover {
+  color: palevioletred;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.column1 h3{
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-family:'Times New Roman', Times, serif;
+}
+.column1 h6{ 
+  
+  height: 27px;
+  left: 120px;
+  top: 387px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 60;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #3d4457;
+}
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+.controller {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+}
+
+.title{
+margin-top: 20px;
+font-family: Gilroy;
+font-style: normal;
+font-weight: 500;
+font-size: 38px;
+line-height: 60px;
+text-transform: capitalize;
+color: #091018
+}
+
+#cards{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.feature , .faq ,.user{
+left: 120px;
+top: 115px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 27px;
+/* identical to box height, or 135% */
+
+letter-spacing: 0.2em;
+text-transform: uppercase;
+
+color: #6BB2FF;
+
+}
+
+
+/* 
+@media only screen and (max-width:700px){
+    nav ul {
+        width:100%;
+        position: absolute;
+        top:35px;
+    }
+    nav ul li{
+        display:block;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .col-1{
+        top:80px;
+    }
+}
+     */
