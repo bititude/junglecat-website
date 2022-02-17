@@ -203,11 +203,14 @@
             <div class="col-6 col-md-6">
               <img src="./images/Ellipse 4.png" />
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-12 col-md-4 mt-4">
               <h5>Qualification & Courses Management</h5>
               <p
                 class="card-text"
-                style="font-family: 'Source Sans Pro', sans-serif;"
+                style="
+                  font-family: 'Source Sans Pro', sans-serif;
+                  text-align: justify;
+                "
               >
                 An academy may provide a plethora of courses under different
                 qualifications, on Jungle Cat the Administrators can easily
@@ -242,9 +245,73 @@
             </p>
           </div>
         </div>
+        <!-- faq blocks -->
+        <section class="mt-5">
+          <div class="accordion">
+            <h5>
+              Is there a free trail available?
+            </h5>
+          </div>
+          <div class="panel">
+            <hr />
+            <p style="font-family: 'Source Sans Pro', sans-serif;">
+              All the hassles of monitoring, managing and tracking can now be
+              done easily with Jungle Cat. Administrators can easily access the
+              platform to see what is happening in the classes. This means high
+              level data control throughout the platform to edit and audit for
+              maximum efficiency.
+            </p>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="accordion">
+            <h5>Is there a course available?</h5>
+          </div>
+          <div class="panel">
+            <hr />
+            <p style="font-family: 'Source Sans Pro', sans-serif;">
+              All the hassles of monitoring, managing and tracking can now be
+              done easily with Jungle Cat. Administrators can easily access the
+              platform to see what is happening in the classes. This means high
+              level data control throughout the platform to edit and audit for
+              maximum efficiency.
+            </p>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="accordion">
+            <h5>What is new updates?</h5>
+          </div>
+          <div class="panel">
+            <hr />
+            <p style="font-family: 'Source Sans Pro', sans-serif;">
+              All the hassles of monitoring, managing and tracking can now be
+              done easily with Jungle Cat. Administrators can easily access the
+              platform to see what is happening in the classes. This means high
+              level data control throughout the platform to edit and audit for
+              maximum efficiency.
+            </p>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="accordion">
+            <h5>Is there a free trail available?</h5>
+          </div>
+          <div class="panel">
+            <hr />
+            <p style="font-family: 'Source Sans Pro', sans-serif;">
+              All the hassles of monitoring, managing and tracking can now be
+              done easily with Jungle Cat. Administrators can easily access the
+              platform to see what is happening in the classes. This means high
+              level data control throughout the platform to edit and audit for
+              maximum efficiency.
+            </p>
+          </div>
+        </section>
+        <!-- faq blocks end -->
       </div>
     </div>
-    <!------------------------ Contact -------------------------->
+    <!----------------------------------- Contact -------------------------------------->
     <div style="margin-top: 100px;">
       <div class="container-fluid">
         <span class="jcfooter">
@@ -257,7 +324,7 @@
         <div class="contact">
           <p>Contact</p>
           <p>
-            <img src="./images/Group 93058@2x.png" />
+            <img src="./images/mail.png" />
             <span style="font-family: 'Source Sans Pro', sans-serif;">
               hello@junglecat.com
             </span>
@@ -295,5 +362,22 @@
         <img src="./images/bluebox.png" id="blueboximage" />
       </div>
     </div>
+
+    <script>
+      let acc = document.getElementsByClassName('accordion')
+      let i
+      let len = acc.length
+      for (i = 0; i < len; i++) {
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active')
+          let panel = this.nextElementSibling
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + 'px'
+          }
+        })
+      }
+    </script>
   </body>
 </html>

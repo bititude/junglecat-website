@@ -11,6 +11,8 @@
   padding-right: 8%;
   box-sizing: border-box;
   overflow: hidden;
+  background-color:#FCFCFC;
+  
 }
 .navbar {
   width: 100%;
@@ -18,8 +20,8 @@
   align-items: center;
   margin-top: 20px;
 }
-.logoimg{
- float: left;
+.logoimg {
+  float: left;
 }
 .menu-icon {
   width: 25px;
@@ -33,7 +35,6 @@ nav ul li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
-  
 }
 nav ul li a {
   text-decoration: none;
@@ -124,37 +125,44 @@ nav ul li .btn:hover,
   color: #6bb2ff;
 }
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px;
+  border-radius: 10px;
+ background-color: whitesmoke;
+}
+section h5{
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 10 15px;
 }
 
-.next {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.round {
+.accordion {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+.panel {
+  padding: 0 15px 10px 10px;
+  font-size: 14px;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 0.5s ease-in;
 }
 
-#floatingTextarea2 {
-  background-image: linear-gradient(
-    white,
-    white 30px,
-    #ccc 30px,
-    #ccc 31px,
-    white 31px
-  );
-}
-
-/* -------------contact----------------------- */
+/* ------------------- contact ----------------------- */
 
 .container-fluid {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-color: black;
   position: absolute;
   z-index: 2;
@@ -196,76 +204,58 @@ nav ul li .btn:hover,
   margin-top: 80px;
   border-radius: 10px;
 }
-.jcfooter{
+.jcfooter {
   position: absolute;
   margin-top: 170px;
   margin-left: 140px;
   color: white;
 }
-.contact{
- size: 15px;
+.contact {
+  size: 15px;
   color: white;
   position: absolute;
   margin-top: 170px;
   margin-left: 500px;
 }
-.navigation{
+.navigation {
   size: 15px;
   color: white;
   position: absolute;
   margin-top: 170px;
   margin-left: 750px;
 }
-#content1{
-  width:70%;
+#content1 {
+  width: 70%;
   margin: auto;
 }
 
-#option1 select{
-  width:80%;
-  height:2.7em;
+#option1 select {
+  width: 80%;
+  height: 2.7em;
   position: relative;
-  bottom:10px;
+  bottom: 10px;
   border-radius: 5px;
   border-color: blue;
-  border:0;
+  border: 0;
   background-color: #3d4457;
-} 
+}
 
 
-/* 
-@media only screen and (max-width:700px){
-    nav ul {
-        width:100%;
-        position: absolute;
-        top:35px;
-    }
-    nav ul li{
-        display:block;
-        margin-top:10px;
-        margin-bottom:10px;
-    }
-    .col-1{
-        top:80px;
-    }
-  
-}
-}
-     */
 @media screen and (max-width: 768px) {
   nav ul {
-    width:100%;
+    width: 100%;
     position: absolute;
-    top:35px;
-}
-nav ul li{
-    display:block;
-    margin-top:0px;
-    margin-bottom:10px;
-}
-.col-1{
-    top:80px;
-}
+    top: 35px;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .col-1 {
+    top: 80px;
+  }
+
   .bluebox p {
     font-size: 25px;
     margin-left: 30px;
@@ -277,17 +267,17 @@ nav ul li{
   #buttonbluebox {
     margin: 150px 50px;
   }
-  .contact{
+  .contact {
     position: absolute;
     margin-top: 300px;
     margin-left: 200px;
   }
-  .navigation{
+  .navigation {
     margin-left: 200px;
     margin-top: 500px;
   }
-  .container-fluid{
-      width: 700px;
-      height: 700px;
-}
+  .container-fluid {
+    width: 700px;
+    height: 700px;
+  }
 }
