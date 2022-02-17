@@ -19,7 +19,6 @@
   <body>
     <div class="container">
       <!---------------------------Navbar------------------------------->
-
       <div class="navbar">
         <nav>
           <span>
@@ -31,10 +30,10 @@
             />
           </span>
           <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Faq</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#section1">About</a></li>
+            <li><a href="#section2">Product</a></li>
+            <li><a href="#section3">Faq</a></li>
+            <li><a href="#section4">Contact</a></li>
             <li>
               <button type="button" class="btn btn-outline-primary">
                 Login
@@ -47,11 +46,8 @@
             </li>
           </ul>
         </nav>
-        <img src="" alt="" class="menu-icon" />
       </div>
-
       <!---------------------------virtual platform------------------------------->
-
       <div class="container overflow-hidden" style="margin-top: 200px;">
         <div class="row gx-5">
           <div class="col">
@@ -91,8 +87,7 @@
           </span>
         </div>
         <!---------------------------User experience------------------------------->
-
-        <div style="margin-top: 200px;">
+        <div style="margin-top: 200px;" id="section1">
           <div class="user">
             <h6>User experience</h6>
           </div>
@@ -183,7 +178,7 @@
           </div>
         </div>
         <!--------------------------- Product features ------------------------------->
-        <div>
+        <div id="section2">
           <div class="feature">
             <p>Product Features</p>
           </div>
@@ -232,7 +227,7 @@
           </div>
         </div>
         <!--------------------------- FAQ ------------------------------->
-        <div>
+        <div id="section3">
           <div class="feature">
             <h6>FAQ</h6>
           </div>
@@ -312,7 +307,7 @@
       </div>
     </div>
     <!----------------------------------- Contact -------------------------------------->
-    <div style="margin-top: 100px;">
+    <div style="margin-top: 100px;" id="section4">
       <div class="container-fluid">
         <span class="jcfooter">
           <img src="./images/junglecatFooter.png" />
@@ -361,8 +356,15 @@
       <div>
         <img src="./images/bluebox.png" id="blueboximage" />
       </div>
+      <div class="footer">
+        <p>Copyright © 2020 JungleCat All rights reserved.</p>
+        <h6>Privacy Policy</h6>
+        <span class="terms">
+          <h6>Terms Of Use</h6>
+        </span>
+      </div>
     </div>
-
+    <!------------------------------ js for faq ---------------------->
     <script>
       let acc = document.getElementsByClassName('accordion')
       let i

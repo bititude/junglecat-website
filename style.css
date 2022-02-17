@@ -239,7 +239,41 @@ section h5{
   border: 0;
   background-color: #3d4457;
 }
-
+ .footer{
+  /* min-height: 100vh;
+  max-width: 40px; */
+  height: 80px;
+  min-width: 100vw;
+  background-color:#1E1E1E;
+  position: absolute;
+  margin-top: 500px;
+  color: white;
+ }
+ .footer p{
+  size: 15px;
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+ }
+ .footer h6{
+  size: 15px;
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 550px;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+ }
+ .terms h6{
+  size: 15px;
+  color: white;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 660px;
+  font-family: 'Source Sans Pro', sans-serif;
+ }
 
 @media screen and (max-width: 768px) {
   nav ul {
@@ -279,5 +313,8 @@ section h5{
   .container-fluid {
     width: 700px;
     height: 700px;
+  }
+  .footer{
+    display:none;
   }
 }
