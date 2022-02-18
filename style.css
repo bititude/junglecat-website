@@ -78,13 +78,10 @@ nav ul li a:hover {
 #videobutton img:hover {
   color: white;
 }
-#videobtn:hover {
+#videobtn:hover,
+#login:hover {
   background-color: white;
   color: #40a1ff;
-}
-#login:hover {
-  color: white;
-  background-color: #40a1ff;
 }
 
 @font-face {
@@ -96,7 +93,10 @@ nav ul li a:hover {
   src: url('fonts/Gilroy-Bold.ttf');
 }
 .column1 h6,
-.user h6 {
+.user h6,
+.feature p {
+  font-weight: 600;
+  margin-top: 200px;
   color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
   font-size: 20px;
@@ -127,17 +127,16 @@ nav ul li a:hover {
   align-items: Left;
   vertical-align: top;
 }
-.descOfuser {
+.descOfuser ,.featureDesc{
+  font-weight: 400;
   margin-top: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 28px;
-
   align-items: Left;
   vertical-align: Top;
   color: #494949;
-  text-align: justify;
 }
 .col .card {
   padding: 1.5em 0.5em 0.5em;
@@ -151,8 +150,8 @@ nav ul li a:hover {
   align-items: Left;
   vertical-align: top;
 }
-.card-body p {
-  
+.card-body p ,#title2 p{
+  font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -161,6 +160,14 @@ nav ul li a:hover {
   align-items: Left;
   vertical-align: top;
   color: #838383;
+}
+#title2 h5{
+  font-family: ' Gilroy-SemiBold';
+  font-size: 28px;
+  color: #343434;
+  line-height: 42px;
+  align-items: Left;
+  vertical-align: top;
 }
 @media screen and (max-width: 768px) {
   nav ul li {
