@@ -31,7 +31,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: medium;
   font-size: 18px;
   vertical-align: top;
@@ -44,13 +44,13 @@ nav ul li a:hover {
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   line-height: 30px;
   border-radius: 12px;
   width: 90px;
 }
 #registerbtn {
-  padding:10px 10px;
+  padding: 10px 10px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
@@ -67,7 +67,7 @@ nav ul li a:hover {
   width: 90px;
 }
 #videobtn {
-  padding:10px 10px;
+  padding: 10px 10px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 15px;
@@ -95,13 +95,13 @@ nav ul li a:hover {
   font-family: ' Gilroy-Bold';
   src: url('fonts/Gilroy-Bold.ttf');
 }
-.column1 h6 {
-  color: #6BB2FF;
+.column1 h6,
+.user h6 {
+  color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
   font-size: 20px;
   vertical-align: top;
   letter-spacing: 0.2em;
-  font-weight: 200;
   line-height: 27px;
 }
 .column1 h3 {
@@ -119,8 +119,28 @@ nav ul li a:hover {
 .buttons .btn {
   margin: 0 10px;
 }
+.title p {
+  font-family: ' Gilroy-SemiBold';
+  font-size: 48px;
+  color: #091018;
+  line-height: 72px;
+  align-items: Left;
+  vertical-align: top;
+}
+.descOfuser {
+  margin-top: 24px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: normal;
+  font-size: 18px;
+  line-height: 29px;
+  align-items: Left;
+  vertical-align: Top;
+  color:#494949;
+  text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
   nav ul li {
     display: none;
   }
-  }
+}
