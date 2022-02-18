@@ -1,18 +1,11 @@
+/* ----------------container-------------------- */
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
 }
-
-.container {
-  width: 100%;
-  min-height: 100hv;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
+.div1 {
+  margin: 15px 70px 0px 70px;
   overflow: hidden;
-  background-color:#FCFCFC;
-  
 }
 .navbar {
   width: 100%;
@@ -23,298 +16,97 @@
 .logoimg {
   float: left;
 }
-.menu-icon {
-  width: 25px;
-  cursor: pointer;
-}
 nav {
   flex: 1;
   text-align: right;
+}
+nav ul {
+   flex: 1;
+  float: right;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
+ 
 }
 nav ul li a {
   text-decoration: none;
-  color: #000;
-  font-size: 14px;
+  font-family: 'Inter';
+  font-style: medium;
+  font-size: 15px;
+  vertical-align: top;
+  color: #091018;
 }
 nav ul li a:hover {
   color: #40a1ff;
 }
-nav ul li .btn,
-.videobutton .btn {
-  color: #40a1ff;
-  border-color: #40a1ff;
-}
-nav ul li .btn:hover,
-.videobutton .btn:hover {
-  color: white;
+#signup{
   background-color: #40a1ff;
   border-color: #40a1ff;
+  font-size: 15px;
+  font-family: 'Inter';
+  line-height: 30px;
+  border-radius: 12px;
+  width:90px;
 }
-/* .videobutton .btn{
-} */
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px 0;
+#registerbtn{
+  background-color: #40a1ff;
+  border-color: #40a1ff;
+  font-size: 15px;
+  font-family: 'Inter';
+  line-height: 33px;
+  border-radius: 12px;
+} 
+#login {
+  border-color: #40a1ff;
+  color: #40a1ff;
+  font-size: 15px;
+  line-height: 30px;
+  border-radius: 12px;
+  width:90px;
 }
-.column1 h3 {
-  font-size: 45px;
-  line-height: 60px;
-  text-transform: capitalize;
-  font-family: 'Times New Roman', Times, serif;
+#videobtn{
+  border-color: #40a1ff;
+  color: #40a1ff;
+  font-size: 15px;
+  line-height: 33px;
+  border-radius: 12px;
+  width:140px;
+}
+#login:hover,#videobtn:hover{
+  color: white;
+  background-color: #40a1ff;
+}
+
+@font-face {
+  font-family: ' Gilroy';
+  src: url('fonts/Gilroy-SemiBold.ttf'); 
+}
+@font-face {
+  font-family: ' Gilroy-Bold';
+  src: url('fonts/Gilroy-Bold.ttf'); 
 }
 .column1 h6 {
-  height: 27px;
-  left: 120px;
-  top: 387px;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 60;
-  font-size: 15px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #3d4457;
-}
-.col-2 {
-  position: relative;
-  flex-basis: 60%;
-  display: flex;
-  align-items: center;
-}
-.controller {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-.title {
-  margin-top: 20px;
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 60px;
-  text-transform: capitalize;
-  color: #091018;
-}
-
-#cards {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.feature,
-.faq,
-.user {
-  left: 120px;
-  top: 115px;
-
-  font-family: Gilroy;
-  font-style: normal;
-  font-weight: 500;
+  font-family:' Gilroy';
   font-size: 17px;
-  line-height: 27px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6bb2ff;
+  vertical-align: top;
+  letter-spacing: .2em;
 }
+.column1 h3{
+  font-size: 52px;
+  font-family: ' Gilroy-Bold';
+  line-height: 100px;
+  align:left;
+  vertical-align: top;
+  color: #091018;
 
-section {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px;
-  border-radius: 10px;
- background-color: whitesmoke;
 }
-section h5{
-  margin-top: 10px;
-  font-size: 18px;
-  padding: 10 15px;
+.column2 img{
+  max-width: 100%;  
+  height: auto;  
 }
-
-.accordion {
-  width: 100%;
-  padding: 0 15px;
-  cursor: pointer;
-  display: flex;
-  margin: 10px 0;
-  align-items: center;
-}
-.panel {
-  padding: 0 15px 10px 10px;
-  font-size: 14px;
-  text-align: justify;
-  overflow: hidden;
-  max-height: 0px;
-  transition: all 0.5s ease-in;
-}
-
-/* ------------------- contact ----------------------- */
-
-.container-fluid {
-  width: 400px;
-  height: 400px;
-  background-color: black;
-  position: absolute;
-  z-index: 2;
-  margin-left: 100px;
-  margin-top: 100px;
-}
-.bluebox {
-  width: 800px;
-  height: 200px;
-  background-color: #40a1ff;
-  z-index: 3;
-  position: absolute;
-  margin-left: 160px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-.bluebox p {
-  color: white;
-  position: absolute;
-  margin: 70px;
-  font-size: 40px;
-}
-.bluebox h6 {
-  color: white;
-  position: absolute;
-  margin-top: 120px;
-  margin-left: 70px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-#blueboximage {
-  z-index: 3;
-  position: absolute;
-  margin-left: 200px;
-}
-#buttonbluebox {
-  color: #40a1ff;
-  position: absolute;
-  margin-left: 550px;
-  margin-top: 80px;
-  border-radius: 10px;
-}
-.jcfooter {
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 140px;
-  color: white;
-}
-.contact {
-  size: 15px;
-  color: white;
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 500px;
-}
-.navigation {
-  size: 15px;
-  color: white;
-  position: absolute;
-  margin-top: 170px;
-  margin-left: 750px;
-}
-#content1 {
-  width: 70%;
-  margin: auto;
-}
-
-#option1 select {
-  width: 80%;
-  height: 2.7em;
-  position: relative;
-  bottom: 10px;
-  border-radius: 5px;
-  border-color: blue;
-  border: 0;
-  background-color: #3d4457;
-}
- .footer{
-  /* min-height: 100vh;
-  max-width: 40px; */
-  height: 80px;
-  min-width: 100vw;
-  background-color:#1E1E1E;
-  position: absolute;
-  margin-top: 500px;
-  color: white;
- }
- .footer p{
-  size: 15px;
-  color: white;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 50px;
-  font-family: 'Source Sans Pro', sans-serif;
- }
- .footer h6{
-  size: 15px;
-  color: white;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 550px;
-  font-family: 'Source Sans Pro', sans-serif;
-  
- }
- .terms h6{
-  size: 15px;
-  color: white;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 660px;
-  font-family: 'Source Sans Pro', sans-serif;
- }
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    width: 100%;
-    position: absolute;
-    top: 35px;
-  }
-  nav ul li {
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  .col-1 {
-    top: 80px;
-  }
-
-  .bluebox p {
-    font-size: 25px;
-    margin-left: 30px;
-  }
-  .bluebox h6 {
-    margin-left: 30px;
-    font-size: 13px;
-  }
-  #buttonbluebox {
-    margin: 150px 50px;
-  }
-  .contact {
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 200px;
-  }
-  .navigation {
-    margin-left: 200px;
-    margin-top: 500px;
-  }
-  .container-fluid {
-    width: 700px;
-    height: 700px;
-  }
-  .footer{
-    display:none;
-  }
+.buttons .btn{
+  margin: 0 10px;
 }

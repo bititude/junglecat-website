@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
+    <div class="div1">
       <!---------------------------Navbar------------------------------->
       <div class="navbar">
         <nav>
@@ -35,12 +35,12 @@
             <li><a href="#section3">Faq</a></li>
             <li><a href="#section4">Contact</a></li>
             <li>
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline-primary" id="login">
                 Login
               </button>
             </li>
             <li>
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-primary" id="signup">
                 Sign Up
               </button>
             </li>
@@ -48,338 +48,47 @@
         </nav>
       </div>
       <!---------------------------virtual platform------------------------------->
-      <div class="container overflow-hidden" style="margin-top: 200px;">
-        <div class="row gx-5">
-          <div class="col">
-            <div>
-              <div class="column1">
-                <h6>A Virtual platform</h6>
-                <h3>
-                  All your
-                  <br />
-                  learning under
-                  <br />
-                  one jungle
-                </h3>
-              </div>
+      <div class="container-fluid" style="margin-top: 200px;">
+        <div class="row">
+          <div class="col-sm-3 col-md-6">
+            <div class="column1">
+              <h6>A VIRTUAL PLATFORM</h6>
+              <h3>
+                All Your
+                <br />
+                Learning Under
+                <br />
+                One Jungle
+              </h3>
+            </div>
+            <div class="mt-5">
+              <span class="buttons">
+                <button type="button" class="btn btn-primary" id="registerbtn">
+                  Register for Access
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="videobtn"
+                >
+                  Watch Video
+                </button>
+              </span>
             </div>
           </div>
-          <div class="col">
-            <div>
-              <div>
-                <img
-                  src="./images/pets Recovered .png"
-                  alt=""
-                  class="controller"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <span class="videobutton">
-            <button type="button" class="btn btn-outline-primary">
-              Register for Access
-            </button>
-            <button type="button" class="btn btn-outline-primary">
-              Watch Video
-            </button>
-          </span>
-        </div>
-        <!---------------------------User experience------------------------------->
-        <div style="margin-top: 200px;" id="section1">
-          <div class="user">
-            <h6>User experience</h6>
-          </div>
-          <div class="title">
-            <p>
-              When your institute
-              <br />
-              runs on Junglecat, everybody wins.
-            </p>
-          </div>
-          <div>
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              Jungle Cat is a virtual learning platform bringing virtual
-              education in the simplest and easiest form. The virtual learning
-              platform is taken to a whole new level with our complete virtual
-              academy framework offering a holistic institutional experience to
-              each user.
-            </p>
-          </div>
-        </div>
-        <!--------------------------- Cards ------------------------------->
-        <div id="cards">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <img src="./images/management.png" />
-                  <h5 class="card-title"><strong>Management</strong></h5>
-                  <p
-                    class="card-text"
-                    style="font-family: 'Source Sans Pro', sans-serif;"
-                  >
-                    All the hassles of monitoring, managing and tracking can now
-                    be done easily with Jungle Cat. Administrators can easily
-                    access the platform to see.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <img src="./images/teachers.png" />
-                  <h5 class="card-title"><strong>Teachers</strong></h5>
-                  <p
-                    class="card-text"
-                    style="font-family: 'Source Sans Pro', sans-serif;"
-                  >
-                    It’s all in one platform now. Teachers can schedule
-                    meetings, assign tasks, evaluate and exchange feedbacks,
-                    along with the easiness of being
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mt-3">
-              <div class="card">
-                <div class="card-body">
-                  <img src="./images/student.png" />
-                  <h5 class="card-title"><strong>Students</strong></h5>
-                  <p
-                    class="card-text"
-                    style="font-family: 'Source Sans Pro', sans-serif;"
-                  >
-                    Experiencing school in a new and dynamic way is what this
-                    platform offers for students. With the stream mode of
-                    attending and managing classes
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 mt-3">
-              <div class="card">
-                <div class="card-body">
-                  <img src="./images/Authorities.png" />
-                  <h5 class="card-title"><strong>Authorities</strong></h5>
-                  <p
-                    class="card-text"
-                    style="font-family: 'Source Sans Pro', sans-serif;"
-                  >
-                    Auditing the efficiency of the platform is important. Jungle
-                    Cat allows authorities in charge to ensure the compliance of
-                    the organization.
-                  </p>
-                </div>
-              </div>
+          <div class="col-sm-9 col-md-6">
+            <div class="column2 mt-3">
+              <img src="./images/pets (1)-Recovered 1 (1).png" />
             </div>
           </div>
         </div>
-        <!--------------------------- Product features ------------------------------->
-        <div id="section2">
-          <div class="feature">
-            <p>Product Features</p>
-          </div>
-          <div class="title">
-            <p>A Virtual edu Era, Future of Education</p>
-          </div>
-          <div>
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              Build your AI Infrastructure with powerful research, creative and
-              performance features that fuel your marketing objectives and
-              strategies at every level.
-            </p>
-          </div>
+      </div>
+      <!---------------------------User experience------------------------------->
+      <div style="margin-top: 200px;" id="section1">
+        <div class="user">
+          <h6>User experience</h6>
         </div>
-        <div class="container">
-          <div class="row g-0 mt-6">
-            <div class="col-6 col-md-6">
-              <img src="./images/Ellipse 4.png" />
-            </div>
-            <div class="col-sm-12 col-md-4 mt-4">
-              <h5>Qualification & Courses Management</h5>
-              <p
-                class="card-text"
-                style="
-                  font-family: 'Source Sans Pro', sans-serif;
-                  text-align: justify;
-                "
-              >
-                An academy may provide a plethora of courses under different
-                qualifications, on Jungle Cat the Administrators can easily
-                organize and manage different courses and its respective details
-                with ease. It helps in listing and arrangement of courses under
-                qualification levels. Each of these course listings can further
-                be expanded and shared with teachers and students, as it may
-                include syllabuses, academic calendars etc. This makes it easier
-                for the teachers and the students for quick and easy sync.
-              </p>
-              <div>
-                <a href="#">View All</a>
-                <span>
-                  <a href="#" class="previous round">&#8249;</a>
-                  <a href="#" class="next round">&#8250;</a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--------------------------- FAQ ------------------------------->
-        <div id="section3">
-          <div class="feature">
-            <h6>FAQ</h6>
-          </div>
-          <div class="title">
-            <p>Hello,How can we help?</p>
-          </div>
-          <div>
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              Everything you need to know aboutthe product and billing.
-            </p>
-          </div>
-        </div>
-        <!-- faq blocks -->
-        <section class="mt-5">
-          <div class="accordion">
-            <h5>
-              Is there a free trail available?
-            </h5>
-          </div>
-          <div class="panel">
-            <hr />
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              All the hassles of monitoring, managing and tracking can now be
-              done easily with Jungle Cat. Administrators can easily access the
-              platform to see what is happening in the classes. This means high
-              level data control throughout the platform to edit and audit for
-              maximum efficiency.
-            </p>
-          </div>
-        </section>
-        <section class="mt-5">
-          <div class="accordion">
-            <h5>Is there a course available?</h5>
-          </div>
-          <div class="panel">
-            <hr />
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              All the hassles of monitoring, managing and tracking can now be
-              done easily with Jungle Cat. Administrators can easily access the
-              platform to see what is happening in the classes. This means high
-              level data control throughout the platform to edit and audit for
-              maximum efficiency.
-            </p>
-          </div>
-        </section>
-        <section class="mt-5">
-          <div class="accordion">
-            <h5>What is new updates?</h5>
-          </div>
-          <div class="panel">
-            <hr />
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              All the hassles of monitoring, managing and tracking can now be
-              done easily with Jungle Cat. Administrators can easily access the
-              platform to see what is happening in the classes. This means high
-              level data control throughout the platform to edit and audit for
-              maximum efficiency.
-            </p>
-          </div>
-        </section>
-        <section class="mt-5">
-          <div class="accordion">
-            <h5>Is there a free trail available?</h5>
-          </div>
-          <div class="panel">
-            <hr />
-            <p style="font-family: 'Source Sans Pro', sans-serif;">
-              All the hassles of monitoring, managing and tracking can now be
-              done easily with Jungle Cat. Administrators can easily access the
-              platform to see what is happening in the classes. This means high
-              level data control throughout the platform to edit and audit for
-              maximum efficiency.
-            </p>
-          </div>
-        </section>
-        <!-- faq blocks end -->
       </div>
     </div>
-    <!----------------------------------- Contact -------------------------------------->
-    <div style="margin-top: 100px;" id="section4">
-      <div class="container-fluid">
-        <span class="jcfooter">
-          <img src="./images/junglecatFooter.png" />
-          <br />
-          <p style="font-family: 'Source Sans Pro', sans-serif;">
-            A virtual edu Era, Future of education
-          </p>
-        </span>
-        <div class="contact">
-          <p>Contact</p>
-          <p>
-            <img src="./images/mail.png" />
-            <span style="font-family: 'Source Sans Pro', sans-serif;">
-              hello@junglecat.com
-            </span>
-          </p>
-          <p>
-            <img src="./images/instagram.png" />
-            <span style="font-family: 'Source Sans Pro', sans-serif;">
-              jungle_cat
-            </span>
-          </p>
-          <p>
-            <img src="./images/twitter.png" />
-            <span style="font-family: 'Source Sans Pro', sans-serif;">
-              _junglecat
-            </span>
-          </p>
-        </div>
-        <!---------------------------------- Navigation ------------------------------------->
-        <div class="navigation">
-          <p>Navigation</p>
-          <p style="font-family: 'Source Sans Pro', sans-serif;">Home</p>
-          <p style="font-family: 'Source Sans Pro', sans-serif;">Product</p>
-          <p style="font-family: 'Source Sans Pro', sans-serif;">Faq</p>
-          <p style="font-family: 'Source Sans Pro', sans-serif;">Sign Up</p>
-        </div>
-      </div>
-      <div class="bluebox">
-        <p>Start Under One Jungle</p>
-        <h6>Expand and combine audiences based on performance</h6>
-        <button type="button" class="btn btn-light" id="buttonbluebox">
-          Register for Access
-        </button>
-      </div>
-      <div>
-        <img src="./images/bluebox.png" id="blueboximage" />
-      </div>
-      <div class="footer">
-        <p>Copyright © 2020 JungleCat All rights reserved.</p>
-        <h6>Privacy Policy</h6>
-        <span class="terms">
-          <h6>Terms Of Use</h6>
-        </span>
-      </div>
-    </div>
-    <!------------------------------ js for faq ---------------------->
-    <script>
-      let acc = document.getElementsByClassName('accordion')
-      let i
-      let len = acc.length
-      for (i = 0; i < len; i++) {
-        acc[i].addEventListener('click', function () {
-          this.classList.toggle('active')
-          let panel = this.nextElementSibling
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + 'px'
-          }
-        })
-      }
-    </script>
   </body>
 </html>
