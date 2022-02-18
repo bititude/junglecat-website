@@ -70,7 +70,7 @@ nav ul li a:hover {
   padding: 10px 10px;
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 33px;
   border-radius: 12px;
   width: 140px;
@@ -107,7 +107,7 @@ nav ul li a:hover {
 .column1 h3 {
   font-size: 55px;
   font-family: ' Gilroy-Bold';
-  line-height: 100px;
+  line-height: 80px;
   align: left;
   vertical-align: top;
   color: #091018;
@@ -130,15 +130,38 @@ nav ul li a:hover {
 .descOfuser {
   margin-top: 24px;
   font-family: 'Inter', sans-serif;
-  letter-spacing: normal;
+  font-style: normal;
   font-size: 18px;
-  line-height: 29px;
+  line-height: 28px;
+
   align-items: Left;
   vertical-align: Top;
-  color:#494949;
+  color: #494949;
   text-align: justify;
 }
-
+.col .card {
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 1.5em;
+}
+.card-title {
+  font-family: ' Gilroy-SemiBold';
+  font-size: 28px;
+  color: #252525;
+  line-height: 32px;
+  align-items: Left;
+  vertical-align: top;
+}
+.card-body p {
+  
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: Left;
+  vertical-align: top;
+  color: #838383;
+}
 @media screen and (max-width: 768px) {
   nav ul li {
     display: none;
