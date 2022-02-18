@@ -21,92 +21,106 @@ nav {
   text-align: right;
 }
 nav ul {
-   flex: 1;
+  flex: 1;
   float: right;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
- 
 }
 nav ul li a {
   text-decoration: none;
   font-family: 'Inter';
   font-style: medium;
-  font-size: 15px;
+  font-size: 18px;
   vertical-align: top;
   color: #091018;
 }
 nav ul li a:hover {
   color: #40a1ff;
 }
-#signup{
+#signup {
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Inter';
   line-height: 30px;
   border-radius: 12px;
-  width:90px;
+  width: 90px;
 }
-#registerbtn{
+#registerbtn {
+  padding:10px 10px;
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Inter';
   line-height: 33px;
   border-radius: 12px;
-} 
+}
 #login {
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   border-radius: 12px;
-  width:90px;
+  width: 90px;
 }
-#videobtn{
+#videobtn {
+  padding:10px 10px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 15px;
   line-height: 33px;
   border-radius: 12px;
-  width:140px;
+  width: 140px;
 }
-#login:hover,#videobtn:hover{
+#videobutton img:hover {
+  color: white;
+}
+#videobtn:hover {
+  background-color: white;
+  color: #40a1ff;
+}
+#login:hover {
   color: white;
   background-color: #40a1ff;
 }
 
 @font-face {
-  font-family: ' Gilroy';
-  src: url('fonts/Gilroy-SemiBold.ttf'); 
+  font-family: ' Gilroy-SemiBold';
+  src: url('fonts/Gilroy-SemiBold.ttf');
 }
 @font-face {
   font-family: ' Gilroy-Bold';
-  src: url('fonts/Gilroy-Bold.ttf'); 
+  src: url('fonts/Gilroy-Bold.ttf');
 }
 .column1 h6 {
-  color: #3d4457;
-  font-family:' Gilroy';
-  font-size: 17px;
+  color: #6BB2FF;
+  font-family: ' Gilroy-SemiBold';
+  font-size: 20px;
   vertical-align: top;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
+  font-weight: 200;
+  line-height: 27px;
 }
-.column1 h3{
-  font-size: 52px;
+.column1 h3 {
+  font-size: 55px;
   font-family: ' Gilroy-Bold';
   line-height: 100px;
-  align:left;
+  align: left;
   vertical-align: top;
   color: #091018;
-
 }
-.column2 img{
-  max-width: 100%;  
-  height: auto;  
+.column2 img {
+  max-width: 100%;
+  height: auto;
 }
-.buttons .btn{
+.buttons .btn {
   margin: 0 10px;
 }
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: none;
+  }
+  }
