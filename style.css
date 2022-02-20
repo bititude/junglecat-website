@@ -1,11 +1,15 @@
+.logoimg{
+  margin-top: 20px;
+}
 nav ul li {
   margin-right: 10px;
+  margin-top: 20px;
 }
 #navbarSupportedContent ul li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: medium;
-  font-size: 15px;
+  font-size: 18px;
   color: #091018;
 }
 #navbarSupportedContent ul li a:hover {
@@ -14,7 +18,7 @@ nav ul li {
 #signup {
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Inter', sans-serif;
   line-height: 25px;
   border-radius: 12px;
@@ -24,7 +28,7 @@ nav ul li {
   padding: 0%, 24px, 18px, 24px;
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Inter';
   line-height: 30px;
   border-radius: 12px;
@@ -32,7 +36,7 @@ nav ul li {
 #login {
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
   border-radius: 12px;
   width: 80px;
@@ -41,7 +45,7 @@ nav ul li {
   padding: 0%, 24px, 18px, 24px;
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 30px;
   border-radius: 12px;
 }
@@ -68,7 +72,7 @@ nav ul li {
   margin-top: 200px;
   color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
-  font-size: 17px;
+  font-size: 20px;
   vertical-align: top;
   letter-spacing: 0.2em;
   line-height: 29px;
@@ -76,9 +80,9 @@ nav ul li {
 }
 .column1 h3 {
   margin-top: 20px;
-  font-size: 55px;
+  font-size: 60px;
   font-family: ' Gilroy-Bold';
-  line-height: 80px;
+  line-height: 90px;
   align: left;
   vertical-align: top;
   color: #091018;
@@ -104,7 +108,7 @@ nav ul li {
   margin-top: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   align-items: Left;
   vertical-align: Top;
@@ -128,7 +132,7 @@ nav ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   align-items: Left;
   vertical-align: top;
