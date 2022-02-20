@@ -1,79 +1,49 @@
-/* ----------------container-------------------- */
-* {
-  margin: 0;
-  padding: 0;
-}
-.div1 {
-  margin: 15px 70px 0px 70px;
-  overflow: hidden;
-}
-.navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-.logoimg {
-  float: left;
-}
-nav {
-  flex: 1;
-  text-align: right;
-}
-nav ul {
-  flex: 1;
-  float: right;
-}
 nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
-nav ul li a {
+#navbarSupportedContent ul li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: medium;
-  font-size: 18px;
-  vertical-align: top;
+  font-size: 15px;
   color: #091018;
 }
-nav ul li a:hover {
+#navbarSupportedContent ul li a:hover {
   color: #40a1ff;
 }
 #signup {
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
-  line-height: 30px;
+  line-height: 25px;
   border-radius: 12px;
   width: 90px;
 }
 #registerbtn {
-  padding: 10px 10px;
+  padding: 0%, 24px, 18px, 24px;
   background-color: #40a1ff;
   border-color: #40a1ff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Inter';
-  line-height: 33px;
+  line-height: 30px;
   border-radius: 12px;
 }
 #login {
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 25px;
   border-radius: 12px;
-  width: 90px;
+  width: 80px;
 }
 #videobtn {
-  padding: 10px 10px;
+  padding: 0%, 24px, 18px, 24px;
   border-color: #40a1ff;
   color: #40a1ff;
-  font-size: 16px;
-  line-height: 33px;
+  font-size: 15px;
+  line-height: 30px;
   border-radius: 12px;
-  width: 140px;
 }
 #videobutton img:hover {
   color: white;
@@ -95,16 +65,17 @@ nav ul li a:hover {
 .column1 h6,
 .user h6,
 .feature p {
-  font-weight: 600;
   margin-top: 200px;
   color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
-  font-size: 20px;
+  font-size: 17px;
   vertical-align: top;
   letter-spacing: 0.2em;
-  line-height: 27px;
+  line-height: 29px;
+  text-rendering: optimizeLegibility;
 }
 .column1 h3 {
+  margin-top: 20px;
   font-size: 55px;
   font-family: ' Gilroy-Bold';
   line-height: 80px;
@@ -120,6 +91,7 @@ nav ul li a:hover {
   margin: 0 10px;
 }
 .title p {
+  font-weight: lighter;
   font-family: ' Gilroy-SemiBold';
   font-size: 48px;
   color: #091018;
@@ -127,12 +99,12 @@ nav ul li a:hover {
   align-items: Left;
   vertical-align: top;
 }
-.descOfuser ,.featureDesc{
-  font-weight: 400;
+.descOfuser,
+.featureDesc {
   margin-top: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   align-items: Left;
   vertical-align: Top;
@@ -150,27 +122,23 @@ nav ul li a:hover {
   align-items: Left;
   vertical-align: top;
 }
-.card-body p ,#title2 p{
+.card-body p,
+#title2 p {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   align-items: Left;
   vertical-align: top;
   color: #838383;
 }
-#title2 h5{
+#title2 h5 {
   font-family: ' Gilroy-SemiBold';
   font-size: 28px;
   color: #343434;
   line-height: 42px;
   align-items: Left;
   vertical-align: top;
-}
-@media screen and (max-width: 768px) {
-  nav ul li {
-    display: none;
-  }
 }
