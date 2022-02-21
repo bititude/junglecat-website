@@ -30,7 +30,7 @@ nav ul li {
   border-color: #40a1ff;
   font-size: 16px;
   font-family: 'Inter';
-  line-height: 30px;
+  line-height: 39px;
   border-radius: 12px;
 }
 #login {
@@ -46,7 +46,7 @@ nav ul li {
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 39px;
   border-radius: 12px;
 }
 #videobutton img:hover {
@@ -72,7 +72,7 @@ nav ul li {
   margin-top: 200px;
   color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
-  font-size: 20px;
+  font-size: 19px;
   vertical-align: top;
   letter-spacing: 0.2em;
   line-height: 29px;
@@ -82,7 +82,7 @@ nav ul li {
   margin-top: 20px;
   font-size: 60px;
   font-family: ' Gilroy-Bold';
-  line-height: 90px;
+  line-height: 80px;
   align: left;
   vertical-align: top;
   color: #091018;
@@ -97,7 +97,7 @@ nav ul li {
 .title p {
   font-weight: lighter;
   font-family: ' Gilroy-SemiBold';
-  font-size: 48px;
+  font-size: 46px;
   color: #091018;
   line-height: 72px;
   align-items: Left;
@@ -132,7 +132,7 @@ nav ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   align-items: Left;
   vertical-align: top;
