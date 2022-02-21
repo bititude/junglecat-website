@@ -1,4 +1,17 @@
-.logoimg{
+@font-face {
+  font-family: ' Gilroy-SemiBold';
+  src: url('fonts/Gilroy-SemiBold.ttf');
+}
+@font-face {
+  font-family: ' Gilroy-Bold';
+  src: url('fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+  font-family: ' Gilroy';
+  src: url('fonts/Gilroy-Regular.ttf');
+}
+
+.logoimg {
   margin-top: 20px;
 }
 nav ul li {
@@ -58,17 +71,10 @@ nav ul li {
   color: #40a1ff;
 }
 
-@font-face {
-  font-family: ' Gilroy-SemiBold';
-  src: url('fonts/Gilroy-SemiBold.ttf');
-}
-@font-face {
-  font-family: ' Gilroy-Bold';
-  src: url('fonts/Gilroy-Bold.ttf');
-}
 .column1 h6,
 .user h6,
-.feature p {
+.feature p,
+.faq h6 {
   margin-top: 200px;
   color: #6bb2ff;
   font-family: ' Gilroy-SemiBold';
@@ -82,7 +88,7 @@ nav ul li {
   margin-top: 20px;
   font-size: 60px;
   font-family: ' Gilroy-Bold';
-  line-height: 80px;
+  line-height: 85px;
   align: left;
   vertical-align: top;
   color: #091018;
@@ -104,9 +110,11 @@ nav ul li {
   vertical-align: top;
 }
 .descOfuser,
-.featureDesc {
+.featureDesc,
+.faqdesc p {
   margin-top: 24px;
   font-family: 'Inter', sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 28px;
@@ -130,9 +138,8 @@ nav ul li {
 #title2 p {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
-  font-weight: 100;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
   align-items: Left;
   vertical-align: top;
@@ -145,4 +152,108 @@ nav ul li {
   line-height: 42px;
   align-items: Left;
   vertical-align: top;
+}
+.viewAll a {
+  font-family: 'Inter';
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.6px;
+  color: #5ba1f2;
+}
+.faqbox {
+  border: 1px solid rgba(192, 192, 192, 0.18) !important;
+  border-radius: 20px;
+}
+.faqtitle {
+  padding: 35px !important;
+  background-color: white !important;
+  font-family: 'Inter' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  color: #494949;
+}
+.faqtitle:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+.faqboxbody p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #838383;
+}
+.bluebox {
+  margin-top: 240px;
+  background: rgba(64, 161, 255, 0.87);
+  backdrop-filter: blur(92px);
+  border-radius: 10px;
+  height: 240px;
+}
+.boxtext h3 {
+  text-align: center;
+  margin-top: 116px;
+  color: white;
+  font-family: ' Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.boxtext p {
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+}
+#buttonbluebox {
+  margin-top: 116px;
+  float: right;
+  margin-right: 50px;
+  color: #40a1ff;
+  border-radius: 10px;
+  line-height: 39px;
+}
+#blueboximage {
+  z-index: 3;
+  position: absolute;
+  margin-left: 62px;
+  margin-top: -230px;
+}
+@media screen and (max-width: 768px) {
+  .bluebox {
+    height: 333px;
+  }
+  #blueboximage {
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    margin-top: -330px;
+    left: 24%;
+  }
+  #buttonbluebox {
+    text-align: center;
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 999px) {
+  #blueboximage {
+    z-index: 3;
+    position: absolute;
+    margin-top: -270px;
+  }
+  .boxtext h3 {
+    margin-top: 110px;
+    font-size: 30px;
+  }
 }
