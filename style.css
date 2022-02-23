@@ -1,4 +1,6 @@
-.logoimg {
+/* -------------- Navbar ------------------ */
+
+.logo {
   margin-top: 20px;
 }
 nav ul li {
@@ -26,7 +28,6 @@ nav ul li {
   font-size: 16px;
   line-height: 19px;
   border-radius: 12px;
-  /* margin-top: 20px; */
 }
 #signup {
   padding: 12px;
@@ -38,6 +39,35 @@ nav ul li {
   line-height: 19px;
   border-radius: 12px;
 }
+/* -------------- virtual platform -------------- */
+
+.column1 h6,
+.user h6,
+.feature p,
+.faq h6 {
+  margin-top: 200px;
+  font-weight: 600;
+  color: #6bb2ff;
+  font-family: 'Gilroy-Regular';
+  font-size: 19px;
+  vertical-align: top;
+  letter-spacing: 0.2em;
+  line-height: 27px;
+}
+.column1 h3 {
+  margin-top: 20px;
+  font-size: 72px;
+  font-family: 'Gilroy-Bold';
+  line-height: 100px;
+  align: left;
+  vertical-align: top;
+  color: #091018;
+}
+.column2 img {
+  max-width: 100%;
+  height: auto;
+}
+
 #registerbtn {
   padding: 15px 15px;
   background-color: #40a1ff;
@@ -67,39 +97,14 @@ nav ul li {
   color: #40a1ff;
 }
 
-.column1 h6,
-.user h6,
-.feature p,
-.faq h6 {
-  margin-top: 200px;
-  font-weight: 600;
-  color: #6bb2ff;
-  font-family: 'Gilroy-Regular';
-  font-size: 19px;
-  vertical-align: top;
-  letter-spacing: 0.2em;
-  line-height: 27px;
-}
-.column1 h3 {
-  margin-top: 20px;
-  font-size: 72px;
-  font-family: 'Gilroy-Bold';
-  line-height: 100px;
-  align: left;
-  vertical-align: top;
-  color: #091018;
-}
-.column2 img {
-  max-width: 100%;
-  height: auto;
-}
-.buttons .btn {
-  margin: 0 10px;
-}
+/* ------------ User experience  --------------- */
+
+.usertitle p,
 .title p {
+  margin-top: 24px;
   font-weight: lighter;
   font-family: 'Gilroy-SemiBold';
-  font-size: 46px;
+  font-size: 48px;
   color: #091018;
   line-height: 72px;
   align-items: Left;
@@ -118,6 +123,9 @@ nav ul li {
   vertical-align: Top;
   color: #494949;
 }
+
+/* ------------ Cards --------------- */
+
 .col .card {
   padding: 1.5em 0.5em 0.5em;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
@@ -132,7 +140,7 @@ nav ul li {
   vertical-align: top;
 }
 .card-body p,
-#title2 p {
+.rightbox p {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -142,7 +150,7 @@ nav ul li {
   vertical-align: top;
   color: #838383;
 }
-#title2 h5 {
+.rightbox h5 {
   font-family: 'Gilroy-SemiBold';
   font-size: 28px;
   color: #343434;
@@ -150,12 +158,22 @@ nav ul li {
   align-items: Left;
   vertical-align: top;
 }
+
+/* ------------  product features content --------------- */
+
+/* pink circle */
 .circle {
   position: absolute;
   left: 0px;
 }
+
 .leftbox {
-  background-color: rgb(247, 255, 255);
+  background: linear-gradient(
+    180deg,
+    #ffacbb 0%,
+    rgba(172, 235, 255, 0.92) 100%
+  );
+  border-radius: 180px;
 }
 .images {
   position: relative;
