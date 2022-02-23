@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(/fonts/Gilroy-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: url(/fonts/Gilroy-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
+}
+
+
 .logoimg {
   margin-top: 20px;
 }
