@@ -2,51 +2,60 @@
   margin-top: 20px;
 }
 nav ul li {
-  margin-right: 10px;
-  margin-top: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 #navbarSupportedContent ul li a {
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: medium;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
   color: #091018;
 }
 #navbarSupportedContent ul li a:hover {
   color: #40a1ff;
 }
+#login {
+  padding: 12px 20px;
+  border-color: #40a1ff;
+  color: #40a1ff;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 12px;
+  /* margin-top: 20px; */
+}
 #signup {
+  padding: 12px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  line-height: 30px;
+  font-weight: 600;
+  line-height: 19px;
   border-radius: 12px;
-  width: 90px;
 }
 #registerbtn {
-  padding: 0%, 24px, 18px, 24px;
+  padding: 15px 15px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
   font-family: 'Inter';
-  line-height: 39px;
+  font-weight: 600;
+  line-height: 19px;
   border-radius: 12px;
 }
-#login {
-  border-color: #40a1ff;
-  color: #40a1ff;
-  font-size: 16px;
-  line-height: 30px;
-  border-radius: 12px;
-  width: 80px;
-}
+
 #videobtn {
-  padding: 0%, 24px, 18px, 24px;
+  padding: 10px 10px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 16px;
-  line-height: 39px;
+  font-weight: 400;
+  line-height: 19px;
   border-radius: 12px;
 }
 #videobutton img:hover {
@@ -63,21 +72,19 @@ nav ul li {
 .feature p,
 .faq h6 {
   margin-top: 200px;
-  font-weight: 700;
+  font-weight: 600;
   color: #6bb2ff;
   font-family: 'Gilroy-Regular';
   font-size: 19px;
   vertical-align: top;
   letter-spacing: 0.2em;
-  line-height: 29px;
-  text-rendering: optimizeLegibility;
-  text-transform: uppercase;
+  line-height: 27px;
 }
 .column1 h3 {
   margin-top: 20px;
-  font-size: 60px;
+  font-size: 72px;
   font-family: 'Gilroy-Bold';
-  line-height: 85px;
+  line-height: 100px;
   align: left;
   vertical-align: top;
   color: #091018;
@@ -113,7 +120,8 @@ nav ul li {
 }
 .col .card {
   padding: 1.5em 0.5em 0.5em;
-  border-radius: 1.5em;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
 }
 .card-title {
   font-family: 'Gilroy-SemiBold';
@@ -141,6 +149,32 @@ nav ul li {
   line-height: 42px;
   align-items: Left;
   vertical-align: top;
+}
+.circle {
+  position: absolute;
+  left: 0px;
+}
+.leftbox {
+  background-color: rgb(247, 255, 255);
+}
+.images {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  margin-top: 30px;
+  border-radius: 15px;
+  opacity: 0.7;
+  border: 10px solid white;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  width: 70%;
+  top: 90px;
+  left: 15%;
 }
 .viewAll a {
   font-family: 'Inter';
@@ -182,11 +216,10 @@ nav ul li {
   background: rgba(64, 161, 255, 0.87);
   backdrop-filter: blur(92px);
   border-radius: 10px;
-  height: 240px;
 }
 .boxtext h3 {
-  text-align: center;
   margin-top: 116px;
+  text-align: center;
   color: white;
   font-family: 'Gilroy-Regular';
   font-style: normal;
@@ -203,46 +236,31 @@ nav ul li {
   font-size: 17px;
   line-height: 24px;
   color: #ffffff;
+  padding-bottom: 56px;
 }
-#buttonbluebox {
-  margin-top: 116px;
-  float: right;
-  margin-right: 50px;
+.accesbtn .btn {
+  padding: 10px;
+  margin-top: 120px;
   color: #40a1ff;
+  background-color: #ffffff;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: none;
   border-radius: 10px;
   line-height: 39px;
 }
+
+.blueboxpositions {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 #blueboximage {
-  z-index: 3;
   position: absolute;
-  margin-left: 62px;
-  margin-top: -230px;
+  top: 200px;
+  left: 190px;
 }
-@media screen and (max-width: 768px) {
-  .bluebox {
-    height: 333px;
-  }
-  #blueboximage {
-    z-index: 3;
-    position: absolute;
-    text-align: center;
-    margin-top: -330px;
-    left: 24%;
-  }
-  #buttonbluebox {
-    text-align: center;
-    margin-top: 30px;
-    width: 80%;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 999px) {
-  #blueboximage {
-    z-index: 3;
-    position: absolute;
-    margin-top: -270px;
-  }
-  .boxtext h3 {
-    margin-top: 110px;
-    font-size: 30px;
-  }
+.container-fluid {
+  background-color: #091018;
 }
