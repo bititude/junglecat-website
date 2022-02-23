@@ -11,9 +11,8 @@
   font-family: 'Gilroy-Bold';
   src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
 }
-
 /* -------------- Navbar-------------- */
-.logo{
+.logo {
   margin-top: 20px;
 }
 nav ul li {
@@ -242,6 +241,9 @@ nav ul li {
   line-height: 28px;
   color: #838383;
 }
+
+/* ------------ blue box -------- */
+
 .bluebox {
   margin-top: 240px;
   background: rgba(64, 161, 255, 0.87);
@@ -281,17 +283,26 @@ nav ul li {
   border-radius: 10px;
   line-height: 39px;
 }
-
-.blueboxpositions {
+.blueboxposition {
+  margin-bottom: -140px;
   position: relative;
   top: 0;
   left: 0;
 }
-#blueboximage {
+#hatimage {
   position: absolute;
-  top: 200px;
+  top:-40px;
   left: 190px;
 }
-.container-fluid {
+/* ------------- Contact ----------- */
+
+.container-fluid{
   background-color: #091018;
+  padding: 170px;
+}
+.firstcol , .secondcol , .thirdcol {
+  padding: 20px;
+}
+.firstcol p, .secondcol p, .thirdcol p {
+  color: white;
 }
