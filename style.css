@@ -189,7 +189,7 @@ nav ul li {
     #ffacbb 0%,
     rgba(172, 235, 255, 0.92) 100%
   );
-  opacity: 0.6;
+  opacity: 0.5;
   filter: blur(184px);
   height: 500px;
 }
@@ -198,9 +198,9 @@ nav ul li {
   top: 100px;
   left: 0;
   border-radius: 15px;
-  width: 50%;
+  width: 55%;
   border: 10px solid white;
-  opacity: .6;
+  opacity: .5;
 }
 .image2 {
   position: absolute;
@@ -278,7 +278,7 @@ nav ul li {
 .accesbtn .btn {
   color: #40a1ff;
   background-color: #ffffff;
-
+  margin-top: 60px;
   border: none;
   border-radius: 10px;
   line-height: 39px;
@@ -335,5 +335,5 @@ nav ul li {
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
-  margin: 27px;
+  margin: 20px;
 }
