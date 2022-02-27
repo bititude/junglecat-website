@@ -12,6 +12,7 @@
   src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
 }
 /* -------------- Navbar-------------- */
+
 .logo {
   margin-top: 20px;
 }
@@ -71,7 +72,6 @@ nav ul li {
   font-size: 72px;
   font-family: 'Gilroy-Bold';
   line-height: 100px;
-  align: left;
   vertical-align: top;
   color: #091018;
 }
@@ -190,7 +190,9 @@ nav ul li {
     rgba(172, 235, 255, 0.92) 100%
   );
   opacity: 0.5;
+  border-radius: 180px;
   filter: blur(184px);
+  transform: rotate(-15.72deg);
   height: 500px;
 }
 .image1 {
@@ -200,7 +202,7 @@ nav ul li {
   border-radius: 15px;
   width: 55%;
   border: 10px solid white;
-  opacity: .5;
+  opacity: 0.5;
 }
 .image2 {
   position: absolute;
@@ -220,31 +222,57 @@ nav ul li {
   letter-spacing: 0.6px;
   color: #5ba1f2;
 }
- .faqbox {
-  border: 1px solid rgba(192, 192, 192, 0.18) !important;
-  border-radius: 20px;
+
+/* ------------------ FAQ -------------- */
+
+.firstaccordion,
+.secondaccordion,
+.thirdaccordion {
+  border: 2px solid rgba(192, 192, 192, 0.18);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
 }
-.faqtitle {
-  padding: 35px !important;
+.horrizondal {
+  margin-top: -10px;
+}
+.accordDiv1,
+.accordDiv2,
+.accordDiv3 {
+  border: none;
+  border-radius: 15px !important;
+}
+.accordion-button {
+  border-radius: 15px !important ;
   background-color: white !important;
-  font-family: 'Inter' !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  font-size: 24px !important;
-  line-height: 32px !important;
+  margin-top: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
   color: #494949;
 }
-.faqtitle:focus {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
-}
-.faqboxbody p {
+.accordion-body p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #838383;
 }
+.accordion-button:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed):focus {
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+}
+.accordion-button:not(.collapsed),
+.accordion-button:not(.collapsed):focus {
+  color: #40a1ff;
+}
+
 
 /* ------------ blue box -------- */
 
@@ -253,10 +281,11 @@ nav ul li {
   background: rgba(64, 161, 255, 0.87);
   backdrop-filter: blur(92px);
   border-radius: 10px;
-}
-.boxtext h3 {
-  margin-top: 116px;
-  text-align: center;
+
+} 
+ .boxtext h3 {
+  margin-top: 111px;
+  margin-left: 60px;
   color: white;
   font-family: 'Gilroy-Regular';
   font-style: normal;
@@ -264,24 +293,29 @@ nav ul li {
   font-size: 38px;
   line-height: 42px;
   color: #ffffff;
-}
-.boxtext p {
-  text-align: center;
+} 
+ .boxtext p {
+  margin-left: 60px;
+  margin-bottom: 50px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  padding-bottom: 56px;
+
 }
 .accesbtn .btn {
   color: #40a1ff;
   background-color: #ffffff;
-  margin-top: 60px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   line-height: 39px;
+  margin:120px 40px 20px 40px;
+}
+.accesbtn .btn:hover{
+  box-shadow: 0 0 1px white;
+  border: #ffffff;
 }
 .blueboxposition {
   margin-bottom: -140px;
@@ -291,21 +325,23 @@ nav ul li {
 }
 #hatimage {
   position: absolute;
-  top: -40px;
-  left: 6%;
+  top: -30px;
+  margin-left: 5%;
 }
-/* ------------- Contact ----------- */
 
-.container-fluid {
-  background-color: #091018;
+/* ------------- Contact ----------- */
+.firstcol{
+  margin-left:-140px;
+}
+.contact{
   padding: 170px;
+  padding-bottom: 30px;
 }
-.firstcol,
-.secondcol,
-.thirdcol {
-  padding: 20px;
-  align-items: center;
+.footerRow{
+  column-gap: 4%;
+  margin-right: -19%;
 }
+
 .firstcol p,
 .secondcol ul li,
 .thirdcol ul li {
@@ -313,18 +349,31 @@ nav ul li {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
   color: white;
 }
 .secondcol h3,
 .thirdcol h3 {
   color: white;
 }
+.fluid{
+  background-color: #091018;
+}
 
 /* ------------- Copy right  ----------- */
 
 .copyright {
-  background-color: #1e1e1e;
+  background:#1E1E1E;
+}
+.copyright .p1{
+ margin-left:10px ;
+ 
+}
+.copyright .p2{
+text-align: right;
+}
+.copyright .p3{
+  text-align: center;
 }
 .copyright .p1,
 .p2,
@@ -332,8 +381,23 @@ nav ul li {
   font-family: 'Inter';
   color: white;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  margin: 20px;
+  margin: 20px 0px;
+
 }
+.copy{
+  background: #1E1E1E;
+}
+
+
+@media only screen 
+  and (max-width: 768px) {
+    .firstcol{
+    margin-left: 0;
+    }
+    .copy{
+      display: none;
+    }
+  }
