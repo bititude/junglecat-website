@@ -273,7 +273,6 @@ nav ul li {
   color: #40a1ff;
 }
 
-
 /* ------------ blue box -------- */
 
 .bluebox {
@@ -281,9 +280,8 @@ nav ul li {
   background: rgba(64, 161, 255, 0.87);
   backdrop-filter: blur(92px);
   border-radius: 10px;
-
-} 
- .boxtext h3 {
+}
+.boxtext h3 {
   margin-top: 111px;
   margin-left: 60px;
   color: white;
@@ -293,8 +291,8 @@ nav ul li {
   font-size: 38px;
   line-height: 42px;
   color: #ffffff;
-} 
- .boxtext p {
+}
+.boxtext p {
   margin-left: 60px;
   margin-bottom: 50px;
   font-family: 'Inter';
@@ -303,7 +301,6 @@ nav ul li {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
 }
 .accesbtn .btn {
   color: #40a1ff;
@@ -311,9 +308,9 @@ nav ul li {
   border: none;
   border-radius: 12px;
   line-height: 39px;
-  margin:120px 40px 20px 40px;
+  margin: 120px 40px 20px 40px;
 }
-.accesbtn .btn:hover{
+.accesbtn .btn:hover {
   box-shadow: 0 0 1px white;
   border: #ffffff;
 }
@@ -330,14 +327,14 @@ nav ul li {
 }
 
 /* ------------- Contact ----------- */
-.firstcol{
-  margin-left:-140px;
+.firstcol {
+  margin-left: -140px;
 }
-.contact{
+.contact {
   padding: 170px;
   padding-bottom: 30px;
 }
-.footerRow{
+.footerRow {
   column-gap: 4%;
   margin-right: -19%;
 }
@@ -356,23 +353,22 @@ nav ul li {
 .thirdcol h3 {
   color: white;
 }
-.fluid{
+.fluid {
   background-color: #091018;
 }
 
 /* ------------- Copy right  ----------- */
 
 .copyright {
-  background:#1E1E1E;
+  background: #1e1e1e;
 }
-.copyright .p1{
- margin-left:10px ;
- 
+.copyright .p1 {
+  margin-left: 10px;
 }
-.copyright .p2{
-text-align: right;
+.copyright .p2 {
+  text-align: right;
 }
-.copyright .p3{
+.copyright .p3 {
   text-align: center;
 }
 .copyright .p1,
@@ -385,19 +381,120 @@ text-align: right;
   font-size: 14px;
   line-height: 26px;
   margin: 20px 0px;
-
 }
-.copy{
-  background: #1E1E1E;
+.copy {
+  background: #1e1e1e;
 }
 
-
-@media only screen 
-  and (max-width: 768px) {
-    .firstcol{
+@media only screen and (max-width: 768px) {
+  .firstcol {
     margin-left: 0;
-    }
-    .copy{
-      display: none;
-    }
   }
+  .copy {
+    display: none;
+  }
+}
+/* * * * * * * * * Contact form  * * * * * * * * */
+
+.form {
+  margin-top: 100px;
+}
+.close,
+.close-symbol {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #091018;
+}
+
+.top-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    #a6d3ff 0%,
+    rgba(255, 125, 186, 0.9) 100%
+  );
+  opacity: 0.9;
+  filter: blur(220px);
+  border-radius: 180px;
+  transform: rotate(145.9deg);
+  height: 300px;
+  width: 200px;
+}
+.bottom-background {
+  position: absolute;
+  left: -50px;
+  border-radius: 180px;
+  top: 600px;
+  height: 250px;
+  width: 300px;
+  background: linear-gradient(
+    180deg,
+    #a6fff4 0%,
+    rgba(170, 168, 254, 0.92) 100%
+  );
+  opacity: 0.8;
+  filter: blur(200px);
+}
+.form-title p {
+  margin-top: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5f5f5f;
+}
+.form-title h3 {
+  font-family: 'Gilroy-Bold';
+  font-size: 40px;
+  line-height: 72px;
+  color: #091018;
+}
+#name,
+#email,
+#message {
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #939393;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 0;
+}
+input::placeholder {
+  font-family: 'Inter' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px !important;
+  line-height: 26px !important;
+  color: #939393;
+}
+form .label {
+  font-family: 'Inter' !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 26px;
+  color: #091018;
+}
+.submit-btn {
+  border: 1px #40a1ff !important;
+  background: #40a1ff !important;
+  border-radius: 12px !important;
+  font-size: 15px  !important;
+  line-height: 19px  !important;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px !important;
+}
+input:focus {
+  box-shadow: none !important;
+}
+.red{
+  background-color: dodgerblue;
+}
