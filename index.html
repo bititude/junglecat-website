@@ -20,14 +20,14 @@
   <body>
     <!-- * * * * * * * * * * * * * * * * * * * * Header * * * * * * * * * * * * * * * * * * *  -->
 
-    <header>
+    <header id="section0">
       <nav
         class="navbar navbar-expand-lg navbar-light bg-white sticky"
         data-offset="500"
       >
         <div class="container">
           <a href="#" class="navbar-brand">
-            <img src="./images/Group 1494 .png" alt="" class="logo" />
+            <img src="./images/Group 1494.svg" alt="" class="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -107,7 +107,7 @@
               >
                 <img
                   style="padding: 5px 10px 5px 5px;"
-                  src="./images/videobutton.png"
+                  src="./images/videobtn.svg"
                 />
                 Watch Video
               </button>
@@ -240,7 +240,7 @@
                   <img class="image1" src="./images/square.png" alt="image1" />
                 </div>
                 <div>
-                  <img class="image2" src="./images/window.png" alt="image2" />
+                  <img class="image2" src="./images/window.svg" alt="image2" />
                 </div>
               </div>
             </div>
@@ -300,8 +300,8 @@
 
       <!-- * * * * * * * * * * * * * * * * * FAQ boxes * * * * * * * * * * * * * * * * * * *  -->
 
-      <div class="firstaccordion accordion-flush mt-5">
-        <div class="accordDiv1 accordion-item">
+      <div class="accordion accordion-flush mt-5">
+        <div class="accordion-item">
           <h2 class="accordion-header p-1">
             <button
               class="accordion-button collapsed ps-4 pb-4"
@@ -334,8 +334,8 @@
         </div>
       </div>
 
-      <div class="secondaccordion accordion-flush mt-5">
-        <div class="accordDiv2 accordion-item">
+      <div class="accordion accordion-flush mt-5">
+        <div class="accordion-item">
           <h2 class="accordion-header p-1">
             <button
               class="accordion-button collapsed ps-4 pb-4"
@@ -368,8 +368,8 @@
         </div>
       </div>
 
-      <div class="thirdaccordion accordion-flush mt-5">
-        <div class="accordDiv3 accordion-item">
+      <div class="accordion accordion-flush mt-5">
+        <div class="accordion-item">
           <h2 class="accordion-header p-1">
             <button
               class="accordion-button collapsed ps-4 pb-4"
@@ -415,14 +415,19 @@
                 <p>Expand and combine audiences based on performance</p>
               </div>
               <div>
-                <img src="./images/bluebox.png" id="hatimage" />
+                <img src="./images/hat.svg" id="hatimage" />
               </div>
             </div>
-            <div class=" col-md-5 col-lg-4 col-xl-3 ">
+            <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="accesbtn d-grid">
-                  <button  class="btn btn-primary text-center" onclick="location.href='./contact.html';" type="button">
+                <button
+                  class="btn btn-primary text-center"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
                   Register for Access
-                  </button>
+                </button>
               </div>
             </div>
           </div>
@@ -430,11 +435,111 @@
       </div>
     </div>
 
-    <!-- * * * * * * * * * * * * * * * * * Contact * * * * * * * * * * * * * * * * * * *  -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              <img src="./images/Group 1494.svg" alt="" class="contactlogo" />
+            </h5>
+            <p>
+              close
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- top-background  -->
+
+            <div class="top-background"></div>
+
+            <!-- bottom-background  -->
+
+            <div class="bottom-background"></div>
+
+            <!-- * * * * * * * * * * * * * * * * * *  contactform * * * * * * * * * * * * * * * *  -->
+
+            <div class="form container col-sm-12">
+              <div class="form-title">
+                <h3>Register for Access</h3>
+                <p>
+                  Thanks for your interest in working with us. Please complete
+                  the details below and we'll get back to you within one
+                  business day.
+                </p>
+              </div>
+              <form class="">
+                <div class="mb-3">
+                  <label for="name" class="form-label mt-3">
+                    What should we call you?
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <hr />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label mt-3">
+                    How shall we contact you?
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <hr />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label mt-3">
+                    What about your organisation and details?
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control "
+                    id="message"
+                    placeholder="Message"
+                    required
+                  />
+                  <hr />
+                </div>
+                <button
+                  type="submit"
+                  class="submit-btn btn btn-primary mt-5 mb-5"
+                >
+                  Send
+                  <span class="ms-2">&#8594;</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * * * * * * * * * * * * * * * * * Contact section * * * * * * * * * * * * * * * * * * *  -->
 
     <div class="fluid container-fluid" id="section4">
       <div class="contact container">
-        <div class="footerRow row ">
+        <div class="footerRow row">
           <div class="firstcol col-xl-6 col-lg-6 col-md-6 sm-12 mt-3">
             <img src="./images/junglecatFooter.png" />
             <p class="mt-3">
@@ -469,10 +574,10 @@
           <div class="thirdcol col-xl-2 col-lg-2 col-md-2 col-sm-12 mt-4">
             <h3>Navigation</h3>
             <ul class="list-unstyled">
-              <li class="mt-3">Home</li>
-              <li class="mt-3">Product</li>
-              <li class="mt-3">Faq</li>
-              <li class="mt-3">Sign Up</li>
+              <li class="mt-3"><a href="#section0">Home</a></li>
+              <li class="mt-3"><a href="#section2">Product</a></li>
+              <li class="mt-3"><a href="#section3">FAQ</a></li>
+              <li class="mt-3"><a href="#section0">Sign Up</a></li>
             </ul>
           </div>
         </div>
@@ -481,7 +586,7 @@
 
     <!-- * * * * * * * * * * * * * * * * * copyright * * * * * * * * * * * * * * * * * * *  -->
 
-    <div class="copy container-fluid " >
+    <div class="copy container-fluid">
       <div class="container">
         <div class="copyright row">
           <div class="p1 col-md-8">
@@ -507,6 +612,5 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>
