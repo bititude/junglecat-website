@@ -152,7 +152,7 @@ nav ul li {
   vertical-align: top;
 }
 .card-body p,
-.rightbox p {
+.boxtwo p {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -162,7 +162,7 @@ nav ul li {
   vertical-align: top;
   color: #838383;
 }
-.rightbox h5 {
+.boxtwo h5 {
   font-family: 'Gilroy-SemiBold';
   font-size: 28px;
   color: #343434;
@@ -183,7 +183,7 @@ nav ul li {
   left: -50px;
 }
 
-.leftbox {
+.boxone {
   background: linear-gradient(
     180deg,
     #ffacbb 0%,
@@ -202,7 +202,7 @@ nav ul li {
   border-radius: 15px;
   width: 55%;
   border: 10px solid white;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .image2 {
   position: absolute;
@@ -423,7 +423,7 @@ nav ul li {
 }
 .form-title h3 {
   font-family: 'Gilroy-Bold';
-  font-size: 40px;
+  font-size: 35px;
   line-height: 72px;
   color: #091018;
 }
@@ -431,7 +431,7 @@ nav ul li {
   margin-top: 15px;
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 17px;
   line-height: 28px;
   color: #5f5f5f;
@@ -507,4 +507,186 @@ input::placeholder {
   display: flex;
   align-items: center;
   padding: 16px 24px !important;
+}
+
+/* * * * * * * * * Product feature page  * * * * * * * * */
+
+/* ------------- Home ----------- */
+.firstimage {
+  margin-top: 100px;
+}
+.first-title h3 {
+  font-family: 'Gilroy-SemiBold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #091018;
+  letter-spacing: 1px;
+}
+.first-title p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #494949;
+}
+
+/* -------------  Qualification & Courses Management  ----------- */
+
+.feature-boxes-one {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-one-backgrnd {
+  background: linear-gradient(
+    180deg,
+    #ffacbb 0%,
+    rgba(172, 235, 255, 0.92) 100%
+  );
+  opacity: 0.5;
+  border-radius: 180px;
+  filter: blur(184px);
+  transform: rotate(-15.72deg);
+  height: 500px;
+}
+
+.first-image {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  border-radius: 15px;
+  width: 55%;
+  border: 1px solid white;
+  opacity: 0.8;
+}
+.second-image {
+  position: absolute;
+  top: 30%;
+  left: 90px;
+  border-radius: 15px;
+  width: 80%;
+}
+.feature-boxes-two h5,.descripton-box h5 {
+  font-family: 'Gilroy-Regular';
+  font-size: 42px;
+  line-height: 63px;
+  color: #343434;
+}
+.feature-boxes-two p {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+color: #838383;
+}
+/* -------------  Class Room Experience with Unit Wise Feed  ----------- */
+
+/* green circle */
+
+.greencircle {
+  position: absolute;
+  right: -10px;
+  margin-top: 220px;
+}
+.descripton-box p {
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: Left;
+  vertical-align: top;
+  color: #838383;
+}
+.descripton-box h5 {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 28px;
+  color: #343434;
+  line-height: 42px;
+  align-items: Left;
+  vertical-align: top;
+}
+.featurebox {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image-box {
+  margin-right: -160px;
+  background: linear-gradient(
+    123.23deg,
+    #60e6ef 12.72%,
+    rgba(239, 239, 96, 0.96) 88.47%
+  );
+  opacity: 0.3;
+  filter: blur(174px);
+  border-radius: 180px;
+  height: 500px;
+}
+.white-rectangle {
+  position: absolute;
+  top: 100px;
+  right: -25px;
+  border-radius: 15px;
+  width: 55%;
+  border: 10px solid white;
+  opacity: 0.6;
+}
+.classroom-image {
+  position: absolute;
+  top: 30%;
+  right: 80px;
+  border-radius: 15px;
+  width: 80%;
+}
+/* ------------- Instant & scheduled real time video classes ----------- */
+
+/* blue background */
+
+.boxone-repeat {
+  margin-left: -160px;
+  background: linear-gradient(
+    180deg,
+    #acfaff 0%,
+    rgba(199, 172, 255, 0.92) 100%
+  );
+  opacity: 0.4;
+  filter: blur(200px);
+  border-radius: 180px;
+  height: 500px;
+}
+
+/* ------------- Instant & scheduled real time video classes ----------- */
+
+/* Recorded video sessions */
+
+.featurebox-repeat {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image-box-repeat {
+  margin-right: -150px;
+  background: linear-gradient(
+    128.99deg,
+    #ff82a0 20.17%,
+    rgba(239, 239, 96, 0.96) 89.45%
+  );
+  opacity: 0.4;
+  filter: blur(200px);
+  border-radius: 180px;
+  height: 500px;
+}
+.white-rectangle2 {
+  position: absolute;
+  top: 100px;
+  right: -25px;
+  border-radius: 15px;
+  width: 55%;
+  border: 10px solid white;
+  opacity: 0.6;
 }
