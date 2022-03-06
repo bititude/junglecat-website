@@ -535,7 +535,7 @@ input::placeholder {
 
 /* -------------  Qualification & Courses Management  ----------- */
 
-.feature-boxes-one {
+.feature-imgboxes-one {
   position: relative;
   top: 0;
   left: 0;
@@ -569,19 +569,20 @@ input::placeholder {
   border-radius: 15px;
   width: 80%;
 }
-.feature-boxes-two h5,.descripton-box h5 {
+.feature-desc-box h5,
+.descripton-box h5 {
   font-family: 'Gilroy-Regular';
   font-size: 42px;
   line-height: 63px;
   color: #343434;
 }
-.feature-boxes-two p {
+.feature-desc-box p {
   font-family: 'Inter';
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-color: #838383;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #838383;
 }
 /* -------------  Class Room Experience with Unit Wise Feed  ----------- */
 
@@ -610,12 +611,12 @@ color: #838383;
   align-items: Left;
   vertical-align: top;
 }
-.featurebox {
+.feature-imgboxes-two {
   position: relative;
   top: 0;
   left: 0;
 }
-.image-box {
+.feature-two-backgrnd {
   margin-right: -160px;
   background: linear-gradient(
     123.23deg,
@@ -638,16 +639,20 @@ color: #838383;
 }
 .classroom-image {
   position: absolute;
-  top: 30%;
-  right: 80px;
+  top: 15%;
+  right: 60px;
   border-radius: 15px;
   width: 80%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
 
 /* blue background */
-
-.boxone-repeat {
+.feature-imgboxes-three {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-three-backgrnd {
   margin-left: -160px;
   background: linear-gradient(
     180deg,
@@ -660,16 +665,14 @@ color: #838383;
   height: 500px;
 }
 
-/* ------------- Instant & scheduled real time video classes ----------- */
+/* ------------- Recorded video sessions ----------- */
 
-/* Recorded video sessions */
-
-.featurebox-repeat {
+.feature-imgboxes-four {
   position: relative;
   top: 0;
   left: 0;
 }
-.image-box-repeat {
+.feature-four-backgrnd {
   margin-right: -150px;
   background: linear-gradient(
     128.99deg,
@@ -683,10 +686,98 @@ color: #838383;
 }
 .white-rectangle2 {
   position: absolute;
-  top: 100px;
+  top: 30px;
   right: -25px;
   border-radius: 15px;
   width: 55%;
-  border: 10px solid white;
+  border: 1px solid white;
+  opacity: 0.4;
+}
+
+/* ------------- Time and Schedule Management ----------*/
+
+.box-five {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* violet circle */
+.violet-circle {
+  position: absolute;
+  left: -40px;
+  top: 380px;
+}
+.feature-five-backgrnd {
+  margin-left: -160px;
+  background: linear-gradient(
+    180deg,
+    #acfaff 26.31%,
+    rgba(199, 172, 255, 0.92) 100%
+  );
+  opacity: 0.4;
+  filter: blur(220px);
+  border-radius: 180px;
+  height: 500px;
+}
+.feature-imgboxes-five {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* ------------- attendance Management ----------*/
+.feature-imgboxes-six {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-six-backgrnd {
+  margin-right: -100px;
+  background: linear-gradient(
+    123.23deg,
+    #ff82a0 12.72%,
+    rgba(239, 239, 96, 0.96) 88.47%
+  );
   opacity: 0.6;
+  filter: blur(200px);
+  border-radius: 180px;
+  transform: rotate(20.19deg);
+  height: 500px;
+}
+
+/* ------Assessment management with automated audit evidence system -------*/
+.feature-imgboxes-seven {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-seven-backgrnd {
+  margin-left: -30px;
+  background: linear-gradient(
+    180deg,
+    #acfaff 0%,
+    rgba(199, 172, 255, 0.92) 100%
+  );
+  opacity: 0.7;
+  filter: blur(174px);
+  border-radius: 180px;
+  height: 500px;
+}
+/* ------Student Portfolio -------*/
+.feature-imgboxes-eight {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-eight-backgrnd {
+  margin-right: -240px;
+  background: linear-gradient(
+    127.71deg,
+    #d782ff 23.24%,
+    rgba(96, 239, 196, 0.7) 80.78%
+  );
+  opacity: 0.4;
+  filter: blur(200px);
+  border-radius: 180px;
+  transform: rotate(30.19deg);
+  height: 500px;
 }
