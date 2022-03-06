@@ -781,3 +781,60 @@ input::placeholder {
   transform: rotate(30.19deg);
   height: 500px;
 }
+/* ------Teacher profile -------*/
+.feature-imgboxes-nine {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-nine-backgrnd {
+  margin-left: -240px;
+  background: #ef6079;
+  opacity: 0.2;
+  filter: blur(210px);
+  border-radius: 180px;
+  transform: rotate(-1.9deg);
+  height: 500px;
+}
+/* ------Public & Class specific library-------*/
+.feature-imgboxes-ten {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.feature-ten-backgrnd {
+  margin-right: -100px;
+  background: linear-gradient(
+    123.23deg,
+    #ff82a0 12.72%,
+    rgba(239, 239, 96, 0.96) 88.47%
+  );
+  opacity: 0.6;
+  filter: blur(150px);
+  height: 500px;
+}
+.featurefooter{
+  margin-top: 200px;
+  background-color: #091018;
+}
+.feature-container{
+ padding-top: 150px;
+ padding-bottom: 50px;
+}
+.contact {
+  padding-top: 170px;
+  padding-bottom: 30px;
+}
+.footerRow {
+  column-gap: 4%;
+  margin-right: -19%;
+}
+.feature-firstcol p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
