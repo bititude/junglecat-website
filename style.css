@@ -535,6 +535,9 @@ input::placeholder {
 
 /* -------------  Qualification & Courses Management  ----------- */
 
+.top-part {
+  margin-top: 100px;
+}
 .feature-imgboxes-one {
   position: relative;
   top: 0;
@@ -546,28 +549,29 @@ input::placeholder {
     #ffacbb 0%,
     rgba(172, 235, 255, 0.92) 100%
   );
+  margin-left: -160px;
+  margin-right: 200px;
   opacity: 0.5;
   border-radius: 180px;
   filter: blur(184px);
   transform: rotate(-15.72deg);
   height: 500px;
 }
-
 .first-image {
   position: absolute;
-  top: 100px;
+  top: 70px;
   left: 0;
   border-radius: 15px;
   width: 55%;
   border: 1px solid white;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .second-image {
   position: absolute;
-  top: 30%;
-  left: 90px;
+  top: 25%;
+  left: 60px;
   border-radius: 15px;
-  width: 80%;
+  width: 75%;
 }
 .feature-desc-box h5,
 .descripton-box h5 {
@@ -593,56 +597,39 @@ input::placeholder {
   right: -10px;
   margin-top: 220px;
 }
-.descripton-box p {
-  font-weight: 400;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 28px;
-  align-items: Left;
-  vertical-align: top;
-  color: #838383;
-}
-.descripton-box h5 {
-  font-family: 'Gilroy-SemiBold';
-  font-size: 28px;
-  color: #343434;
-  line-height: 42px;
-  align-items: Left;
-  vertical-align: top;
-}
 .feature-imgboxes-two {
   position: relative;
   top: 0;
   left: 0;
 }
 .feature-two-backgrnd {
-  margin-right: -160px;
+  margin-right: -120px;
+  margin-left: 200px;
   background: linear-gradient(
     123.23deg,
     #60e6ef 12.72%,
-    rgba(239, 239, 96, 0.96) 88.47%
+    rgba(239, 239, 96, 0.99) 58.47%
   );
-  opacity: 0.3;
+  opacity: 0.4;
   filter: blur(174px);
   border-radius: 180px;
   height: 500px;
 }
 .white-rectangle {
   position: absolute;
-  top: 100px;
-  right: -25px;
+  top: 50px;
+  right: 0px;
   border-radius: 15px;
   width: 55%;
   border: 10px solid white;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .classroom-image {
   position: absolute;
-  top: 15%;
-  right: 60px;
+  top: 20%;
+  right: 70px;
   border-radius: 15px;
-  width: 80%;
+  width: 75%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
 
@@ -654,13 +641,14 @@ input::placeholder {
 }
 .feature-three-backgrnd {
   margin-left: -160px;
+  margin-right: 200px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
-    rgba(199, 172, 255, 0.92) 100%
+    rgba(199, 172, 255, .99) 100%
   );
-  opacity: 0.4;
-  filter: blur(200px);
+  opacity: 0.6;
+  filter: blur(170px);
   border-radius: 180px;
   height: 500px;
 }
@@ -674,28 +662,18 @@ input::placeholder {
 }
 .feature-four-backgrnd {
   margin-right: -150px;
+  margin-left: 180px;
   background: linear-gradient(
     128.99deg,
     #ff82a0 20.17%,
-    rgba(239, 239, 96, 0.96) 89.45%
+    rgba(239, 239, 96, 0.96) 59.45%
   );
-  opacity: 0.4;
-  filter: blur(200px);
+  opacity: 0.5;
+  filter: blur(180px);
   border-radius: 180px;
   height: 500px;
 }
-.white-rectangle2 {
-  position: absolute;
-  top: 30px;
-  right: -25px;
-  border-radius: 15px;
-  width: 55%;
-  border: 1px solid white;
-  opacity: 0.4;
-}
-
 /* ------------- Time and Schedule Management ----------*/
-
 .box-five {
   position: relative;
   top: 0;
@@ -705,17 +683,18 @@ input::placeholder {
 .violet-circle {
   position: absolute;
   left: -40px;
-  top: 380px;
+  top: 420px;
 }
 .feature-five-backgrnd {
   margin-left: -160px;
+  margin-right: 170px;
   background: linear-gradient(
     180deg,
-    #acfaff 26.31%,
-    rgba(199, 172, 255, 0.92) 100%
+    #acfaff 0%,
+    rgba(199, 172, 255, 0.99) 100%
   );
-  opacity: 0.4;
-  filter: blur(220px);
+  opacity: 0.6;
+  filter: blur(200px);
   border-radius: 180px;
   height: 500px;
 }
@@ -725,44 +704,49 @@ input::placeholder {
   left: 0;
 }
 /* ------------- attendance Management ----------*/
+
 .feature-imgboxes-six {
   position: relative;
   top: 0;
   left: 0;
 }
 .feature-six-backgrnd {
-  margin-right: -100px;
+  margin-right: -170px;
+  margin-left: 170px;
   background: linear-gradient(
     123.23deg,
-    #ff82a0 12.72%,
-    rgba(239, 239, 96, 0.96) 88.47%
+    #ff82a0 0%,
+    rgba(239, 239, 96, 0.96) 78.47%
   );
-  opacity: 0.6;
-  filter: blur(200px);
+  opacity: 0.5;
+  filter: blur(160px);
   border-radius: 180px;
-  transform: rotate(20.19deg);
+  transform: rotate(4.19deg);
   height: 500px;
 }
 
 /* ------Assessment management with automated audit evidence system -------*/
+
 .feature-imgboxes-seven {
   position: relative;
   top: 0;
   left: 0;
 }
 .feature-seven-backgrnd {
-  margin-left: -30px;
+  margin-left: -160px;
+  margin-right: 180px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
-    rgba(199, 172, 255, 0.92) 100%
+    rgba(199, 172, 255, 0.99) 100%
   );
-  opacity: 0.7;
+  opacity: 0.6;
   filter: blur(174px);
-  border-radius: 180px;
+  border-radius: 150px;
   height: 500px;
 }
 /* ------Student Portfolio -------*/
+
 .feature-imgboxes-eight {
   position: relative;
   top: 0;
@@ -770,18 +754,20 @@ input::placeholder {
 }
 .feature-eight-backgrnd {
   margin-right: -240px;
+  margin-left: 150px;
   background: linear-gradient(
     127.71deg,
     #d782ff 23.24%,
     rgba(96, 239, 196, 0.7) 80.78%
   );
   opacity: 0.4;
-  filter: blur(200px);
+  filter: blur(180px);
   border-radius: 180px;
   transform: rotate(30.19deg);
   height: 500px;
 }
 /* ------Teacher profile -------*/
+
 .feature-imgboxes-nine {
   position: relative;
   top: 0;
@@ -789,6 +775,7 @@ input::placeholder {
 }
 .feature-nine-backgrnd {
   margin-left: -240px;
+  margin-right: 190px;
   background: #ef6079;
   opacity: 0.2;
   filter: blur(210px);
@@ -797,6 +784,7 @@ input::placeholder {
   height: 500px;
 }
 /* ------Public & Class specific library-------*/
+
 .feature-imgboxes-ten {
   position: relative;
   top: 0;
@@ -804,6 +792,7 @@ input::placeholder {
 }
 .feature-ten-backgrnd {
   margin-right: -100px;
+  margin-left: 170px;
   background: linear-gradient(
     123.23deg,
     #ff82a0 12.72%,
@@ -813,13 +802,15 @@ input::placeholder {
   filter: blur(150px);
   height: 500px;
 }
-.featurefooter{
+/* --------- Feature-footer-------- */
+
+.featurefooter {
   margin-top: 200px;
   background-color: #091018;
 }
-.feature-container{
- padding-top: 150px;
- padding-bottom: 50px;
+.feature-container {
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 .contact {
   padding-top: 170px;
@@ -829,7 +820,7 @@ input::placeholder {
   column-gap: 4%;
   margin-right: -19%;
 }
-.feature-firstcol p{
+.feature-firstcol p {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
@@ -838,3 +829,4 @@ input::placeholder {
   color: white;
   text-decoration: none;
 }
+/* --------- Feature-copyright-------- */
