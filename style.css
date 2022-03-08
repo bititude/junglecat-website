@@ -180,10 +180,14 @@ nav ul li {
 /* pink circle */
 .circle {
   position: absolute;
-  left: -50px;
+  left: -130px;
+  margin-top: -40px;
+  opacity: 0.6;
 }
 
 .boxone {
+  margin-right:330px;
+  margin-left: -100px;
   background: linear-gradient(
     180deg,
     #ffacbb 0%,
@@ -195,23 +199,22 @@ nav ul li {
   transform: rotate(-15.72deg);
   height: 500px;
 }
-.image1 {
+.first-image-home {
   position: absolute;
-  top: 100px;
+  top: 90px;
   left: 0;
   border-radius: 15px;
   width: 55%;
-  border: 10px solid white;
-  opacity: 0.8;
+  border: 1px solid white;
+  opacity: 0.5;
 }
-.image2 {
+.second-image-home {
   position: absolute;
-  top: 30%;
+  top: 29%;
   left: 90px;
   border-radius: 15px;
-  width: 80%;
+  width: 73%;
 }
-
 .viewAll a {
   font-family: 'Inter';
   font-style: normal;
@@ -534,7 +537,6 @@ input::placeholder {
 }
 
 /* -------------  Qualification & Courses Management  ----------- */
-
 .top-part {
   margin-top: 100px;
 }
@@ -549,11 +551,9 @@ input::placeholder {
     #ffacbb 0%,
     rgba(172, 235, 255, 0.92) 100%
   );
-  margin-left: -160px;
-  margin-right: 200px;
   opacity: 0.5;
+  filter: blur(274px);
   border-radius: 180px;
-  filter: blur(184px);
   transform: rotate(-15.72deg);
   height: 500px;
 }
@@ -563,15 +563,14 @@ input::placeholder {
   left: 0;
   border-radius: 15px;
   width: 55%;
-  border: 1px solid white;
   opacity: 0.6;
 }
 .second-image {
   position: absolute;
   top: 25%;
-  left: 60px;
+  left: 90px;
   border-radius: 15px;
-  width: 75%;
+  width: 73%;
 }
 .feature-desc-box h5,
 .descripton-box h5 {
@@ -594,8 +593,8 @@ input::placeholder {
 
 .greencircle {
   position: absolute;
-  right: -10px;
-  margin-top: 220px;
+  right: -120px;
+  margin-top: 240px;
 }
 .feature-imgboxes-two {
   position: relative;
@@ -604,16 +603,16 @@ input::placeholder {
 }
 .feature-two-backgrnd {
   margin-right: -120px;
-  margin-left: 200px;
+  margin-left: 310px;
   background: linear-gradient(
     123.23deg,
     #60e6ef 12.72%,
-    rgba(239, 239, 96, 0.99) 58.47%
+    rgba(239, 239, 96, 0.96) 88.47%
   );
-  opacity: 0.4;
-  filter: blur(174px);
+  opacity: 0.5;
+  filter: blur(274px);
   border-radius: 180px;
-  height: 500px;
+  height: 530px;
 }
 .white-rectangle {
   position: absolute;
@@ -621,15 +620,14 @@ input::placeholder {
   right: 0px;
   border-radius: 15px;
   width: 55%;
-  border: 10px solid white;
   opacity: 0.5;
 }
 .classroom-image {
   position: absolute;
   top: 20%;
-  right: 70px;
+  right: 90px;
   border-radius: 15px;
-  width: 75%;
+  width: 73%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
 
@@ -641,14 +639,14 @@ input::placeholder {
 }
 .feature-three-backgrnd {
   margin-left: -160px;
-  margin-right: 200px;
+  margin-right: 350px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
-    rgba(199, 172, 255, .99) 100%
+    rgba(199, 172, 255, 0.92) 100%
   );
   opacity: 0.6;
-  filter: blur(170px);
+  filter: blur(234px);
   border-radius: 180px;
   height: 500px;
 }
@@ -661,16 +659,17 @@ input::placeholder {
   left: 0;
 }
 .feature-four-backgrnd {
-  margin-right: -150px;
-  margin-left: 180px;
+  margin-right: -120px;
+  margin-left: 310px;
   background: linear-gradient(
     128.99deg,
     #ff82a0 20.17%,
-    rgba(239, 239, 96, 0.96) 59.45%
+    rgba(239, 239, 96, 0.96) 89.45%
   );
   opacity: 0.5;
-  filter: blur(180px);
+  filter: blur(274px);
   border-radius: 180px;
+  transform: rotate(20.19deg);
   height: 500px;
 }
 /* ------------- Time and Schedule Management ----------*/
@@ -687,14 +686,14 @@ input::placeholder {
 }
 .feature-five-backgrnd {
   margin-left: -160px;
-  margin-right: 170px;
+  margin-right: 330px;
   background: linear-gradient(
     180deg,
-    #acfaff 0%,
-    rgba(199, 172, 255, 0.99) 100%
+    #acfaff 26.31%,
+    rgba(199, 172, 255, 0.92) 100%
   );
   opacity: 0.6;
-  filter: blur(200px);
+  filter: blur(274px);
   border-radius: 180px;
   height: 500px;
 }
@@ -712,17 +711,17 @@ input::placeholder {
 }
 .feature-six-backgrnd {
   margin-right: -170px;
-  margin-left: 170px;
+  margin-left: 330px;
   background: linear-gradient(
     123.23deg,
-    #ff82a0 0%,
-    rgba(239, 239, 96, 0.96) 78.47%
+    #ff82a0 12.72%,
+    rgba(239, 239, 96, 0.96) 88.47%
   );
-  opacity: 0.5;
-  filter: blur(160px);
+  opacity: 0.7;
+  filter: blur(254px);
   border-radius: 180px;
-  transform: rotate(4.19deg);
-  height: 500px;
+  transform: rotate(20.19deg);
+  height: 400px;
 }
 
 /* ------Assessment management with automated audit evidence system -------*/
@@ -734,15 +733,15 @@ input::placeholder {
 }
 .feature-seven-backgrnd {
   margin-left: -160px;
-  margin-right: 180px;
+  margin-right: 330px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
-    rgba(199, 172, 255, 0.99) 100%
+    rgba(170, 134, 241, 0.99) 100%
   );
   opacity: 0.6;
-  filter: blur(174px);
-  border-radius: 150px;
+  filter: blur(244px);
+  border-radius: 180px;
   height: 500px;
 }
 /* ------Student Portfolio -------*/
@@ -754,16 +753,16 @@ input::placeholder {
 }
 .feature-eight-backgrnd {
   margin-right: -240px;
-  margin-left: 150px;
+  margin-left: 330px;
   background: linear-gradient(
     127.71deg,
     #d782ff 23.24%,
-    rgba(96, 239, 196, 0.7) 80.78%
+    rgba(96, 239, 196, 0.66) 76.78%
   );
-  opacity: 0.4;
-  filter: blur(180px);
+  opacity: 0.5;
+  filter: blur(244px);
   border-radius: 180px;
-  transform: rotate(30.19deg);
+  transform: rotate(20.19deg);
   height: 500px;
 }
 /* ------Teacher profile -------*/
@@ -775,10 +774,10 @@ input::placeholder {
 }
 .feature-nine-backgrnd {
   margin-left: -240px;
-  margin-right: 190px;
+  margin-right: 330px;
   background: #ef6079;
   opacity: 0.2;
-  filter: blur(210px);
+  filter: blur(274px);
   border-radius: 180px;
   transform: rotate(-1.9deg);
   height: 500px;
@@ -792,20 +791,22 @@ input::placeholder {
 }
 .feature-ten-backgrnd {
   margin-right: -100px;
-  margin-left: 170px;
+  margin-left: 330px;
   background: linear-gradient(
     123.23deg,
     #ff82a0 12.72%,
     rgba(239, 239, 96, 0.96) 88.47%
   );
   opacity: 0.6;
-  filter: blur(150px);
+  filter: blur(254px);
+  border-radius: 180px;
+  transform: rotate(20.19deg);
   height: 500px;
 }
 /* --------- Feature-footer-------- */
 
 .featurefooter {
-  margin-top: 200px;
+  margin-top: 250px;
   background-color: #091018;
 }
 .feature-container {
@@ -829,4 +830,3 @@ input::placeholder {
   color: white;
   text-decoration: none;
 }
-/* --------- Feature-copyright-------- */
