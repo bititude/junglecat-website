@@ -229,7 +229,6 @@ nav ul li {
 /* ------------------ FAQ -------------- */
 
 .accordion {
-  /* border: 2px solid rgba(192, 192, 192, 0.18); */
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 }
@@ -266,7 +265,6 @@ nav ul li {
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
   box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
-  border-bottom: 1px solid red ;
 }
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
@@ -553,7 +551,7 @@ input::placeholder {
     rgba(172, 235, 255, 0.92) 100%
   );
   opacity: 0.5;
-  filter: blur(274px);
+  filter: blur(254px);
   border-radius: 180px;
   transform: rotate(-15.72deg);
   height: 500px;
@@ -611,7 +609,7 @@ input::placeholder {
     rgba(239, 239, 96, 0.96) 88.47%
   );
   opacity: 0.5;
-  filter: blur(274px);
+  filter: blur(254px);
   border-radius: 180px;
   height: 530px;
 }
@@ -646,7 +644,7 @@ input::placeholder {
     #acfaff 0%,
     rgba(199, 172, 255, 0.92) 100%
   );
-  opacity: 0.6;
+  opacity: 0.8;
   filter: blur(234px);
   border-radius: 180px;
   height: 500px;
@@ -668,7 +666,7 @@ input::placeholder {
     rgba(239, 239, 96, 0.96) 89.45%
   );
   opacity: 0.5;
-  filter: blur(274px);
+  filter: blur(234px);
   border-radius: 180px;
   transform: rotate(20.19deg);
   height: 500px;
@@ -694,7 +692,7 @@ input::placeholder {
     rgba(199, 172, 255, 0.92) 100%
   );
   opacity: 0.6;
-  filter: blur(274px);
+  filter: blur(234px);
   border-radius: 180px;
   height: 500px;
 }
@@ -719,7 +717,7 @@ input::placeholder {
     rgba(239, 239, 96, 0.96) 88.47%
   );
   opacity: 0.7;
-  filter: blur(254px);
+  filter: blur(234px);
   border-radius: 180px;
   transform: rotate(20.19deg);
   height: 400px;
@@ -740,8 +738,8 @@ input::placeholder {
     #acfaff 0%,
     rgba(170, 134, 241, 0.99) 100%
   );
-  opacity: 0.6;
-  filter: blur(244px);
+  opacity: 0.7;
+  filter: blur(234px);
   border-radius: 180px;
   height: 500px;
 }
@@ -761,7 +759,7 @@ input::placeholder {
     rgba(96, 239, 196, 0.66) 76.78%
   );
   opacity: 0.5;
-  filter: blur(244px);
+  filter: blur(214px);
   border-radius: 180px;
   transform: rotate(20.19deg);
   height: 500px;
@@ -778,7 +776,7 @@ input::placeholder {
   margin-right: 330px;
   background: #ef6079;
   opacity: 0.2;
-  filter: blur(274px);
+  filter: blur(234px);
   border-radius: 180px;
   transform: rotate(-1.9deg);
   height: 500px;
@@ -799,7 +797,7 @@ input::placeholder {
     rgba(239, 239, 96, 0.96) 88.47%
   );
   opacity: 0.6;
-  filter: blur(254px);
+  filter: blur(234px);
   border-radius: 180px;
   transform: rotate(20.19deg);
   height: 500px;
