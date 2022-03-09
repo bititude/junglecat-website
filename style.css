@@ -186,7 +186,7 @@ nav ul li {
 }
 
 .boxone {
-  margin-right:330px;
+  margin-right: 330px;
   margin-left: -100px;
   background: linear-gradient(
     180deg,
@@ -229,7 +229,7 @@ nav ul li {
 /* ------------------ FAQ -------------- */
 
 .accordion {
-  border: 2px solid rgba(192, 192, 192, 0.18);
+  /* border: 2px solid rgba(192, 192, 192, 0.18); */
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 }
@@ -266,6 +266,7 @@ nav ul li {
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
   box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+  border-bottom: 1px solid red ;
 }
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
