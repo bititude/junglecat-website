@@ -196,7 +196,7 @@ nav ul li {
   opacity: 0.5;
   border-radius: 180px;
   filter: blur(184px);
-  transform: rotate(-15.72deg);
+  transform: rotate(-15.72deg) translateZ(0);
   height: 500px;
 }
 .first-image-home {
@@ -275,7 +275,7 @@ nav ul li {
 
 .bluebox {
   margin-top: 240px;
-  background: rgba(64, 161, 255, 0.87);
+  background: rgba(64, 161, 255);
   backdrop-filter: blur(92px);
   border-radius: 10px;
 }
