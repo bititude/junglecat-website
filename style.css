@@ -99,8 +99,8 @@ nav ul li {
   line-height: 19px;
   border-radius: 12px;
 }
-#registerbtn:hover{
-  background: #2F80ED;
+#registerbtn:hover {
+  background: #2f80ed;
   outline: 0;
   box-shadow: none;
 }
@@ -115,9 +115,10 @@ nav ul li {
 }
 
 #videobtn:hover {
-  background-color: #DEECFC;
+  background-color: #deecfc;
 }
-#videobtn:focus,#registerbtn:focus{
+#videobtn:focus,
+#registerbtn:focus {
   box-shadow: none;
 }
 /* ------------ User experience  --------------- */
@@ -163,7 +164,8 @@ nav ul li {
   vertical-align: top;
 }
 .card-body p,
-.boxtwo p {
+.boxtwo p,
+.feature-desc-box-carousel p {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -173,7 +175,8 @@ nav ul li {
   vertical-align: top;
   color: #838383;
 }
-.boxtwo h5 {
+.boxtwo h5,
+.feature-desc-box-carousel h5 {
   font-family: 'Gilroy-SemiBold';
   font-size: 28px;
   color: #343434;
@@ -226,6 +229,11 @@ nav ul li {
   border-radius: 15px;
   width: 73%;
 }
+.viewAll {
+  float: right;
+  margin-right: 30%;
+  margin-top: -0px;
+}
 .viewAll a {
   font-family: 'Inter';
   font-style: normal;
@@ -235,6 +243,23 @@ nav ul li {
   line-height: 19px;
   letter-spacing: 0.6px;
   color: #5ba1f2;
+}
+.assessment-para {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.for-carousal {
+  height: 600px;
+}
+.carousel-control-prev ,
+.carousel-control-next{
+  margin-bottom: -510px;
+}
+.carousel-control-prev {
+  margin-left: 74%;
 }
 
 /* ------------------ FAQ -------------- */
@@ -291,7 +316,7 @@ nav ul li {
   border-radius: 10px;
 }
 .boxtext h3 {
-  margin-top: 111px;
+  margin-top: 50px;
   margin-left: 60px;
   color: white;
   font-family: 'Gilroy-Regular';
@@ -317,13 +342,13 @@ nav ul li {
   border: none;
   border-radius: 12px;
   line-height: 39px;
-  margin: 120px 40px 20px 40px;
+  margin: 50px 40px 20px 40px;
 }
 .accesbtn .btn:hover {
   box-shadow: 0 0 5px white;
 }
-.accesbtn .btn:focus{
-box-shadow:none;
+.accesbtn .btn:focus {
+  box-shadow: none;
 }
 .blueboxposition {
   margin-bottom: -140px;
@@ -332,8 +357,7 @@ box-shadow:none;
   left: 0;
 }
 #hatimage {
-  position: absolute;
-  top: -30px;
+  margin-top: -30px;
   margin-left: 5%;
 }
 
@@ -405,6 +429,14 @@ box-shadow:none;
   }
   .copy {
     display: none;
+  }
+  .for-carousal {
+    height: 950px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .for-carousal {
+    height: 950px;
   }
 }
 /* * * * * * * * * Contact form  * * * * * * * * */
@@ -567,7 +599,7 @@ input::placeholder {
   opacity: 0.5;
   filter: blur(254px);
   border-radius: 180px;
-  transform: rotate(-15.72deg);
+  transform: rotate(-15.72deg) translateZ(0);
   height: 500px;
 }
 .first-image {
@@ -624,6 +656,7 @@ input::placeholder {
   );
   opacity: 0.5;
   filter: blur(254px);
+  transform: translateZ(0);
   border-radius: 180px;
   height: 530px;
 }
@@ -660,6 +693,7 @@ input::placeholder {
   );
   opacity: 0.8;
   filter: blur(234px);
+  transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
 }
@@ -682,7 +716,7 @@ input::placeholder {
   opacity: 0.5;
   filter: blur(234px);
   border-radius: 180px;
-  transform: rotate(20.19deg);
+  transform: rotate(20.19deg) translateZ(0);
   height: 500px;
 }
 /* ------------- Time and Schedule Management ----------*/
@@ -707,6 +741,7 @@ input::placeholder {
   );
   opacity: 0.6;
   filter: blur(234px);
+  transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
 }
@@ -733,7 +768,7 @@ input::placeholder {
   opacity: 0.7;
   filter: blur(234px);
   border-radius: 180px;
-  transform: rotate(20.19deg);
+  transform: rotate(20.19deg) translateZ(0);
   height: 400px;
 }
 
@@ -754,6 +789,7 @@ input::placeholder {
   );
   opacity: 0.7;
   filter: blur(234px);
+  transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
 }
@@ -775,7 +811,7 @@ input::placeholder {
   opacity: 0.5;
   filter: blur(214px);
   border-radius: 180px;
-  transform: rotate(20.19deg);
+  transform: rotate(20.19deg) translateZ(0);
   height: 500px;
 }
 /* ------Teacher profile -------*/
@@ -792,7 +828,7 @@ input::placeholder {
   opacity: 0.2;
   filter: blur(234px);
   border-radius: 180px;
-  transform: rotate(-1.9deg);
+  transform: rotate(-1.9deg) translateZ(0);
   height: 500px;
 }
 /* ------Public & Class specific library-------*/
@@ -813,7 +849,7 @@ input::placeholder {
   opacity: 0.6;
   filter: blur(234px);
   border-radius: 180px;
-  transform: rotate(20.19deg);
+  transform: rotate(20.19deg) translateZ(0);
   height: 500px;
 }
 /* --------- Feature-footer-------- */
