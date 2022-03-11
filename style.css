@@ -232,7 +232,7 @@ nav ul li {
 .viewAll {
   float: right;
   margin-right: 30%;
-  margin-top: -0px;
+  margin-top: 30px;
 }
 .viewAll a {
   font-family: 'Inter';
@@ -256,10 +256,11 @@ nav ul li {
 }
 .carousel-control-prev ,
 .carousel-control-next{
-  margin-bottom: -510px;
+  align-items: flex-end;
+  margin-bottom: -50px;
 }
 .carousel-control-prev {
-  margin-left: 74%;
+  margin-left: 76%;
 }
 
 /* ------------------ FAQ -------------- */
