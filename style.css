@@ -63,11 +63,11 @@ nav ul li {
 }
 /* -------------- virtual platform -------------- */
 
-.column1 h6,
+.virtualPlatform-column1 h6,
 .user h6,
 .feature p,
 .faq h6 {
-  margin-top: 200px;
+  margin-top: 250px;
   font-weight: 600;
   color: #6bb2ff;
   font-family: 'Gilroy-Regular';
@@ -76,7 +76,7 @@ nav ul li {
   letter-spacing: 0.2em;
   line-height: 27px;
 }
-.column1 h3 {
+.virtualPlatform-column1 h3 {
   margin-top: 20px;
   font-size: 72px;
   font-family: 'Gilroy-Bold';
@@ -84,7 +84,8 @@ nav ul li {
   vertical-align: top;
   color: #091018;
 }
-.column2 img {
+.virtualPlatform-column2 img {
+  margin-top: 230px;
   max-width: 100%;
   height: auto;
 }
@@ -151,9 +152,9 @@ nav ul li {
 /* ------------ Cards --------------- */
 
 .col .card {
-  /* padding: 1.5em 0.5em 0.5em; */
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
+  border: none;
 }
 .card-title {
   font-family: 'Gilroy-SemiBold';
@@ -194,9 +195,9 @@ nav ul li {
 /* pink circle */
 .circle {
   position: absolute;
-  left: -130px;
-  margin-top: -40px;
-  opacity: 0.6;
+  left: -250px;
+  margin-top: -70px;
+  opacity: 0.3;
 }
 
 .boxone {
@@ -231,7 +232,7 @@ nav ul li {
 }
 .viewAll {
   float: right;
-  margin-right: 30%;
+  margin-right: 33%;
   margin-top: 30px;
 }
 .viewAll a {
@@ -584,7 +585,7 @@ input::placeholder {
 
 /* -------------  Qualification & Courses Management  ----------- */
 .top-part {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .feature-imgboxes-one {
   position: relative;
@@ -592,13 +593,14 @@ input::placeholder {
   left: 0;
 }
 .feature-one-backgrnd {
+  margin-right: 100px;
   background: linear-gradient(
     180deg,
     #ffacbb 0%,
     rgba(172, 235, 255, 0.92) 100%
   );
-  opacity: 0.5;
-  filter: blur(254px);
+  opacity: 0.6;
+  filter: blur(214px);
   border-radius: 180px;
   transform: rotate(-15.72deg) translateZ(0);
   height: 500px;
@@ -639,27 +641,29 @@ input::placeholder {
 
 .greencircle {
   position: absolute;
-  right: -120px;
-  margin-top: 240px;
+  right: -360px;
+  margin-top: 210px;
+ opacity: .2;
 }
+
 .feature-imgboxes-two {
   position: relative;
   top: 0;
   left: 0;
 }
 .feature-two-backgrnd {
-  margin-right: -120px;
-  margin-left: 310px;
+  margin-right: -160px;
+  margin-left: 400px;
   background: linear-gradient(
     123.23deg,
     #60e6ef 12.72%,
     rgba(239, 239, 96, 0.96) 88.47%
   );
-  opacity: 0.5;
-  filter: blur(254px);
+  opacity: 0.6;
+  filter: blur(214px);
   transform: translateZ(0);
   border-radius: 180px;
-  height: 530px;
+  height: 500px;
 }
 .white-rectangle {
   position: absolute;
@@ -685,15 +689,15 @@ input::placeholder {
   left: 0;
 }
 .feature-three-backgrnd {
-  margin-left: -160px;
-  margin-right: 350px;
+  margin-left: -260px;
+  margin-right: 400px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
     rgba(199, 172, 255, 0.92) 100%
   );
-  opacity: 0.8;
-  filter: blur(234px);
+  opacity: 0.7;
+  filter: blur(214px);
   transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
@@ -707,7 +711,7 @@ input::placeholder {
   left: 0;
 }
 .feature-four-backgrnd {
-  margin-right: -120px;
+  margin-right: -250px;
   margin-left: 310px;
   background: linear-gradient(
     128.99deg,
@@ -715,7 +719,7 @@ input::placeholder {
     rgba(239, 239, 96, 0.96) 89.45%
   );
   opacity: 0.5;
-  filter: blur(234px);
+  filter: blur(214px);
   border-radius: 180px;
   transform: rotate(20.19deg) translateZ(0);
   height: 500px;
@@ -729,19 +733,20 @@ input::placeholder {
 /* violet circle */
 .violet-circle {
   position: absolute;
-  left: -40px;
-  top: 420px;
+  left: -170px;
+  top: 320px;
+  opacity: .4;
 }
 .feature-five-backgrnd {
-  margin-left: -160px;
+  margin-left: -250px;
   margin-right: 330px;
   background: linear-gradient(
     180deg,
-    #acfaff 26.31%,
+    #acfaff 6.31%,
     rgba(199, 172, 255, 0.92) 100%
   );
   opacity: 0.6;
-  filter: blur(234px);
+  filter: blur(224px);
   transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
@@ -759,8 +764,8 @@ input::placeholder {
   left: 0;
 }
 .feature-six-backgrnd {
-  margin-right: -170px;
-  margin-left: 330px;
+  margin-right: -250px;
+  margin-left: 400px;
   background: linear-gradient(
     123.23deg,
     #ff82a0 12.72%,
@@ -769,8 +774,8 @@ input::placeholder {
   opacity: 0.7;
   filter: blur(234px);
   border-radius: 180px;
-  transform: rotate(20.19deg) translateZ(0);
-  height: 400px;
+  transform: rotate(10.19deg) translateZ(0);
+  height:500px;
 }
 
 /* ------Assessment management with automated audit evidence system -------*/
@@ -781,15 +786,15 @@ input::placeholder {
   left: 0;
 }
 .feature-seven-backgrnd {
-  margin-left: -160px;
-  margin-right: 330px;
+  margin-left: -260px;
+  margin-right: 360px;
   background: linear-gradient(
     180deg,
     #acfaff 0%,
     rgba(170, 134, 241, 0.99) 100%
   );
   opacity: 0.7;
-  filter: blur(234px);
+  filter: blur(214px);
   transform: translateZ(0);
   border-radius: 180px;
   height: 500px;
@@ -840,15 +845,15 @@ input::placeholder {
   left: 0;
 }
 .feature-ten-backgrnd {
-  margin-right: -100px;
+  margin-right: -200px;
   margin-left: 330px;
   background: linear-gradient(
     123.23deg,
     #ff82a0 12.72%,
     rgba(239, 239, 96, 0.96) 88.47%
   );
-  opacity: 0.6;
-  filter: blur(234px);
+  opacity: 0.7;
+  filter: blur(200px);
   border-radius: 180px;
   transform: rotate(20.19deg) translateZ(0);
   height: 500px;
