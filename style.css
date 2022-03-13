@@ -199,7 +199,12 @@ nav ul li {
   margin-top: -70px;
   opacity: 0.3;
 }
-
+.circle-carousel{
+  position: absolute;
+  margin-top: -70px;
+  margin-left:-123px;
+  opacity: .4;
+}
 .boxone {
   margin-right: 330px;
   margin-left: -100px;
@@ -210,22 +215,21 @@ nav ul li {
   );
   opacity: 0.5;
   border-radius: 180px;
-  filter: blur(184px);
+  filter: blur(274px);
   transform: rotate(-15.72deg) translateZ(0);
   height: 500px;
 }
 .first-image-home {
   position: absolute;
-  top: 90px;
-  left: 0;
+ top: 100px;
+  margin-left: 30px;
   border-radius: 15px;
-  width: 55%;
-  border: 1px solid white;
+  width: 35%;
   opacity: 0.5;
 }
 .second-image-home {
   position: absolute;
-  top: 29%;
+  top: 28%;
   left: 90px;
   border-radius: 15px;
   width: 73%;
@@ -884,4 +888,9 @@ input::placeholder {
   line-height: 24px;
   color: white;
   text-decoration: none;
+}
+.carousel-item-next:not(.carousel-item-left){
+  /* transform: translateX(100%); */
+  /* transition-delay: 0.2s; */
+
 }
