@@ -199,11 +199,11 @@ nav ul li {
   margin-top: -70px;
   opacity: 0.3;
 }
-.circle-carousel{
+.circle-carousel {
   position: absolute;
   margin-top: -70px;
-  margin-left:-123px;
-  opacity: .4;
+  margin-left: -123px;
+  opacity: 0.4;
 }
 .boxone {
   margin-right: 330px;
@@ -221,7 +221,7 @@ nav ul li {
 }
 .first-image-home {
   position: absolute;
- top: 100px;
+  top: 100px;
   margin-left: 30px;
   border-radius: 15px;
   width: 35%;
@@ -259,16 +259,17 @@ nav ul li {
 .for-carousal {
   height: 600px;
 }
-.carousel-control-prev ,
-.carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
   align-items: flex-end;
-  margin-bottom: -50px;
+  margin-top: 620px;
   width: 40px;
+  margin-bottom: -50px;
 }
 .carousel-control-prev {
   margin-left: 88%;
 }
-.carousel-control-next{
+.carousel-control-next {
   margin-right: 2%;
 }
 /* ------------------ FAQ -------------- */
@@ -502,10 +503,13 @@ form .label {
   color: #091018;
 }
 input {
-  margin-left: -11px !important;
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid #b5b5b5 !important;
+  padding-left: 0 !important;
 }
 input:focus {
   box-shadow: none !important;
+  border-bottom: 1px solid red !important;
 }
 input::placeholder {
   font-family: 'Inter' !important;
@@ -515,6 +519,11 @@ input::placeholder {
   line-height: 26px !important;
   color: #939393;
 }
+#name-error,#email-error,#message-error{
+  color: #ee4057;
+  margin-top: 10px;
+  display: none;
+}
 #name,
 #email,
 #message {
@@ -522,10 +531,11 @@ input::placeholder {
   border: none;
   outline: none;
   border-radius: 0;
+  word-break: break-all; 
 }
 .top-background {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
   background: linear-gradient(
     180deg,
@@ -537,22 +547,7 @@ input::placeholder {
   border-radius: 180px;
   transform: rotate(145.9deg);
   height: 300px;
-  width: 200px;
-}
-.bottom-background {
-  position: absolute;
-  left: -50px;
-  border-radius: 180px;
-  top: 600px;
-  height: 250px;
   width: 300px;
-  background: linear-gradient(
-    180deg,
-    #a6fff4 0%,
-    rgba(170, 168, 254, 0.92) 100%
-  );
-  opacity: 0.8;
-  filter: blur(200px);
 }
 
 .submit-btn {
@@ -650,7 +645,7 @@ input::placeholder {
   position: absolute;
   right: -360px;
   margin-top: 210px;
- opacity: .2;
+  opacity: 0.2;
 }
 
 .feature-imgboxes-two {
@@ -742,7 +737,7 @@ input::placeholder {
   position: absolute;
   left: -170px;
   top: 320px;
-  opacity: .4;
+  opacity: 0.4;
 }
 .feature-five-backgrnd {
   margin-left: -250px;
@@ -782,7 +777,7 @@ input::placeholder {
   filter: blur(234px);
   border-radius: 180px;
   transform: rotate(10.19deg) translateZ(0);
-  height:500px;
+  height: 500px;
 }
 
 /* ------Assessment management with automated audit evidence system -------*/
@@ -891,9 +886,4 @@ input::placeholder {
   line-height: 24px;
   color: white;
   text-decoration: none;
-}
-.carousel-item-next:not(.carousel-item-left){
-  /* transform: translateX(100%); */
-  /* transition-delay: 0.2s; */
-
 }
