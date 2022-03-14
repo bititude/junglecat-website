@@ -263,11 +263,14 @@ nav ul li {
 .carousel-control-next{
   align-items: flex-end;
   margin-bottom: -50px;
+  width: 40px;
 }
 .carousel-control-prev {
-  margin-left: 76%;
+  margin-left: 88%;
 }
-
+.carousel-control-next{
+  margin-right: 2%;
+}
 /* ------------------ FAQ -------------- */
 
 .accordion {
