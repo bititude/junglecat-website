@@ -201,9 +201,9 @@ nav ul li {
 }
 .circle-carousel {
   position: absolute;
-  margin-top: -70px;
-  margin-left: -123px;
-  opacity: 0.4;
+  top: -50px;
+  margin-left: -120px;
+  opacity: 0.3;
 }
 .boxone {
   margin-right: 330px;
@@ -454,15 +454,15 @@ nav ul li {
 .contactlogo {
   width: 90%;
 }
-.modal-dialog{
+.modal-dialog {
   transform: translate3d(0, 0, 0) !important;
 }
 .modal-header {
   border-bottom: 0 none;
 }
-.modal-header p {
-  margin-left: 52%;
-  padding-top: 15px;
+.btn-close p {
+  margin-left:-65px;
+  margin-top: -2px;
   font-family: 'Inter';
   font-style: normal;
   font-size: 15px;
@@ -522,7 +522,9 @@ input::placeholder {
   line-height: 26px !important;
   color: #939393;
 }
-#name-error,#email-error,#message-error{
+#name-error,
+#email-error,
+#message-error {
   color: #ee4057;
   margin-top: 10px;
   display: none;
@@ -534,7 +536,7 @@ input::placeholder {
   border: none;
   outline: none;
   border-radius: 0;
-  word-break: break-all; 
+  word-break: break-all;
 }
 .top-background {
   position: absolute;
@@ -548,7 +550,7 @@ input::placeholder {
   opacity: 0.9;
   filter: blur(220px);
   border-radius: 180px;
-  transform: rotate(145.9deg);
+  transform: rotate(145.9deg) translateZ(0);
   height: 300px;
   width: 300px;
 }
@@ -680,10 +682,10 @@ input::placeholder {
 }
 .classroom-image {
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 90px;
   border-radius: 15px;
-  width: 73%;
+  width: 68%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
 
