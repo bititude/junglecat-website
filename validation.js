@@ -33,8 +33,3 @@ function fun() {
   document.getElementById('email').value = ''
   document.getElementById('message').value = ''
 }
-function sendEmail(){
-  email.send({
-    
-  })
-}

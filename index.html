@@ -107,18 +107,15 @@
                 class="btn btn-outline-primary"
                 id="videobtn"
               >
-                <img
-                  style="padding: 5px 10px 5px 5px;"
-                  src="./images/homepage/videobtn.svg"
-                />
                 Watch Video
               </button>
             </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="laptop-girl-background"></div>
           <div class="virtualPlatform-column2">
-            <img style="" src="./images/homepage/laptop-girl.png" />
+            <img src="./images/homepage/laptop-girl.png" />
           </div>
         </div>
       </div>
@@ -389,7 +386,7 @@
                       <div class="feature-imgboxes-three mt-5">
                         <div>
                           <img
-                            class="second-image "
+                            class="second-image"
                             src="./images/featurepage/recorded-video.png"
                             alt="image2"
                           />
@@ -827,9 +824,34 @@
       <div class="viewAll">
         <a href="./feature.html">
           View All
+          <span>
+            <svg class="svg">
+              <defs>
+                <marker
+                  id="m"
+                  markerWidth="4"
+                  markerHeight="6"
+                  refX="0"
+                  refY="1"
+                  viewBox="0 0 1 2"
+                >
+                  <polygon points="0,0 1,1 0,2" fill="#5ba1f2" />
+                </marker>
+              </defs>
+              <line
+                x1="0"
+                y1="50%"
+                x2="100%"
+                y2="50%"
+                stroke-width="2"
+                marker-end="url(#m)"
+                stroke="#5ba1f2"
+              />
+            </svg>
+          </span>
         </a>
-        <span class="ms-2" style="color: #40a1ff;">&#8594;</span>
       </div>
+    
       <!-- * * * * * * * * * * * * * * * * * FAQ * * * * * * * * * * * * * * * * * * *  -->
 
       <div id="section3">
@@ -1069,13 +1091,13 @@
                     <label for="message" class="form-label mt-3">
                       What about your organisation and details?
                     </label>
-                    <input
+                    <textarea
                       type="text"
                       class="form-control"
                       id="message"
                       name="Message"
                       placeholder="Message"
-                    />
+                    ></textarea>
                     <div id="message-error">Add Your Message</div>
                   </div>
                   <button
@@ -1158,7 +1180,7 @@
         </div>
       </div>
     </div>
-    <div></div>
+
     <script src="validation.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

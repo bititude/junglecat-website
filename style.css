@@ -53,9 +53,13 @@ nav ul li {
   border-radius: 12px;
 }
 #login:hover {
-  background-color: white;
-  color: #40a1ff;
+ color:  #40a1ff;
+ background-color: #deecfc;
 }
+#signup:hover {
+  color:  white;
+  background: #2f80ed;
+ }
 #login:focus,
 #signup:focus {
   outline: 0;
@@ -91,7 +95,7 @@ nav ul li {
 }
 
 #registerbtn {
-  padding: 15px 15px;
+  padding: 16px 15px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
@@ -106,17 +110,22 @@ nav ul li {
   box-shadow: none;
 }
 #videobtn {
-  padding: 10px 10px;
+  padding: 15px 30px;
+  padding-left: 45px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
   border-radius: 12px;
+  background: url("./images/homepage/videobtn.svg") no-repeat;
+  background-position:15px 15px ;
 }
 
 #videobtn:hover {
   background-color: #deecfc;
+  background: url("./images/homepage/hover-videobtn.svg") no-repeat, #DEECFC;;
+  background-position:15px 15px ;
 }
 #videobtn:focus,
 #registerbtn:focus {
@@ -235,8 +244,8 @@ nav ul li {
   width: 73%;
 }
 .viewAll {
-  float: right;
-  margin-right: 33%;
+  float: left;
+  margin-left: 60%;
   margin-top: 30px;
 }
 .viewAll a {
@@ -249,6 +258,16 @@ nav ul li {
   letter-spacing: 0.6px;
   color: #5ba1f2;
 }
+.svg{
+  width: 20px;
+  height: 20px;
+  transition:width 2s ease;
+  overflow: visible;
+}
+.viewAll:hover .svg{
+  width: 60px;
+}
+
 .assessment-para {
   display: -webkit-box;
   -webkit-line-clamp: 10;
@@ -324,6 +343,7 @@ nav ul li {
   background: rgba(64, 161, 255);
   backdrop-filter: blur(92px);
   border-radius: 10px;
+  transform: translateZ(0);
 }
 .boxtext h3 {
   margin-top: 50px;
@@ -454,9 +474,6 @@ nav ul li {
 .contactlogo {
   width: 90%;
 }
-.modal-dialog {
-  transform: translate3d(0, 0, 0) !important;
-}
 .modal-header {
   border-bottom: 0 none;
 }
@@ -509,18 +526,28 @@ input {
   padding-bottom: 20px !important;
   border-bottom: 1px solid #b5b5b5 !important;
   padding-left: 0 !important;
+ 
 }
 input:focus {
   box-shadow: none !important;
   border-bottom: 1px solid red !important;
 }
-input::placeholder {
+input::placeholder,textarea::placeholder {
   font-family: 'Inter' !important;
   font-style: normal;
   font-weight: 400;
   font-size: 20px !important;
   line-height: 26px !important;
   color: #939393;
+}
+textarea{
+  padding-bottom: 20px !important;
+  border-bottom: 1px solid #b5b5b5 !important;
+  padding-left: 0 !important;
+}
+textarea:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid red !important;
 }
 #name-error,
 #email-error,
@@ -891,4 +918,16 @@ input::placeholder {
   line-height: 24px;
   color: white;
   text-decoration: none;
+}
+.laptop-girl-background{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 100px;
+  height: 500px;
+  width:400px;
+  border-radius: 180px;
+  transform: rotate(145.9deg) translateZ(0);
+  background: linear-gradient(180deg, #A6D3FF 0%, rgba(254, 168, 208, 0.82) 100%);
+  opacity: 0.7;
+  filter: blur(204px);
 }
