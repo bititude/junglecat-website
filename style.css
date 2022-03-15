@@ -454,6 +454,9 @@ nav ul li {
 .contactlogo {
   width: 90%;
 }
+.modal-dialog{
+  transform: translate3d(0, 0, 0) !important;
+}
 .modal-header {
   border-bottom: 0 none;
 }
