@@ -33,3 +33,17 @@ function fun() {
   document.getElementById('email').value = ''
   document.getElementById('message').value = ''
 }
+
+const thisForm = document.getElementsById('customerform');
+thisForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(thisForm).entries()
+    const response = await fetch('https://api-v2.junglecat.com/api/contact/insert', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(formData))
+    });
+
+    const result = await response.json();
+    console.log(result)
+});
