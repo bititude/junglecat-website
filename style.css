@@ -66,7 +66,18 @@ nav ul li {
   box-shadow: none;
 }
 /* -------------- virtual platform -------------- */
-
+.laptop-girl-background{
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 100px;
+  height: 500px;
+  width:400px;
+  border-radius: 220px;
+  transform: rotate(145.9deg) translateZ(0);
+  background: linear-gradient(180deg, #A6D3FF 0%, rgba(254, 168, 208, 0.82) 100%);
+  opacity: 0.7;
+  filter: blur(204px);
+}
 .virtualPlatform-column1 h6,
 .user h6,
 .feature p,
@@ -918,16 +929,4 @@ textarea:focus {
   line-height: 24px;
   color: white;
   text-decoration: none;
-}
-.laptop-girl-background{
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 100px;
-  height: 500px;
-  width:400px;
-  border-radius: 180px;
-  transform: rotate(145.9deg) translateZ(0);
-  background: linear-gradient(180deg, #A6D3FF 0%, rgba(254, 168, 208, 0.82) 100%);
-  opacity: 0.7;
-  filter: blur(204px);
 }
