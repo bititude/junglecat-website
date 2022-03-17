@@ -37,6 +37,9 @@ function fun() {
   document.getElementById('name').value = ''
   document.getElementById('email').value = ''
   document.getElementById('message').value = ''
+  name.nextElementSibling.style.display = 'none'
+  email.nextElementSibling.style.display = 'none'
+  message.nextElementSibling.style.display = 'none'
 }
 
 const thisForm = document.getElementById('customerform')
