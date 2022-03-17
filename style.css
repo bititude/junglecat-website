@@ -282,11 +282,12 @@ nav ul li {
   display: inline-block;
 }
 .a .arrow {
-  width: 50px;
+  top: -3px;
+  width: 30px;
   transition: all 0.3s ease;
 }
  .viewAll:hover .arrow {
-  width: 100px;
+  width: 90px;
 }
 .arrow{
   border: 1px solid #40a1ff;
