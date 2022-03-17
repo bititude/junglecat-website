@@ -11,16 +11,21 @@
   font-family: 'Gilroy-Bold';
   src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
+}
 /* -------------- Navbar-------------- */
 
 .logo {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 nav ul li {
   margin-right: 20px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 #navbarSupportedContent ul li a {
+  margin-top: 10px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: medium;
@@ -33,7 +38,7 @@ nav ul li {
   color: #40a1ff;
 }
 #login {
-  padding: 12px 20px;
+  padding: 16px 24px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-family: 'Inter';
@@ -43,12 +48,12 @@ nav ul li {
   border-radius: 12px;
 }
 #signup {
-  padding: 12px;
+  padding: 16px 24px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
 }
@@ -106,12 +111,12 @@ nav ul li {
 }
 
 #registerbtn {
-  padding: 16px 15px;
+  padding: 18px 24px;
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
   font-family: 'Inter';
-  font-weight: 600;
+  font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
 }
@@ -121,22 +126,22 @@ nav ul li {
   box-shadow: none;
 }
 #videobtn {
-  padding: 15px 30px;
-  padding-left: 45px;
+  padding: 18px 24px;
+  padding-left: 55px;
   border-color: #40a1ff;
   color: #40a1ff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
-  background: url("./images/homepage/videobtn.svg") no-repeat;
-  background-position:15px 15px ;
+  background: url("./images/homepage/hover-videobtn.svg") no-repeat;
+  background-position:24px 18px ;
 }
 
 #videobtn:hover {
   background-color: #deecfc;
-  background: url("./images/homepage/hover-videobtn.svg") no-repeat, #DEECFC;;
-  background-position:15px 15px ;
+  background: url("./images/homepage/hover-videobtn.svg") no-repeat, #DEECFC;
+  background-position:24px 18px  ;
 }
 #videobtn:focus,
 #registerbtn:focus {
@@ -174,7 +179,8 @@ nav ul li {
 .col .card {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
-  border: none;
+  background:  #FFFFFF;
+  border: 1px solid #EBEBEB;
 }
 .card-title {
   font-family: 'Gilroy-SemiBold';
@@ -269,14 +275,41 @@ nav ul li {
   letter-spacing: 0.6px;
   color: #5ba1f2;
 }
-.svg{
-  width: 20px;
-  height: 20px;
-  transition:width 2s ease;
-  overflow: visible;
+
+.a{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
-.viewAll:hover .svg{
-  width: 60px;
+.a .arrow {
+  width: 50px;
+  transition: all 0.3s ease;
+}
+ .viewAll:hover .arrow {
+  width: 100px;
+}
+.arrow{
+  border: 1px solid #40a1ff;
+  position: relative;
+  background: #40a1ff;
+}
+
+.arrow .head,
+.arrow .head:after {
+  border: 1px solid #40a1ff;
+  border-radius: 5px;
+  width: 9px;
+  position: absolute;
+  right: -4px;
+  transform: rotate(-45deg);
+}
+
+.arrow .head:after {
+  content: "";
+  border-color: #40a1ff;
+  right: -4px;
+  top: -4px;
+  transform: rotate(90deg);
 }
 
 .assessment-para {
@@ -286,8 +319,11 @@ nav ul li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.for-carousal {
+.for-carousal{
   height: 600px;
+}
+.carousel-container{
+  height:600px;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -552,7 +588,7 @@ input::placeholder,textarea::placeholder {
   color: #939393;
 }
 textarea{
-  padding-bottom: 20px !important;
+  padding-bottom: 10px !important;
   border-bottom: 1px solid #b5b5b5 !important;
   padding-left: 0 !important;
 }
@@ -668,6 +704,7 @@ textarea:focus {
 .feature-desc-box h5,
 .descripton-box h5 {
   font-family: 'Gilroy-Regular';
+  font-weight: 600;
   font-size: 42px;
   line-height: 63px;
   color: #343434;

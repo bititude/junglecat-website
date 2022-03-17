@@ -34,16 +34,27 @@ function fun() {
   document.getElementById('message').value = ''
 }
 
-const thisForm = document.getElementsById('customerform');
+const thisForm = document.getElementById('customerform')
 thisForm.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const formData = new FormData(thisForm).entries()
-    const response = await fetch('https://api-v2.junglecat.com/api/contact/insert', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(formData))
-    });
+  e.preventDefault()
+  const formData = new FormData(thisForm).entries()
+  console.log(Object.fromEntries(formData))
 
-    const result = await response.json();
-    console.log(result)
-});
+  const response = await fetch(
+    'https://api-v2.junglecat.com/api/contact/insert',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+      }),
+    },
+  )
+
+  const result = await response.json()
+  // const myModalEl=document.getElementById('staticBackdrop')
+  // const modal=new MediaCapabilities.Modal(myModalEl)
+  // modal.hide()
+})
