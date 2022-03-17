@@ -1,6 +1,10 @@
 const name = document.form.name
 const email = document.form.email
 const message = document.form.message
+
+const myModalEl = document.querySelector('.mymodal')
+const modal = new window.bootstrap.Modal(myModalEl)
+
 function validated() {
   if (name.value == '') {
     name.nextElementSibling.style.display = 'block'
@@ -28,6 +32,7 @@ function validated() {
     message.nextElementSibling.style.display = 'none'
   }
 }
+
 function fun() {
   document.getElementById('name').value = ''
   document.getElementById('email').value = ''
@@ -37,9 +42,9 @@ function fun() {
 const thisForm = document.getElementById('customerform')
 thisForm.addEventListener('submit', async function (e) {
   e.preventDefault()
-  const formData = new FormData(thisForm).entries()
-  console.log(Object.fromEntries(formData))
-
+  if (validated() === false) {
+    return
+  }
   const response = await fetch(
     'https://api-v2.junglecat.com/api/contact/insert',
     {
@@ -48,13 +53,10 @@ thisForm.addEventListener('submit', async function (e) {
       body: JSON.stringify({
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value,
       }),
     },
   )
-
   const result = await response.json()
-  // const myModalEl=document.getElementById('staticBackdrop')
-  // const modal=new MediaCapabilities.Modal(myModalEl)
-  // modal.hide()
+  modal.hide()
 })
