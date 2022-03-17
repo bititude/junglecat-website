@@ -81,7 +81,7 @@ nav ul li {
   transform: rotate(145.9deg) translateZ(0);
   background: linear-gradient(180deg, #A6D3FF 0%, rgba(254, 168, 208, 0.82) 100%);
   opacity: 0.7;
-  filter: blur(204px);
+  filter: blur(254px);
 }
 .virtualPlatform-column1 h6,
 .user h6,
@@ -105,7 +105,7 @@ nav ul li {
   color: #091018;
 }
 .virtualPlatform-column2 img {
-  margin-top: 230px;
+  margin-top: 220px;
   max-width: 100%;
   height: auto;
 }
@@ -283,11 +283,11 @@ nav ul li {
 }
 .a .arrow {
   top: -3px;
-  width: 30px;
+  width: 20px;
   transition: all 0.3s ease;
 }
  .viewAll:hover .arrow {
-  width: 90px;
+  width: 60px;
 }
 .arrow{
   border: 1px solid #40a1ff;
@@ -298,7 +298,7 @@ nav ul li {
 .arrow .head,
 .arrow .head:after {
   border: 1px solid #40a1ff;
-  border-radius: 5px;
+  border-radius: 2px;
   width: 9px;
   position: absolute;
   right: -4px;
@@ -342,7 +342,11 @@ nav ul li {
 /* ------------------ FAQ -------------- */
 
 .accordion {
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 15px;
+}
+.accordion:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
   border-radius: 15px;
 }
 .horrizondal {
