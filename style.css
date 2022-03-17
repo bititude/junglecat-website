@@ -58,36 +58,51 @@ nav ul li {
   border-radius: 12px;
 }
 #login:hover {
- color:  #40a1ff;
- background-color: #deecfc;
+  color: #40a1ff;
+  background-color: #deecfc;
 }
 #signup:hover {
-  color:  white;
+  color: white;
   background: #2f80ed;
- }
+}
 #login:focus,
 #signup:focus {
   outline: 0;
   box-shadow: none;
 }
 /* -------------- virtual platform -------------- */
-.laptop-girl-background{
+.laptop-girl-background {
   position: absolute;
   margin-left: 400px;
   margin-top: 100px;
   height: 500px;
-  width:400px;
+  width: 400px;
   border-radius: 220px;
   transform: rotate(145.9deg) translateZ(0);
-  background: linear-gradient(180deg, #A6D3FF 0%, rgba(254, 168, 208, 0.82) 100%);
+  background: linear-gradient(
+    180deg,
+    #a6d3ff 0%,
+    rgba(254, 168, 208, 0.82) 100%
+  );
   opacity: 0.7;
   filter: blur(254px);
 }
 .virtualPlatform-column1 h6,
 .user h6,
-.feature p,
-.faq h6 {
+.feature p
+ {
   margin-top: 250px;
+  font-weight: 600;
+  color: #40a1ff;
+  font-family: 'Gilroy-Regular';
+  font-size: 19px;
+  vertical-align: top;
+  letter-spacing: 0.2em;
+  line-height: 27px;
+}
+.faq h6{
+  margin-top: 100px;
+  padding-top: 150px;
   font-weight: 600;
   color: #40a1ff;
   font-family: 'Gilroy-Regular';
@@ -134,14 +149,14 @@ nav ul li {
   font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
-  background: url("./images/homepage/hover-videobtn.svg") no-repeat;
-  background-position:24px 18px ;
+  background: url('./images/homepage/hover-videobtn.svg') no-repeat;
+  background-position: 24px 18px;
 }
 
 #videobtn:hover {
   background-color: #deecfc;
-  background: url("./images/homepage/hover-videobtn.svg") no-repeat, #DEECFC;
-  background-position:24px 18px  ;
+  background: url('./images/homepage/hover-videobtn.svg') no-repeat, #deecfc;
+  background-position: 24px 18px;
 }
 #videobtn:focus,
 #registerbtn:focus {
@@ -179,8 +194,8 @@ nav ul li {
 .col .card {
   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
-  background:  #FFFFFF;
-  border: 1px solid #EBEBEB;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
 }
 .card-title {
   font-family: 'Gilroy-SemiBold';
@@ -276,7 +291,7 @@ nav ul li {
   color: #5ba1f2;
 }
 
-.a{
+.a {
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
@@ -286,10 +301,10 @@ nav ul li {
   width: 20px;
   transition: all 0.3s ease;
 }
- .viewAll:hover .arrow {
+.viewAll:hover .arrow {
   width: 60px;
 }
-.arrow{
+.arrow {
   border: 1px solid #40a1ff;
   position: relative;
   background: #40a1ff;
@@ -298,15 +313,16 @@ nav ul li {
 .arrow .head,
 .arrow .head:after {
   border: 1px solid #40a1ff;
-  border-radius: 2px;
-  width: 9px;
+  border-radius: 8px;
+  width: 7px;
   position: absolute;
+  top:1px;
   right: -4px;
   transform: rotate(-45deg);
 }
 
 .arrow .head:after {
-  content: "";
+  content: '';
   border-color: #40a1ff;
   right: -4px;
   top: -4px;
@@ -320,16 +336,16 @@ nav ul li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.for-carousal{
-  height: 600px;
+.for-carousal {
+  height: 540px;
 }
-.carousel-container{
-  height:600px;
+.carousel-container {
+  height: 540px;
 }
 .carousel-control-prev,
 .carousel-control-next {
   align-items: flex-end;
-  margin-top: 620px;
+  margin-top: 540px;
   width: 40px;
   margin-bottom: -50px;
 }
@@ -342,12 +358,14 @@ nav ul li {
 /* ------------------ FAQ -------------- */
 
 .accordion {
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.04);
   border-radius: 15px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
 }
 .accordion:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
+
 }
 .horrizondal {
   margin-top: -10px;
@@ -355,8 +373,10 @@ nav ul li {
 .accordion-item {
   border: none;
   border-radius: 15px !important;
+
 }
 .accordion-button {
+  padding: 25px !important;
   border-radius: 15px !important ;
   background-color: white !important;
   margin-top: 10px;
@@ -378,6 +398,7 @@ nav ul li {
 }
 .accordion-button:focus {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
 }
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
@@ -386,12 +407,20 @@ nav ul li {
 .accordion-button:not(.collapsed),
 .accordion-button:not(.collapsed):focus {
   color: #40a1ff;
-}
 
+}
+.accordion-button:after {
+  background-image: url("./images/homepage/up-arrow.svg") !important;
+}
+.faq-background-part {
+  background: #FCFCFC;
+  padding-bottom: 350px;
+  margin-bottom: -110px;
+}
 /* ------------ blue box -------- */
 
 .bluebox {
-  margin-top: 240px;
+  margin-top: 0px;
   background: rgba(64, 161, 255);
   backdrop-filter: blur(92px);
   border-radius: 10px;
@@ -530,7 +559,7 @@ nav ul li {
   border-bottom: 0 none;
 }
 .btn-close p {
-  margin-left:-65px;
+  margin-left: -65px;
   margin-top: -2px;
   font-family: 'Inter';
   font-style: normal;
@@ -578,13 +607,13 @@ input {
   padding-bottom: 20px !important;
   border-bottom: 1px solid #b5b5b5 !important;
   padding-left: 0 !important;
- 
 }
 input:focus {
   box-shadow: none !important;
   border-bottom: 1px solid red !important;
 }
-input::placeholder,textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-family: 'Inter' !important;
   font-style: normal;
   font-weight: 400;
@@ -592,7 +621,7 @@ input::placeholder,textarea::placeholder {
   line-height: 26px !important;
   color: #939393;
 }
-textarea{
+textarea {
   padding-bottom: 10px !important;
   border-bottom: 1px solid #b5b5b5 !important;
   padding-left: 0 !important;
