@@ -20,6 +20,9 @@
 .logo {
   margin-top: 25px;
 }
+.logo2{
+  display: none;
+}
 nav ul li {
   margin-right: 20px;
   margin-top: 25px;
@@ -99,6 +102,12 @@ nav ul li {
   letter-spacing: 0.2em;
   line-height: 27px;
 }
+.virtualPlatform-column1 h4 {
+  display: none;
+}
+.virtualPlatform-column2 h6{
+  display: none;
+}
 .faq h6 {
   margin-top: 100px;
   padding-top: 150px;
@@ -123,7 +132,9 @@ nav ul li {
   max-width: 100%;
   height: auto;
 }
-
+.virtualPlatform-column2 h4{ 
+  display: none;
+}
 #registerbtn {
   padding: 18px 24px;
   background-color: #40a1ff;
@@ -408,7 +419,7 @@ nav ul li {
   background-image: url('./images/homepage/up-arrow.svg') !important;
 }
 .faq-background-part {
-  background: #FCFCFC;
+  background: #fcfcfc;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -533,22 +544,6 @@ nav ul li {
   background: #1e1e1e;
 }
 
-@media only screen and (max-width: 768px) {
-  .firstcol {
-    margin-left: 0;
-  }
-  .copy {
-    display: none;
-  }
-  .for-carousal {
-    height: 950px;
-  }
-}
-@media only screen and (max-width: 998px) {
-  .for-carousal {
-    height: 950px;
-  }
-}
 /* * * * * * * * * Contact form  * * * * * * * * */
 
 .contactlogo {
@@ -913,7 +908,7 @@ textarea:focus {
   top: 250px;
   left: -150px;
   height: 400px;
-  width:400px;
+  width: 400px;
   background: #ef6079;
   opacity: 0.1;
   filter: blur(234px);
@@ -982,7 +977,7 @@ textarea:focus {
 /* --------- Feature-footer-------- */
 
 .featurefooter {
-  margin-top: 250px;
+  /* margin-top: 250px; */
   background-color: #091018;
 }
 .feature-container {
@@ -1005,4 +1000,56 @@ textarea:focus {
   line-height: 24px;
   color: white;
   text-decoration: none;
+}
+/* ------------------------ Responsive ----------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 786px) {
+  .logo1 {
+   display: none;
+  }
+  .logo2{
+    display:block;
+  }
+  .virtualPlatform-column2 h6
+ {  display: block;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 27px;
+    color: #40a1ff;
+    font-family: 'Gilroy-Regular';
+    letter-spacing: 0.2em;
+    line-height: 27px;
+  }
+  .virtualPlatform-column2 h4 {
+    text-align: center;
+    display: block;
+    font-family: 'Gilroy-Semibold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #091018;
+  }
+  .virtualPlatform-column1 h3,
+  .virtualPlatform-column1 h6 {
+    display: none;
+  }
+  .virtualPlatform-column2 img {
+    margin-top: 70px;
+  }
+  #registerbtn {
+    margin-top: 100px;
+    padding: 18px 60px;
+    width: 98%;
+  }
+  #videobtn {
+    margin-top: 20px;
+    padding: 18px 60px;
+    width: 98%;
+  }
+
+
+
+
 }
