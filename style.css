@@ -879,9 +879,8 @@ textarea:focus {
   left: 0;
 }
 .feature-six-backgrnd {
-  margin-bottom: -500px;
-  margin-right: -200px;
-  margin-left: 450px;
+  margin-right: -250px;
+  margin-left: 310px;
   background: linear-gradient(
     123.23deg,
     #ff82a0 12.72%,
@@ -893,7 +892,6 @@ textarea:focus {
   transform: rotate(10.19deg) translateZ(0);
   height: 560px;
 }
-
 /* ------Assessment management with automated audit evidence system -------*/
 
 .feature-imgboxes-seven {
@@ -1138,5 +1136,8 @@ textarea:focus {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .copy {
+   display: none;
   }
 }
