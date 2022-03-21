@@ -374,8 +374,8 @@ nav ul li {
 .carousel-control-next {
   margin-right: 2%;
 }
-.carousel-picture{
-  margin-top:100px;
+.carousel-picture {
+  margin-top: 100px;
 }
 /* ------------------ FAQ -------------- */
 
@@ -442,7 +442,7 @@ nav ul li {
 /* ------------ blue box -------- */
 
 .bluebox {
-  margin-top: 0px;
+  margin-top: -100px;
   background: rgba(64, 161, 255);
   backdrop-filter: blur(92px);
   border-radius: 10px;
@@ -506,10 +506,14 @@ nav ul li {
   column-gap: 4%;
   margin-right: -19%;
 }
-
+.second-footer-image {
+  display: none;
+}
 .firstcol p,
 .secondcol ul li,
-.thirdcol ul li a {
+.feature-secondcol ul li,
+.thirdcol ul li a,
+.feature-thirdcol ul li a {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
@@ -519,7 +523,9 @@ nav ul li {
   text-decoration: none;
 }
 .secondcol h3,
-.thirdcol h3 {
+.feature-secondcol h3,
+.thirdcol h3,
+.feature-thirdcol h3 {
   color: white;
 }
 .fluid {
@@ -688,10 +694,11 @@ textarea:focus {
 .first-title p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  color: #494949;
+  line-height: 27px;
+  text-align: center;
+  color: #838383;
 }
 
 /* -------------  Qualification & Courses Management  ----------- */
@@ -1002,7 +1009,8 @@ textarea:focus {
   column-gap: 4%;
   margin-right: -19%;
 }
-.feature-firstcol p {
+.feature-firstcol p,
+.feature-thirdcol ul li {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
@@ -1059,15 +1067,19 @@ textarea:focus {
     margin-top: 100px;
     padding: 18px 60px;
     width: 98%;
+    font-size: 14px;
+    line-height: 14px;
   }
   #videobtn {
     margin-top: 20px;
     padding: 18px 60px;
     width: 98%;
-    background-position-x: 60px;
+    background-position-x: 90px;
+    font-size: 14px;
+    line-height: 14px;
   }
   #videobtn:hover {
-    background-position-x: 60px;
+    background-position-x: 90px;
   }
   .virtualPlatform-column1 h6,
   .user h6,
@@ -1077,6 +1089,7 @@ textarea:focus {
   }
   .usertitle p,
   .title p {
+    margin-top: 0px;
     font-size: 24px;
     line-height: 36px;
   }
@@ -1097,10 +1110,10 @@ textarea:focus {
     line-height: 24px;
   }
   .for-carousal {
-    height: 740px;
+    height: 850px;
   }
   .carousel-container {
-    height: 840px;
+    height: 900px;
   }
   .carousel-picture {
     margin-bottom: 200px;
@@ -1114,12 +1127,12 @@ textarea:focus {
 
   .carousel-control-prev,
   .carousel-control-next {
-    margin-top: 840px;
+    margin-top: 900px;
     margin-bottom: -50px;
   }
   .viewAll {
     margin-left: 2%;
-    margin-top: 80px;
+    margin-top: 30px;
   }
   .carousel-control-prev {
     margin-left: 63%;
@@ -1127,10 +1140,7 @@ textarea:focus {
   .carousel-control-next {
     margin-right: 7%;
   }
-  .timeshedule-para,
-  .attendance-para,
-  .teachers-para,
-  .public-para,.tas-para {
+  .descr-carousel-para {
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
@@ -1138,6 +1148,159 @@ textarea:focus {
     text-overflow: ellipsis;
   }
   .copy {
-   display: none;
+    display: none;
+  }
+  .virtualPlatform-column1 h6,
+  .user h6,
+  .feature p {
+    margin-top: 100px;
+  }
+  .second-image {
+    top: 0px;
+  }
+  .faq h6 {
+    font-size: 10px;
+    line-height: 27px;
+  }
+  .accordion-button {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  #hatimage {
+    margin-left: 30%;
+    width: 35%;
+  }
+  .boxtext h3 {
+    margin-top: 24px;
+    margin-left: 28px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .boxtext p {
+    margin-left: 6px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .accesbtn .btn {
+    line-height: 39px;
+    margin: 10px 20px 20px 20px;
+    font-size: 16px;
+  }
+  .boxtwo h5,
+  .feature-desc-box-carousel h5 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .accordion-button {
+    padding: 18px !important;
+  }
+  .faq-background-part {
+    padding-bottom: 200px;
+  }
+  .first-footer-image {
+    display: none;
+  }
+  .second-footer-image {
+    display: block;
+  }
+  .footer-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .firstcol {
+    margin-left: -170px;
+  }
+  .secondcol h3 {
+    margin-top: 300px;
+    margin-left: -30px;
+  }
+  .secondcol ul li {
+    margin-left: -30px;
+  }
+  .thirdcol h3 {
+    margin-top: 600px;
+    margin-left: -50px;
+  }
+  .thirdcol ul li {
+    margin-left: -50px;
+  }
+  .carousel-control-prev-icon img,
+  .carousel-control-next-icon img {
+    width: 130%;
+  }
+  .first-title h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .first-title p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .feature-desc-box {
+    margin-top: -100px;
+  }
+  .classroom-responsive .feature-desc-box {
+    margin-top: -400px;
+  }
+  .instant-responsive .feature-desc-box {
+    margin-top: -250px;
+  }
+  .recorded-responsive .feature-desc-box {
+    margin-top: -380px !important;
+  }
+  .time-responsive .feature-desc-box {
+    margin-top: -200px !important;
+  }
+  .attendance-responsive .feature-desc-box,
+  .assessment-responsive .feature-desc-box {
+    margin-top: -300px !important;
+  }
+  .student-responsive .feature-desc-box {
+    margin-top: -500px !important;
+  }
+  .teacher-responsive .feature-desc-box {
+    margin-top: -380px !important;
+  }
+  .feature-imgboxes-eight {
+    margin-top: -150px;
+  }
+  .feature-imgboxes-nine {
+    margin-top: 100px;
+  }
+  .public-responsive .feature-desc-box,
+  .management-responsive .feature-desc-box {
+    margin-top: -400px !important;
+  }
+  .TAS-responsive .feature-desc-box {
+    margin-top: -400px !important;
+  }
+  .feature-desc-box h5 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .feature-desc-box p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .feature-imgboxes-one {
+    margin-top: 50px;
+  }
+  .blueboxposition {
+    margin-top: -100px !important;
+  }
+  .feature-secondcol h3,
+  .feature-thirdcol h3 {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 500;
+  }
+  .feature-secondcol ul li,
+  .feature-thirdcol ul li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .circle,
+  .greencircle {
+    display: none;
   }
 }
