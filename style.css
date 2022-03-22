@@ -1331,4 +1331,7 @@ textarea:focus {
     text-align: left;
     margin-top: 0px;
   }
+  .laptop-girl-background{
+    display: none;
+  }
 }
