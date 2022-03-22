@@ -1077,12 +1077,12 @@ textarea:focus {
     margin-top: 20px;
     padding: 15px 60px;
     width: 98%;
-    background-position-x: 80px;
     font-size: 14px;
     line-height: 14px;
+    background-position: 100px 12px;
   }
   #videobtn:hover {
-    background-position-x: 90px;
+    background-position: 100px 12px;
   }
   .virtualPlatform-column1 h6,
   .user h6,
@@ -1286,8 +1286,8 @@ textarea:focus {
   }
   .feature-secondcol ul li,
   .secondcol ul li,
-  .feature-thirdcol ul li,
-  .thirdcol ul li {
+  .feature-thirdcol ul li a,
+  .thirdcol ul li a{
     font-size: 16px;
     line-height: 28px;
   }
