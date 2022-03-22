@@ -507,7 +507,7 @@ nav ul li {
 }
 .footerRow {
   column-gap: 4%;
-  margin-right: -19%;
+  /* margin-right: -19%; */
 }
 .second-footer-image {
   display: none;
@@ -1012,6 +1012,7 @@ textarea:focus {
 }
 .footerRow {
   column-gap: 4%;
+  /* margin-right: -19%; */
 }
 .feature-firstcol p,
 .feature-thirdcol ul li {
