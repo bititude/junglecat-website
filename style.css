@@ -498,6 +498,9 @@ nav ul li {
 .firstcol {
   margin-left: -140px;
 }
+.firstcol img {
+  margin-left: 0px;
+}
 .contact {
   padding: 170px;
   padding-bottom: 30px;
@@ -1038,12 +1041,12 @@ textarea:focus {
   .virtualPlatform-column2 h6 {
     display: block;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: 14px;
     line-height: 27px;
     color: #40a1ff;
     font-family: 'Gilroy-Regular';
-    letter-spacing: 0.2em;
+    letter-spacing:  0.095em;
     line-height: 27px;
   }
   .virtualPlatform-column2 h4 {
@@ -1061,20 +1064,20 @@ textarea:focus {
     display: none;
   }
   .virtualPlatform-column2 img {
-    margin-top: 70px;
+    margin-top: 40px;
   }
   #registerbtn {
-    margin-top: 100px;
-    padding: 18px 60px;
+    margin-top: 40px;
+    padding: 15px 60px;
     width: 98%;
     font-size: 14px;
     line-height: 14px;
   }
   #videobtn {
     margin-top: 20px;
-    padding: 18px 60px;
+    padding: 15px 60px;
     width: 98%;
-    background-position-x: 90px;
+    background-position-x: 80px;
     font-size: 14px;
     line-height: 14px;
   }
@@ -1110,13 +1113,14 @@ textarea:focus {
     line-height: 24px;
   }
   .for-carousal {
-    height: 850px;
+    height: 730px;
   }
   .carousel-container {
-    height: 900px;
+    height: 730px;
   }
   .carousel-picture {
-    margin-bottom: 200px;
+    margin-top: 10px;
+    margin-bottom: 180px;
   }
   .second-image-home,
   .second-image {
@@ -1127,7 +1131,7 @@ textarea:focus {
 
   .carousel-control-prev,
   .carousel-control-next {
-    margin-top: 900px;
+    margin-top: 730px;
     margin-bottom: -50px;
   }
   .viewAll {
@@ -1202,27 +1206,11 @@ textarea:focus {
   }
   .second-footer-image {
     display: block;
+    margin-left: 100px;
   }
-  .footer-para {
+  .firstcol p {
     font-size: 16px;
     line-height: 24px;
-  }
-  .firstcol {
-    margin-left: -170px;
-  }
-  .secondcol h3 {
-    margin-top: 300px;
-    margin-left: -30px;
-  }
-  .secondcol ul li {
-    margin-left: -30px;
-  }
-  .thirdcol h3 {
-    margin-top: 600px;
-    margin-left: -50px;
-  }
-  .thirdcol ul li {
-    margin-left: -50px;
   }
   .carousel-control-prev-icon img,
   .carousel-control-next-icon img {
@@ -1289,18 +1277,30 @@ textarea:focus {
     margin-top: -100px !important;
   }
   .feature-secondcol h3,
+  .secondcol h3,
+  .thirdcol h3,
   .feature-thirdcol h3 {
     font-size: 24px;
     line-height: 42px;
     font-weight: 500;
   }
   .feature-secondcol ul li,
-  .feature-thirdcol ul li {
+  .secondcol ul li,
+  .feature-thirdcol ul li,
+  .thirdcol ul li {
     font-size: 16px;
     line-height: 28px;
   }
   .circle,
   .greencircle {
     display: none;
+  }
+  .contact {
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+  .firstcol {
+    padding-top: 150px;
+    margin-left: 0px;
   }
 }
