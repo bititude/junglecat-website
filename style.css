@@ -1174,9 +1174,6 @@ textarea:focus {
   .feature p {
     margin-top: 100px;
   }
-  .second-image {
-    top: 0px;
-  }
   .faq h6 {
     font-size: 10px;
     line-height: 27px;
@@ -1244,42 +1241,6 @@ textarea:focus {
   .feature-desc-box {
     margin-top: -100px;
   }
-  /* carousel -height */
-  .classroom-responsive .feature-desc-box {
-    margin-top: -400px;
-  }
-  .instant-responsive .feature-desc-box {
-    margin-top: -250px;
-  }
-  .recorded-responsive .feature-desc-box {
-    margin-top: -380px !important;
-  }
-  .time-responsive .feature-desc-box {
-    margin-top: -200px !important;
-  }
-  .attendance-responsive .feature-desc-box,
-  .assessment-responsive .feature-desc-box {
-    margin-top: -300px !important;
-  }
-  .student-responsive .feature-desc-box {
-    margin-top: -500px !important;
-  }
-  .teacher-responsive .feature-desc-box {
-    margin-top: -380px !important;
-  }
-  .feature-imgboxes-eight {
-    margin-top: -150px;
-  }
-  .feature-imgboxes-nine {
-    margin-top: 100px;
-  }
-  .public-responsive .feature-desc-box,
-  .management-responsive .feature-desc-box {
-    margin-top: -400px !important;
-  }
-  .TAS-responsive .feature-desc-box {
-    margin-top: -400px !important;
-  }
   .feature-desc-box h5 {
     font-size: 24px;
     line-height: 36px;
@@ -1288,11 +1249,40 @@ textarea:focus {
     font-size: 16px;
     line-height: 28px;
   }
-  .feature-imgboxes-one {
-    margin-top: 50px;
+   .classroom-responsive .feature-desc-box {
+    margin-top: 170px;
+  }
+  .instant-responsive .feature-desc-box {
+    margin-top: 160px;
+  }
+  .recorded-responsive .feature-desc-box {
+    margin-top: 270px !important;
+  }
+  .time-responsive .feature-desc-box {
+    margin-top: 180px !important;
+  }
+  .attendance-responsive .feature-desc-box
+  {
+    margin-top: 230px !important;
+  }
+  .assessment-responsive .feature-desc-box{
+    margin-top: 130px !important;
+  }
+  .student-responsive .feature-desc-box{
+    margin-top: 100px !important;
+  }
+  .teacher-responsive .feature-desc-box {
+    margin-top: 70px !important;
+  }
+  .public-responsive .feature-desc-box,
+  .management-responsive .feature-desc-box {
+    margin-top: 100px !important;
+  }
+  .TAS-responsive .feature-desc-box {
+    margin-top: 80px !important;
   }
   .blueboxposition {
-    margin-top: -100px !important;
+    margin-top: 400px !important;
   }
   .feature-secondcol h3,
   .secondcol h3,
@@ -1310,7 +1300,20 @@ textarea:focus {
     line-height: 28px;
   }
   .circle,
-  .greencircle {
+  .greencircle,
+  .feature-one-backgrnd,
+  .feature-two-backgrnd,
+  .feature-three-backgrnd,
+  .feature-four-backgrnd,
+  .violet-circle,
+  .feature-five-backgrnd,
+  .feature-six-backgrnd,
+  .feature-seven-backgrnd1,
+  .feature-seven-backgrnd2,
+  .feature-eight-backgrnd,
+  .feature-nine-backgrnd,
+  .feature-ten-backgrnd,
+  .feature-two-backgrnd {
     display: none;
   }
   .contact {
@@ -1331,7 +1334,10 @@ textarea:focus {
     text-align: left;
     margin-top: 0px;
   }
-  .laptop-girl-background{
+  .laptop-girl-background {
     display: none;
+  }
+  .classroom-image,.second-image{
+    margin-top: 50px;
   }
 }
