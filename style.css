@@ -507,7 +507,6 @@ nav ul li {
 }
 .footerRow {
   column-gap: 4%;
-  /* margin-right: -19%; */
 }
 .second-footer-image {
   display: none;
@@ -882,6 +881,7 @@ textarea:focus {
   position: relative;
   top: 0;
   left: 0;
+  margin-top: 150px;
 }
 /* ------------- attendance Management ----------*/
 
@@ -999,7 +999,6 @@ textarea:focus {
 /* --------- Feature-footer-------- */
 
 .featurefooter {
-  /* margin-top: 250px; */
   background-color: #091018;
 }
 .feature-container {
@@ -1012,7 +1011,6 @@ textarea:focus {
 }
 .footerRow {
   column-gap: 4%;
-  /* margin-right: -19%; */
 }
 .feature-firstcol p,
 .feature-thirdcol ul li {
@@ -1336,5 +1334,8 @@ textarea:focus {
   }
   .classroom-image,.second-image{
     margin-top: 50px;
+  }
+  .feature-imgboxes-five{
+    margin-top: 0px;
   }
 }
