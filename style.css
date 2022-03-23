@@ -307,7 +307,6 @@ nav ul li {
   width: 73%;
 }
 .viewAll {
-  float: left;
   margin-left: 60%;
   margin-top: 30px;
 }
@@ -1148,14 +1147,14 @@ textarea:focus {
     line-height: 28px;
   }
   .card-title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
-  .card-body p,
   .boxtwo p,
   .feature-desc-box-carousel p {
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
   }
   .for-carousal {
     height: 730px;
@@ -1179,10 +1178,6 @@ textarea:focus {
     margin-top: 730px;
     margin-bottom: -50px;
   }
-  .viewAll {
-    margin-left: 2%;
-    margin-top: 30px;
-  }
   .carousel-control-prev {
     margin-left: 63%;
   }
@@ -1196,6 +1191,8 @@ textarea:focus {
     margin-top: 100px;
   }
   .faq h6 {
+    margin-top: 100px;
+    padding-top: 10px;
     font-size: 10px;
     line-height: 27px;
   }
@@ -1218,6 +1215,9 @@ textarea:focus {
     font-size: 16px;
     text-align: center;
   }
+  .accordion {
+  margin-top: 30px !important;
+  }
   .accesbtn .btn {
     line-height: 39px;
     margin: 10px 20px 20px 20px;
@@ -1227,6 +1227,12 @@ textarea:focus {
   .feature-desc-box-carousel h5 {
     font-size: 24px;
     line-height: 36px;
+    text-align: center;
+    margin-top: 20px !important
+  }
+  .boxtwo img{
+    margin-top: 30px;
+    margin-left: 40%;
   }
   .accordion-button {
     padding: 18px !important;
@@ -1250,6 +1256,16 @@ textarea:focus {
   .carousel-control-prev-icon img,
   .carousel-control-next-icon img {
     width: 130%;
+  }
+  .carousel-control-prev {
+    margin-left: 37%;
+  }
+  .carousel-control-next {
+    margin-right: 37%;
+  }
+  .viewAll {
+    margin-left: 38%;
+    margin-top: 90px;
   }
   .first-title h3 {
     font-size: 32px;
@@ -1363,8 +1379,8 @@ textarea:focus {
   }
   #navbarSupportedContent ul li a {
     line-height: 1px;
-    font-size: 32px;
-    line-height: 54px;
+    font-size: 30px;
+    line-height: 30px;
     color: #3e3e3e;
     font-size: 'Gilroy-SemiBold';
   }
