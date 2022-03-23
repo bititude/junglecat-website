@@ -61,7 +61,7 @@ nav ul li {
   color: #091018;
 }
 #login {
-  margin-right:20px;
+  margin-right: 20px;
   padding: 16px 24px;
   border-color: #40a1ff;
   color: #40a1ff;
@@ -359,7 +359,8 @@ nav ul li {
   transform: rotate(90deg);
 }
 
-.assessment-para,.descr-carousel-para {
+.assessment-para,
+.descr-carousel-para {
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
@@ -440,11 +441,11 @@ nav ul li {
 }
 .accordion-button:after {
   background-image: url('./images/homepage/up-arrow.svg') !important;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 .accordion-button:not(.collapsed)::after {
- transform: rotate(0deg);
-}  
+  transform: rotate(0deg);
+}
 .faq-background-part {
   background: #fcfcfc;
   width: 100vw;
@@ -548,8 +549,8 @@ nav ul li {
 .fluid {
   background-color: #091018;
 }
-.feature-secondcol a{
-text-decoration: none;
+.feature-secondcol a {
+  text-decoration: none;
 }
 /* ------------- Copy right  ----------- */
 
@@ -1041,7 +1042,7 @@ textarea:focus {
 }
 /* ------------------------ Responsive ----------------------------- */
 
-@media screen and (min-width: 320px) and (max-width: 786px) {
+@media screen and (min-width: 320px) and (max-width: 510px) {
   .logo1 {
     display: none;
   }
@@ -1216,7 +1217,7 @@ textarea:focus {
     text-align: center;
   }
   .accordion {
-  margin-top: 30px !important;
+    margin-top: 30px !important;
   }
   .accesbtn .btn {
     line-height: 39px;
@@ -1228,9 +1229,9 @@ textarea:focus {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
-    margin-top: 20px !important
+    margin-top: 20px !important;
   }
-  .boxtwo img{
+  .boxtwo img {
     margin-top: 30px;
     margin-left: 40%;
   }
@@ -1379,19 +1380,19 @@ textarea:focus {
   }
   #navbarSupportedContent ul li a {
     line-height: 1px;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
     color: #3e3e3e;
     font-size: 'Gilroy-SemiBold';
   }
   #login {
-    padding: 10px 50px;
+    padding: 10px 45px;
     font-size: 14px;
     margin-right: 20px;
     margin-left: 10px;
   }
   #signup {
-    padding: 10px 50px;
+    padding: 10px 45px;
     font-size: 14px;
   }
   .login-signup {
@@ -1401,4 +1402,47 @@ textarea:focus {
   .about {
     margin-top: 50px;
   }
+}
+@media screen and (min-width: 511px) and (max-width: 1000px){
+ .boxtwo img{
+padding-top: 200px;
+ }
+ .for-carousal {
+  height: 1000px;
+}
+.carousel-container {
+  height: 1000px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  margin-bottom: 150px;
+}
+.circle,
+.greencircle,
+.feature-one-backgrnd,
+.feature-two-backgrnd,
+.feature-three-backgrnd,
+.feature-four-backgrnd,
+.violet-circle,
+.feature-five-backgrnd,
+.feature-six-backgrnd,
+.feature-seven-backgrnd1,
+.feature-seven-backgrnd2,
+.feature-eight-backgrnd,
+.feature-nine-backgrnd,
+.feature-ten-backgrnd,
+.feature-two-backgrnd,
+.faq-background-part,
+.laptop-girl-background {
+  display: none;
+}
+.carousel-control-prev {
+  margin-left: 40%;
+}
+.carousel-control-next {
+  margin-right: 37%;
+}
+.second-image-home {
+  width: 60%;
+}
 }
