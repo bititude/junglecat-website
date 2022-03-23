@@ -36,7 +36,7 @@
             />
           </a>
           <button
-            class="navbar-toggler"
+            class="collapsed navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -44,14 +44,17 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span><img src="./images/homepage/Frame.svg" /></span>
+            <span class="navbar-icon">
+              <img src="./images/homepage/Frame.svg" />
+            </span>
+            <span class="navbar-close"><p>close x</p></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="about nav-item active">
                 <a class="nav-link" href="#section1">About</a>
               </li>
               <li class="nav-item">
@@ -69,19 +72,21 @@
                   Contact
                 </a>
               </li>
-              <li class="nav-item">
-                <button
-                  type="button"
-                  class="btn btn-outline-primary"
-                  id="login"
-                >
-                  Login
-                </button>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary" id="signup">
-                  Sign Up
-                </button>
+              <li class="login-signup nav-item">
+                <a href="https://app.junglecat.com/login">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="login"
+                  >
+                    Login
+                  </button>
+                </a>
+                <a href="">
+                  <button type="button" class="btn btn-primary" id="signup">
+                    Sign Up
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -1056,10 +1061,10 @@
     </div>
     <!-- * * * * * * * * * * * * * * * * * Contact section * * * * * * * * * * * * * * * * * * *  -->
 
-    <div class="fluid container-fluid" id="section4">
-      <div class="contact container">
+    <div class="featurefooter container-fluid" id="section-last">
+      <div class="feature-container container">
         <div class="footerRow row">
-          <div class="firstcol col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-3">
+          <div class="feature-firstcol col-xl-5 col-lg-5 col-md-4 sm-12 mt-3">
             <img
               class="first-footer-image"
               src="./images/homepage/footer-icon.svg"
@@ -1068,42 +1073,50 @@
               class="second-footer-image"
               src="./images/homepage/responsive-footer-image.svg"
             />
-            <p class="footer-para mt-3">
+            <p class="mt-3">
               A virtual edu era, Future of education
             </p>
           </div>
 
-          <div class="secondcol col-xl-3 col-lg-4 col-md-6 mt-4">
+          <div class="feature-secondcol col-xl-3 col-lg-4 col-md-4 mt-4">
             <h3>Contact</h3>
             <ul class="list-unstyled mt-2">
-              <li class="mail mt-3">
-                <img src="./images/homepage/email.svg" />
-                <span>
-                  hello@junglecat.com
-                </span>
-              </li>
+              <a href="https://hello@junglecat.com/junglecatedu">
+                <li class="mt-3">
+                  <img src="./images/homepage/email.svg" />
+                  <span>
+                    hello@junglecat.com
+                  </span>
+                </li>
+              </a>
+             <a href="https://instagram.com/junglecatedu">
               <li class="mt-3">
                 <img src="./images/homepage/instagram.svg" />
                 <span>
                   JungleCatEdu
                 </span>
               </li>
-              <li class="mt-3">
-                <img src="./images/homepage/twitter.svg" />
-                <span>
-                  JungleCatEdu
-                </span>
-              </li>
+             </a>
+              <a href="https://twitter.com/junglecatedu">
+                <li class="mt-3">
+                  <img src="./images/homepage/twitter.svg" />
+                  <span>
+                    JungleCatEdu
+                  </span>
+                </li>
+              </a>
             </ul>
           </div>
 
-          <div class="thirdcol col-xl-2 col-lg-2 col-md-2 mt-4">
+          <div
+            class="feature-thirdcol col-xl-2 col-lg-2 col-md-2 col-sm-12 mt-4"
+          >
             <h3>Navigation</h3>
             <ul class="list-unstyled">
-              <li class="mt-3"><a href="#section0">Home</a></li>
+              <li class="mt-3"><a href="./index.html#section0">Home</a></li>
               <li class="mt-3"><a href="./feature.html">Product</a></li>
-              <li class="mt-3"><a href="#section3">FAQ</a></li>
-              <li class="mt-3"><a href="#section0">Sign Up</a></li>
+              <li class="mt-3"><a href="./index.html#section3">FAQ</a></li>
+              <li class="mt-3"><a href="./index.html#section0">Sign Up</a></li>
             </ul>
           </div>
         </div>

@@ -27,6 +27,9 @@ nav ul li {
   margin-right: 20px;
   margin-top: 25px;
 }
+.navbar-close p {
+  display: none;
+}
 #navbarSupportedContent ul li a {
   margin-top: 10px;
   text-decoration: none;
@@ -49,7 +52,16 @@ nav ul li {
   outline: none;
   box-shadow: none;
 }
+.navbar-close p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #091018;
+}
 #login {
+  margin-right:20px;
   padding: 16px 24px;
   border-color: #40a1ff;
   color: #40a1ff;
@@ -348,7 +360,7 @@ nav ul li {
   transform: rotate(90deg);
 }
 
-.assessment-para {
+.assessment-para,.descr-carousel-para {
   display: -webkit-box;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
@@ -429,7 +441,11 @@ nav ul li {
 }
 .accordion-button:after {
   background-image: url('./images/homepage/up-arrow.svg') !important;
+  transform: rotate(180deg)
 }
+.accordion-button:not(.collapsed)::after {
+ transform: rotate(0deg);
+}  
 .faq-background-part {
   background: #fcfcfc;
   width: 100vw;
@@ -533,7 +549,9 @@ nav ul li {
 .fluid {
   background-color: #091018;
 }
-
+.feature-secondcol a{
+text-decoration: none;
+}
 /* ------------- Copy right  ----------- */
 
 .copyright {
@@ -1031,6 +1049,18 @@ textarea:focus {
   .logo2 {
     display: block;
   }
+  .navbar-icon img {
+    display: block;
+  }
+  .navbar-close p {
+    display: none;
+  }
+  .navbar-toggler:not(.collapsed) .navbar-close p {
+    display: block;
+  }
+  .navbar-toggler:not(.collapsed) .navbar-icon img {
+    display: none;
+  }
   .firstimage {
     margin-top: 60px;
   }
@@ -1159,13 +1189,6 @@ textarea:focus {
   .carousel-control-next {
     margin-right: 7%;
   }
-  .descr-carousel-para {
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 
   .virtualPlatform-column1 h6,
   .user h6,
@@ -1247,7 +1270,7 @@ textarea:focus {
     font-size: 16px;
     line-height: 28px;
   }
-   .classroom-responsive .feature-desc-box {
+  .classroom-responsive .feature-desc-box {
     margin-top: 170px;
   }
   .instant-responsive .feature-desc-box {
@@ -1259,14 +1282,13 @@ textarea:focus {
   .time-responsive .feature-desc-box {
     margin-top: 180px !important;
   }
-  .attendance-responsive .feature-desc-box
-  {
+  .attendance-responsive .feature-desc-box {
     margin-top: 230px !important;
   }
-  .assessment-responsive .feature-desc-box{
+  .assessment-responsive .feature-desc-box {
     margin-top: 130px !important;
   }
-  .student-responsive .feature-desc-box{
+  .student-responsive .feature-desc-box {
     margin-top: 100px !important;
   }
   .teacher-responsive .feature-desc-box {
@@ -1332,10 +1354,35 @@ textarea:focus {
   .laptop-girl-background {
     display: none;
   }
-  .classroom-image,.second-image{
+  .classroom-image,
+  .second-image {
     margin-top: 50px;
   }
-  .feature-imgboxes-five{
+  .feature-imgboxes-five {
     margin-top: 0px;
+  }
+  #navbarSupportedContent ul li a {
+    line-height: 1px;
+    font-size: 32px;
+    line-height: 54px;
+    color: #3e3e3e;
+    font-size: 'Gilroy-SemiBold';
+  }
+  #login {
+    padding: 10px 50px;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  #signup {
+    padding: 10px 50px;
+    font-size: 14px;
+  }
+  .login-signup {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  .about {
+    margin-top: 50px;
   }
 }

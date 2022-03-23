@@ -35,22 +35,29 @@
             />
           </a>
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><img src="./images/homepage/Frame.svg" /></span>
-          </button>
+          class="collapsed navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-icon">
+            <img src="./images/homepage/Frame.svg" />
+          </span>
+          <span class="navbar-close"><p>close x</p></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav">
-              <li class="nav-item active">
+              <li class="about nav-item active">
                 <a class="nav-link" href="./index.html#section1">About</a>
               </li>
               <li class="nav-item">
@@ -68,7 +75,7 @@
                   Contact
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="login-signup nav-item">
                 <button
                   type="button"
                   class="btn btn-outline-primary"
@@ -76,8 +83,6 @@
                 >
                   Login
                 </button>
-              </li>
-              <li class="nav-item">
                 <button type="button" class="btn btn-primary" id="signup">
                   Sign Up
                 </button>
@@ -324,9 +329,7 @@
             </svg>
           </div>
           <div class="row flex-column-reverse flex-lg-row mt-5">
-            <div
-              class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7"
-            >
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
               <div class="feature-imgboxes-five">
                 <div class="circle">
                   <svg height="500" width="500">
