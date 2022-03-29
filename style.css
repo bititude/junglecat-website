@@ -1403,46 +1403,171 @@ textarea:focus {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 511px) and (max-width: 1000px){
- .boxtwo img{
-padding-top: 200px;
- }
- .for-carousal {
-  height: 1000px;
+/* * * * * * * * * * * *  pricing page styles * * * * * * * * * * * * */
+
+.price-title h3,
+h4 {
+  font-family: 'Gilroy-Bold';
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #091018;
 }
-.carousel-container {
-  height: 1000px;
+.price-title h4 {
+  margin-top: -30px;
 }
-.carousel-control-prev,
-.carousel-control-next {
-  margin-bottom: 150px;
+.price-title h3 {
+  margin-top: 100px;
 }
-.circle,
-.greencircle,
-.feature-one-backgrnd,
-.feature-two-backgrnd,
-.feature-three-backgrnd,
-.feature-four-backgrnd,
-.violet-circle,
-.feature-five-backgrnd,
-.feature-six-backgrnd,
-.feature-seven-backgrnd1,
-.feature-seven-backgrnd2,
-.feature-eight-backgrnd,
-.feature-nine-backgrnd,
-.feature-ten-backgrnd,
-.feature-two-backgrnd,
-.faq-background-part,
-.laptop-girl-background {
-  display: none;
+.price-title p {
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #838383;
 }
-.carousel-control-prev {
-  margin-left: 40%;
+.card-price-symbol h2 {
+  float: right;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
 }
-.carousel-control-next {
-  margin-right: 37%;
+.card-price h1 {
+  margin-top: -5px;
+  float: right;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
 }
-.second-image-home {
-  width: 60%;
+.price-desc p {
+  float: right;
+  margin-right: -40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
 }
+.description {
+  margin-top: -10px;
+}
+.description h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #a1a1a1;
+}
+.form-check-input:checked {
+  background-color: #4ec977;
+  border-color: #4ec977;
+  border: 1.5px solid #4ec977;
+  border-radius: 6px;
+}
+input {
+  padding-bottom: 0px !important;
+}
+input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+.form-check-input {
+  background: #e0e0e0;
+  border: 1.5px solid #e0e0e0;
+}
+.form-check label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #091018;
+}
+.card-body,
+.card .btn {
+  margin: 30px;
+}
+.card .btn {
+  border-radius: 12px;
+  padding: 14.5px 24px;
+  background: #2f80ed;
+  border: 1px solid #2f80ed;
+}
+.col .middle-col {
+  background: #2f80ed;
+}
+.middle-col-text h2,
+.middle-col-text h1,
+.middle-col-text p{
+  color: white;
+}
+.middle-col-text,
+.middle-col-text h6 ,
+.middle-col-text label{
+  color: white;
+}
+.middle-col .btn {
+  background-color: white;
+  color: #2f80ed;
+} 
+/* * * * * * * * * * * *  media * * * * * * * * * * * * */
+
+@media screen and (min-width: 511px) and (max-width: 1000px) {
+  .boxtwo img {
+    padding-top: 200px;
+  }
+  .for-carousal {
+    height: 1000px;
+  }
+  .carousel-container {
+    height: 1000px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-bottom: 150px;
+  }
+  .circle,
+  .greencircle,
+  .feature-one-backgrnd,
+  .feature-two-backgrnd,
+  .feature-three-backgrnd,
+  .feature-four-backgrnd,
+  .violet-circle,
+  .feature-five-backgrnd,
+  .feature-six-backgrnd,
+  .feature-seven-backgrnd1,
+  .feature-seven-backgrnd2,
+  .feature-eight-backgrnd,
+  .feature-nine-backgrnd,
+  .feature-ten-backgrnd,
+  .feature-two-backgrnd,
+  .faq-background-part,
+  .laptop-girl-background {
+    display: none;
+  }
+  .carousel-control-prev {
+    margin-left: 40%;
+  }
+  .carousel-control-next {
+    margin-right: 37%;
+  }
+  .second-image-home {
+    width: 60%;
+  }
 }
