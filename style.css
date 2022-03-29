@@ -24,7 +24,7 @@
   display: none;
 }
 nav ul li {
-  margin-right: 20px;
+  margin-right: 5px;
   margin-top: 25px;
 }
 .navbar-close p {
@@ -32,6 +32,7 @@ nav ul li {
 }
 #navbarSupportedContent ul li a {
   margin-top: 10px;
+  margin-right: 15px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: medium;
