@@ -1432,6 +1432,7 @@ h4 {
   color: #838383;
 }
 .card-price-symbol h2 {
+  display: block;
   float: right;
   font-family: 'Inter';
   font-style: normal;
@@ -1442,6 +1443,7 @@ h4 {
   color: #2f80ed;
 }
 .card-price h1 {
+  display: block;
   margin-top: -5px;
   float: right;
   font-family: 'Inter';
