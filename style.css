@@ -1191,16 +1191,16 @@ h4 {
 }
 .price-page-circle {
   position: absolute;
-  left: -250px;
+  left: -260px;
   top: 640px;
   opacity: 0.4;
 }
 .price-rectangle-image img {
   position: absolute;
   top: 300px;
-  margin-left: -70px;
+  margin-left: -65px;
   border-radius: 15px;
-  width: 110%;
+  width: 108%;
   height: auto;
 }
 .violet-circle-pricepage {
