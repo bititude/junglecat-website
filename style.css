@@ -224,7 +224,6 @@ nav ul li {
 /* ------------ Cards --------------- */
 
 .col .card {
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
   border-radius: 20px;
   background: #ffffff;
   border: 1px solid #ebebeb;
@@ -1311,9 +1310,12 @@ h4 {
 .privacy-bluebox {
   margin-top: 250px;
 }
-.privacy-page-titles p a{
-text-decoration: none;
-color: #40a1ff;
+.privacy-page-titles p a {
+  text-decoration: none;
+  color: #40a1ff;
+}
+.col .card:hover {
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.08);
 }
 /* ------------------------ Responsive ----------------------------- */
 
@@ -1670,16 +1672,19 @@ color: #40a1ff;
     font-size: 'Gilroy-SemiBold';
   }
   #login {
-    padding: 10px 45px;
+    margin-top: 10px;
+    padding: 10px 54px;
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: 10px;
   }
   #signup {
+    margin-top: 10px;
     padding: 10px 45px;
     font-size: 14px;
   }
   .login-signup {
+    text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
   }
@@ -1699,6 +1704,9 @@ color: #40a1ff;
   }
   .price-title h3 {
     margin-top: 30px !important;
+  }
+  .price-title p {
+    font-size: 16px;
   }
   .privacy-title h3 {
     margin-top: 50px;
