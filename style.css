@@ -579,6 +579,11 @@ nav ul li {
   line-height: 26px;
   margin: 20px 0px;
 }
+.p2 a,
+.p3 a {
+  text-decoration: none;
+  color: white;
+}
 .copy {
   background: #1e1e1e;
 }
@@ -1041,6 +1046,275 @@ textarea:focus {
   color: white;
   text-decoration: none;
 }
+/* * * * * * * * * * * *  pricing page styles * * * * * * * * * * * * */
+
+.price-title h3,
+h4 {
+  font-family: 'Gilroy-Bold';
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #091018;
+}
+.price-title h4 {
+  margin-top: -30px;
+}
+.price-title h3 {
+  margin-top: 100px;
+}
+.price-title p {
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #838383;
+}
+.card-price-symbol h2 {
+  display: block;
+  float: right;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
+}
+.card-price h1 {
+  display: block;
+  margin-top: -5px;
+  float: right;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
+}
+.price-desc p {
+  float: right;
+  margin-right: -40px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #2f80ed;
+}
+.description {
+  margin-top: -10px;
+}
+.description h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #a1a1a1;
+}
+.card .btn {
+  margin: 30px;
+}
+.card {
+  border-radius: 10px;
+}
+.card .btn {
+  border-radius: 12px;
+  padding: 14.5px 24px;
+  background: #2f80ed;
+  border: 1px solid #2f80ed;
+}
+.col .middle-col {
+  background: #2f80ed;
+}
+.middle-col-text h2,
+.middle-col-text h1,
+.middle-col-text p {
+  color: white;
+}
+.middle-col-text,
+.middle-col-text h6 {
+  color: white;
+}
+.middle-col .btn {
+  background-color: white;
+  color: #2f80ed;
+}
+.disabled-title {
+  color: #a1a1a1;
+}
+.middle-col li {
+  color: white;
+}
+.price-one-backgrnd {
+  margin-left: -100px;
+  margin-right: 250px;
+  background: linear-gradient(
+    180deg,
+    #ffacbb 0%,
+    rgba(172, 235, 255, 0.9) 100%
+  );
+  opacity: 0.5;
+  filter: blur(204px);
+  border-radius: 180px;
+  transform: rotate(-15.72deg) translateZ(0);
+  height: 970px;
+  width: 400px;
+}
+.price-two-backgrnd {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  margin-right: -100px;
+  background: linear-gradient(
+    180deg,
+    #acfaff 0%,
+    rgba(199, 172, 255, 0.99) 100%
+  );
+  opacity: 0.7;
+  filter: blur(180px);
+  border-radius: 180px;
+  transform: rotate(-41.18deg) translateZ(0);
+  height: 470px;
+  width: 400px;
+}
+.price-row {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.price-page-circle {
+  position: absolute;
+  left: -220px;
+  top: 680px;
+  opacity: 0.4;
+}
+.price-rectangle-image img {
+  position: absolute;
+  top: 460px;
+  left: -200px;
+  border-radius: 15px;
+  width: 100%;
+  height: 40%;
+}
+.violet-circle-pricepage {
+  position: absolute;
+  right: -200px;
+  top: 350px;
+  opacity: 0.2;
+}
+.card ul li {
+  font-size: 1em;
+}
+.pricepage-bluebox {
+  margin-top: 250px;
+}
+/* * * * * * * * * * * *  privacy page styles * * * * * * * * * * * * */
+.privacy-title h3 {
+  margin-top: 100px;
+  font-family: 'Gilroy-Bold';
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #091018;
+}
+.privacy-title p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #838383;
+}
+.privacy-page-titles h4 {
+  text-align: left;
+  margin-top: 50px;
+  font-family: 'Gilroy-SemiBold';
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #091018;
+}
+.privacy-page-titles p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #838383;
+}
+.privacy-content {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+}
+.privacy-one-backgrnd {
+  position: absolute;
+  top: 700px;
+  left: 500px;
+  background: rgba(199, 172, 255, 0.7);
+  opacity: 0.4;
+  filter: blur(180px);
+  border-radius: 270px;
+  transform: rotate(-151.18deg) translateZ(0);
+  height: 470px;
+  width: 900px;
+}
+.privacy-two-backgrnd {
+  position: absolute;
+  top: 900px;
+  left: 500px;
+  background: #acfaff;
+  opacity: 0.5;
+  filter: blur(200px);
+  border-radius: 200px;
+  transform: rotate(-61.18deg) translateZ(0);
+  height: 870px;
+  width: 400px;
+}
+.privacy-three-backgrnd {
+  position: absolute;
+  top: 400px;
+  left: -150px;
+  background: #ffacbb;
+  opacity: 0.4;
+  filter: blur(200px);
+  border-radius: 200px;
+  transform: rotate(-61.18deg) translateZ(0);
+  height: 300px;
+  width: 400px;
+}
+.privacy-four-backgrnd {
+  position: absolute;
+  top: 1500px;
+  left: -100px;
+  background: linear-gradient(
+    123.23deg,
+    #60e6ef 32.72%,
+    rgba(239, 239, 96, 0.96) 48.47%
+  );
+  opacity: 0.3;
+  filter: blur(200px);
+  border-radius: 200px;
+  transform: rotate(-61.18deg) translateZ(0);
+  height: 570px;
+  width: 500px;
+}
+.privacy-bluebox {
+  margin-top: 250px;
+}
+.privacy-page-titles p a{
+text-decoration: none;
+color: #40a1ff;
+}
 /* ------------------------ Responsive ----------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 510px) {
@@ -1348,7 +1622,16 @@ textarea:focus {
   .feature-eight-backgrnd,
   .feature-nine-backgrnd,
   .feature-ten-backgrnd,
-  .feature-two-backgrnd {
+  .feature-two-backgrnd,
+  .price-one-backgrnd,
+  .price-two-backgrnd,
+  .price-rectangle-image,
+  .price-page-circle,
+  .violet-circle-pricepage,
+  .privacy-one-backgrnd,
+  .privacy-two-backgrnd,
+  .privacy-three-backgrnd,
+  .privacy-four-backgrnd {
     display: none;
   }
   .contact {
@@ -1403,171 +1686,39 @@ textarea:focus {
   .about {
     margin-top: 50px;
   }
+  .price-title h3,
+  h4 {
+    font-family: 'Gilroy-SemiBold' !important;
+    font-size: 32px !important;
+    line-height: 48px !important;
+    text-align: center;
+    color: #091018 !important;
+  }
+  .pricepage-bluebox {
+    margin-top: 2600px !important;
+  }
+  .price-title h3 {
+    margin-top: 30px !important;
+  }
+  .privacy-title h3 {
+    margin-top: 50px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #091018;
+  }
+  .privacy-page-titles h4 {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+  .privacy-title p {
+    font-size: 16px !important;
+    line-height: 27px !important;
+  }
 }
-/* * * * * * * * * * * *  pricing page styles * * * * * * * * * * * * */
 
-.price-title h3,
-h4 {
-  font-family: 'Gilroy-Bold';
-  font-size: 48px;
-  line-height: 72px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #091018;
-}
-.price-title h4 {
-  margin-top: -30px;
-}
-.price-title h3 {
-  margin-top: 100px;
-}
-.price-title p {
-  margin-top: 30px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
-  color: #838383;
-}
-.card-price-symbol h2 {
-  display: block;
-  float: right;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: -0.02em;
-  color: #2f80ed;
-}
-.card-price h1 {
-  display: block;
-  margin-top: -5px;
-  float: right;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 36px;
-  letter-spacing: -0.02em;
-  color: #2f80ed;
-}
-.price-desc p {
-  float: right;
-  margin-right: -40px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: #2f80ed;
-}
-.description {
-  margin-top: -10px;
-}
-.description h6 {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-  color: #a1a1a1;
-}
-.card .btn {
-  margin: 30px;
-}
-.card {
-  border-radius: 10px;
-}
-.card .btn {
-  border-radius: 12px;
-  padding: 14.5px 24px;
-  background: #2f80ed;
-  border: 1px solid #2f80ed;
-}
-.col .middle-col {
-  background: #2f80ed;
-}
-.middle-col-text h2,
-.middle-col-text h1,
-.middle-col-text p {
-  color: white;
-}
-.middle-col-text,
-.middle-col-text h6 {
-  color: white;
-}
-.middle-col .btn {
-  background-color: white;
-  color: #2f80ed;
-}
-.disabled-title {
-  color: #a1a1a1;
-}
-.middle-col li {
-  color: white;
-}
-.price-one-backgrnd {
-  margin-left: -100px;
-  margin-right: 250px;
-  background: linear-gradient(
-    180deg,
-    #ffacbb 0%,
-    rgba(172, 235, 255, 0.9) 100%
-  );
-  opacity: 0.5;
-  filter: blur(204px);
-  border-radius: 180px;
-  transform: rotate(-15.72deg) translateZ(0);
-  height: 970px;
-  width: 400px;
-}
-.price-two-backgrnd {
-  position: absolute;
-  top: 400px;
-  right: 0;
-  margin-right: -100px;
-  background: linear-gradient(
-    180deg,
-    #acfaff 0%,
-    rgba(199, 172, 255, 0.99) 100%
-  );
-  opacity: 0.7;
-  filter: blur(180px);
-  border-radius: 180px;
-  transform: rotate(-41.18deg) translateZ(0);
-  height: 470px;
-  width: 400px;
-}
-.price-row {
-  position: absolute;
-  top: 0;
-}
-.price-page-circle {
-  position: absolute;
-  left: -230px;
-  top: 630px;
-  opacity: 0.4;
-}
-.price-rectangle-image img {
-  position: absolute;
-  top: 460px;
-  left:-200px;
-  border-radius: 15px;
-  width: 100%;
-  height: 40%;
-}
-.violet-circle-pricepage {
-  position: absolute;
-  right: -200px;
-  top: 350px;
-  opacity: 0.2;
-}
-/* * * * * * * * * * * *  media * * * * * * * * * * * * */
+/* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
 
 @media screen and (min-width: 511px) and (max-width: 1000px) {
   .boxtwo img {
@@ -1610,5 +1761,8 @@ h4 {
   }
   .second-image-home {
     width: 60%;
+  }
+  .pricepage-bluebox {
+    margin-top: 1500px !important;
   }
 }
