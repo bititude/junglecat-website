@@ -592,9 +592,6 @@ nav ul li {
 .contactlogo {
   width: 90%;
 }
-.modal-dialog {
-  max-width:100% !important;
-}
 .modal-header {
   border-bottom: 0 none;
 }
