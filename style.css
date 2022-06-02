@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Gilroy-Regular';
-  src: url(/fonts/Gilroy-Regular.ttf) format('truetype');
+  font-family: "Gilroy-Regular";
+  src: url(/fonts/Gilroy-Regular.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'Gilroy-SemiBold';
-  src: url(/fonts/Gilroy-SemiBold.ttf) format('truetype');
+  font-family: "Gilroy-SemiBold";
+  src: url(/fonts/Gilroy-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Gilroy-Bold';
-  src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
+  font-family: "Gilroy-Bold";
+  src: url(/fonts/Gilroy-Bold.ttf) format("truetype");
 }
 @font-face {
-  font-family: 'Gilroy-Medium';
-  src: url(/fonts/Gilroy-Bold.ttf) format('truetype');
+  font-family: "Gilroy-Medium";
+  src: url(/fonts/Gilroy-Bold.ttf) format("truetype");
 }
 /* -------------- Navbar-------------- */
 
@@ -34,7 +34,7 @@ nav ul li {
   margin-top: 10px;
   margin-right: 15px;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: medium;
   font-size: 18px;
   font-weight: 500;
@@ -54,7 +54,7 @@ nav ul li {
   box-shadow: none;
 }
 .navbar-close p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -66,7 +66,7 @@ nav ul li {
   padding: 16px 24px;
   border-color: #40a1ff;
   color: #40a1ff;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -77,7 +77,7 @@ nav ul li {
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
@@ -118,7 +118,7 @@ nav ul li {
   margin-top: 250px;
   font-weight: 600;
   color: #40a1ff;
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   font-size: 1.1875em;
   vertical-align: top;
   letter-spacing: 0.2em;
@@ -135,7 +135,7 @@ nav ul li {
   padding-top: 150px;
   font-weight: 600;
   color: #40a1ff;
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   font-size: 19px;
   vertical-align: top;
   letter-spacing: 0.2em;
@@ -144,7 +144,7 @@ nav ul li {
 .virtualPlatform-column1 h3 {
   margin-top: 20px;
   font-size: 4.5em;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   line-height: 100px;
   vertical-align: top;
   color: #091018;
@@ -162,7 +162,7 @@ nav ul li {
   background-color: #40a1ff;
   border-color: #40a1ff;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
@@ -181,13 +181,13 @@ nav ul li {
   font-weight: 500;
   line-height: 19px;
   border-radius: 12px;
-  background: url('./images/homepage/hover-videobtn.svg') no-repeat;
+  background: url("./images/homepage/hover-videobtn.svg") no-repeat;
   background-position: 24px 18px;
 }
 
 #videobtn:hover {
   background-color: #deecfc;
-  background: url('./images/homepage/hover-videobtn.svg') no-repeat, #deecfc;
+  background: url("./images/homepage/hover-videobtn.svg") no-repeat, #deecfc;
   background-position: 24px 18px;
 }
 #videobtn:focus,
@@ -200,7 +200,7 @@ nav ul li {
 .title p {
   margin-top: 24px;
   font-weight: lighter;
-  font-family: 'Gilroy-SemiBold';
+  font-family: "Gilroy-SemiBold";
   font-size: 3em;
   color: #091018;
   line-height: 72px;
@@ -211,7 +211,7 @@ nav ul li {
 .featureDesc,
 .faqdesc p {
   margin-top: 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -229,7 +229,7 @@ nav ul li {
   border: 1px solid #ebebeb;
 }
 .card-title {
-  font-family: 'Gilroy-SemiBold';
+  font-family: "Gilroy-SemiBold";
   font-size: 28px;
   color: #252525;
   line-height: 32px;
@@ -240,7 +240,7 @@ nav ul li {
 .boxtwo p,
 .feature-desc-box-carousel p {
   font-weight: 400;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 28px;
@@ -250,7 +250,7 @@ nav ul li {
 }
 .boxtwo h5,
 .feature-desc-box-carousel h5 {
-  font-family: 'Gilroy-SemiBold';
+  font-family: "Gilroy-SemiBold";
   font-size: 28px;
   color: #343434;
   line-height: 42px;
@@ -311,7 +311,7 @@ nav ul li {
   margin-top: 30px;
 }
 .viewAll a {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   text-decoration: none;
   font-weight: 500;
@@ -352,7 +352,7 @@ nav ul li {
 }
 
 .arrow .head:after {
-  content: '';
+  content: "";
   border-color: #40a1ff;
   right: -4px;
   top: -4px;
@@ -412,7 +412,7 @@ nav ul li {
   border-radius: 15px !important ;
   background-color: white !important;
   margin-top: 10px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -420,7 +420,7 @@ nav ul li {
   color: #494949;
 }
 .accordion-body p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-weight: 400;
@@ -440,7 +440,7 @@ nav ul li {
   color: #40a1ff;
 }
 .accordion-button:after {
-  background-image: url('./images/homepage/up-arrow.svg') !important;
+  background-image: url("./images/homepage/up-arrow.svg") !important;
   transform: rotate(180deg);
 }
 .accordion-button:not(.collapsed)::after {
@@ -468,7 +468,7 @@ nav ul li {
   margin-top: 50px;
   margin-left: 60px;
   color: white;
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
@@ -478,7 +478,7 @@ nav ul li {
 .boxtext p {
   margin-left: 60px;
   margin-bottom: 50px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -532,7 +532,7 @@ nav ul li {
 .feature-secondcol ul li,
 .thirdcol ul li a,
 .feature-thirdcol ul li a {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -570,7 +570,7 @@ nav ul li {
 .copyright .p1,
 .p2,
 .p3 {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -608,14 +608,14 @@ nav ul li {
   margin-top: 50px;
 }
 .form-title h3 {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   font-size: 35px;
   line-height: 72px;
   color: #091018;
 }
 .form-title p {
   margin-top: 15px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -623,7 +623,7 @@ nav ul li {
   color: #5f5f5f;
 }
 form .label {
-  font-family: 'Inter' !important;
+  font-family: "Inter" !important;
   font-style: normal;
   font-weight: 500 !important;
   font-size: 20px !important;
@@ -641,7 +641,7 @@ input:focus {
 }
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Inter' !important;
+  font-family: "Inter" !important;
   font-style: normal;
   font-weight: 400;
   font-size: 20px !important;
@@ -659,7 +659,8 @@ textarea:focus {
 }
 #name-error,
 #email-error,
-#message-error {
+#message-error,
+#captcha-error {
   color: #ee4057;
   margin-top: 10px;
   display: none;
@@ -700,6 +701,12 @@ textarea:focus {
   align-items: center;
   padding: 16px 24px !important;
 }
+.captcha-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
 /* * * * * * * * * Product feature page  * * * * * * * * */
 
@@ -708,7 +715,7 @@ textarea:focus {
   margin-top: 100px;
 }
 .first-title h3 {
-  font-family: 'Gilroy-SemiBold';
+  font-family: "Gilroy-SemiBold";
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -717,7 +724,7 @@ textarea:focus {
   letter-spacing: 1px;
 }
 .first-title p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -768,14 +775,14 @@ textarea:focus {
 }
 .feature-desc-box h5,
 .descripton-box h5 {
-  font-family: 'Gilroy-Regular';
+  font-family: "Gilroy-Regular";
   font-weight: 600;
   font-size: 42px;
   line-height: 63px;
   color: #343434;
 }
 .feature-desc-box p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1037,7 +1044,7 @@ textarea:focus {
 }
 .feature-firstcol p,
 .feature-thirdcol ul li {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -1049,7 +1056,7 @@ textarea:focus {
 
 .price-title h3,
 h4 {
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   font-size: 48px;
   line-height: 72px;
   text-align: center;
@@ -1064,7 +1071,7 @@ h4 {
 }
 .price-title p {
   margin-top: 30px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1075,7 +1082,7 @@ h4 {
 .card-price-symbol h2 {
   display: block;
   float: right;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1087,7 +1094,7 @@ h4 {
   display: block;
   margin-top: -5px;
   float: right;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1098,7 +1105,7 @@ h4 {
 .price-desc p {
   float: right;
   margin-right: -40px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1110,7 +1117,7 @@ h4 {
   margin-top: -10px;
 }
 .description h6 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1218,7 +1225,7 @@ h4 {
 /* * * * * * * * * * * *  privacy page styles * * * * * * * * * * * * */
 .privacy-title h3 {
   margin-top: 100px;
-  font-family: 'Gilroy-Bold';
+  font-family: "Gilroy-Bold";
   font-size: 48px;
   line-height: 72px;
   text-align: center;
@@ -1226,7 +1233,7 @@ h4 {
   color: #091018;
 }
 .privacy-title p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1236,14 +1243,14 @@ h4 {
 .privacy-page-titles h4 {
   text-align: left;
   margin-top: 50px;
-  font-family: 'Gilroy-SemiBold';
+  font-family: "Gilroy-SemiBold";
   font-size: 28px;
   line-height: 42px;
   text-transform: capitalize;
   color: #091018;
 }
 .privacy-page-titles p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1351,7 +1358,7 @@ h4 {
     display: block;
     margin-top: 50px;
     margin-bottom: -30px;
-    font-family: 'Gilroy-SemiBold';
+    font-family: "Gilroy-SemiBold";
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
@@ -1367,14 +1374,14 @@ h4 {
     font-size: 14px;
     line-height: 27px;
     color: #40a1ff;
-    font-family: 'Gilroy-Regular';
+    font-family: "Gilroy-Regular";
     letter-spacing: 0.095em;
     line-height: 27px;
   }
   .virtualPlatform-column2 h4 {
     text-align: center;
     display: block;
-    font-family: 'Gilroy-Semibold';
+    font-family: "Gilroy-Semibold";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1640,6 +1647,7 @@ h4 {
     padding: 0px;
     padding-bottom: 0px;
   }
+
   .firstcol {
     padding-top: 150px;
     margin-left: 0px;
@@ -1669,7 +1677,7 @@ h4 {
     font-size: 25px;
     line-height: 30px;
     color: #3e3e3e;
-    font-size: 'Gilroy-SemiBold';
+    font-size: "Gilroy-SemiBold";
   }
   #login {
     margin-top: 10px;
@@ -1693,7 +1701,7 @@ h4 {
   }
   .price-title h3,
   h4 {
-    font-family: 'Gilroy-SemiBold' !important;
+    font-family: "Gilroy-SemiBold" !important;
     font-size: 32px !important;
     line-height: 48px !important;
     text-align: center;
@@ -1710,7 +1718,7 @@ h4 {
   }
   .privacy-title h3 {
     margin-top: 50px;
-    font-family: 'Gilroy-SemiBold';
+    font-family: "Gilroy-SemiBold";
     font-size: 32px;
     line-height: 48px;
     text-align: center;
@@ -1804,7 +1812,8 @@ h4 {
   .TAS-responsive .feature-desc-box {
     margin-top: 80px !important;
   }
-  .first-image,.white-rectangle{
+  .first-image,
+  .white-rectangle {
     display: none;
   }
 }
