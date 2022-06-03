@@ -1,6 +1,7 @@
 const name = document.form.name;
 const email = document.form.email;
 const message = document.form.message;
+let captchaResponseKey = "";
 
 const captchaError = document.getElementById("captcha-error");
 const myModalEl = document.querySelector(".mymodal");
@@ -39,6 +40,7 @@ function validated() {
     captchaError.style.display = "block";
     return false;
   } else {
+    captchaResponseKey = response;
     captchaError.style.display = "none";
   }
 }
@@ -67,9 +69,11 @@ thisForm.addEventListener("submit", async function (e) {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
+        captchaResponseKey: captchaResponseKey,
       }),
     }
   );
   const result = await response.json();
+  captchaResponseKey = "";
   modal.hide();
 });
