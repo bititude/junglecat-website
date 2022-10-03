@@ -276,7 +276,7 @@ nav ul li {
   position: absolute;
   top: 20%;
   left: 90px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   width: 73%;
 }
 .viewAll {
@@ -703,7 +703,7 @@ textarea:focus {
 .product-feature-responsive {
   display: none;
 }
-/* -------------  Qualification & Courses Management  ----------- */
+/* -------------  TAS  ----------- */
 .top-part {
   margin-top: 150px;
 }
@@ -738,7 +738,7 @@ textarea:focus {
   position: absolute;
   top: 18%;
   left: 90px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   width: 73%;
 }
 .feature-desc-box h5,
@@ -757,7 +757,7 @@ textarea:focus {
   line-height: 24px;
   color: #838383;
 }
-/* -------------  Class Room Experience with Unit Wise Feed  ----------- */
+/* -------------  Qualification & Courses Management ----------- */
 
 /* green circle */
 
@@ -800,7 +800,7 @@ textarea:focus {
   position: absolute;
   top: 18%;
   right: 90px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   width: 68%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
@@ -956,7 +956,7 @@ textarea:focus {
   transform: rotate(20.19deg) translateZ(0);
   height: 500px;
 }
-/* ------Teacher profile -------*/
+/* ------Class Room Experience with Unit Wise Feed -------*/
 
 .feature-imgboxes-nine {
   position: relative;
@@ -973,7 +973,7 @@ textarea:focus {
   transform: rotate(-1.9deg) translateZ(0);
   height: 500px;
 }
-/* ------Public & Class specific library-------*/
+/* ------Management report system-------*/
 
 .feature-imgboxes-ten {
   position: relative;
@@ -1312,21 +1312,17 @@ h4 {
   left: -107%;
   transform: rotate(90deg);
 }
-.carousel-indicators img {
-  width: 100px;
+.carousel-indicators .active {
+  opacity: 1;
+  background-image: url('./images/homepage/active-indicator.png') !important;
+  width: 24px !important;
+  height: 5px !important;
 }
-.carousel-indicators .indicator-one {
-  margin-left: 6px;
-  width: 24px;
-  height: 6px;
-  background-color: #40a1ff !important;
-  border-radius: 10px;
-}
-.carousel-indicators .indicator-other {
+.carousel-indicators .indicators {
   margin-left: 6px;
   width: 6px;
-  height: 6px;
-  border-radius: 50%;
+  height: 5px;
+  border-radius: 43%;
   background-color: #40a1ff !important;
 }
 .tas-column1 {
@@ -1502,7 +1498,7 @@ h4 {
   .second-image-home,
   .second-image {
     left: 10%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     width: 80%;
   }
 
