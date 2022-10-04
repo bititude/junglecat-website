@@ -24,320 +24,128 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
-    <!-- * * * * * * * * * * * * * * * * * * * * Header * * * * * * * * * * * * * * * * * * *  -->
-
-    <header id="home">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white sticky"
-        data-offset="500"
-      >
-        <div class="heading container">
-          <a class="navbar-brand">
-            <img src="./images/homepage/navbar-logo.svg" alt="" class="logo1" />
-            <img
-              src="./images/homepage/responsive-icon.svg"
-              alt=""
-              class="logo2"
-            />
-          </a>
-          <button
-            class="collapsed navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-icon">
-              <img src="./images/homepage/Frame.svg" />
-            </span>
-            <span class="navbar-close"><p>close x</p></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li class="about nav-item active">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/features">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pricing">Pricing</a>
-              </li>
-              <!-- <li class="nav-item">
+    <div class="main container-fluid">
+      <div class="container">
+        <!-- * * * * * * * * * * * * * * * * * * * * Header * * * * * * * * * * * * * * * * * * *  -->
+        <header id="home">
+          <nav class="navbar navbar-expand-lg navbar-light" data-offset="500">
+            <div class="heading container">
+              <a class="navbar-brand">
+                <img
+                  src="./images/homepage/navbar-logo.svg"
+                  alt=""
+                  class="logo1"
+                />
+                <img
+                  src="./images/homepage/responsive-icon.svg"
+                  alt=""
+                  class="logo2"
+                />
+              </a>
+              <button
+                class="collapsed navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-icon">
+                  <img src="./images/homepage/Frame.svg" />
+                </span>
+                <span class="navbar-close"><p>close x</p></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="about nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pricing">Pricing</a>
+                  </li>
+                  <!-- <li class="nav-item">
                 <a class="nav-link" href="#faq">FAQ</a>
               </li> -->
-              <li class="nav-item">
-                <a
-                  class="nav-link"
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li class="login-signup nav-item">
+                    <a href="https://app.junglecat.com/login">
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        id="login"
+                      >
+                        Login
+                      </button>
+                    </a>
+                    <a href="https://app.junglecat.com/register">
+                      <button type="button" class="btn btn-primary" id="signup">
+                        Sign Up
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!-- * * * * * * * * * * * * * * * * * Home main-slides  * * * * * * * * * * * * * * * *  -->
+        <div class="row flex-column-reverse flex-lg-row">
+          <div
+            class="text-change col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5"
+          >
+            <div class="text-container">
+              <div class="text-box">
+                <h6 id="title-one">The complete</h6>
+                <div></div>
+              </div>
+            </div>
+            <h5 id="title-two">software</h5>
+
+            <div class="buttons-group">
+              <div class="buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary me-3"
+                  id="registerbtn"
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"
                 >
-                  Contact
-                </a>
-              </li>
-              <li class="login-signup nav-item">
-                <a href="https://app.junglecat.com/login">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary"
-                    id="login"
-                  >
-                    Login
-                  </button>
-                </a>
-                <a href="https://app.junglecat.com/register">
-                  <button type="button" class="btn btn-primary" id="signup">
-                    Sign Up
-                  </button>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- * * * * * * * * * * * * * * * * * TAS Carousel  * * * * * * * * * * * * * * * *  -->
-
-    <div class="total container">
-      <div class="main-content">
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="indicators active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              class="indicators"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              class="indicators"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="3"
-              class="indicators"
-              aria-label="Slide 4"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- * * * * * * * * * * * * * * * * * TAS Carousel one * * * * * * * * * * * * * * * *  -->
-
-            <div class="carousel-item active" data-bs-interval="1800">
-              <div class="carousel-height row flex-column-reverse flex-lg-row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
-                  <div class="tas-column1">
-                    <h6>The complete</h6>
-                    <h3>
-                      Training &
-                      <br />
-                      Assesment strategy
-                      <br />
-                    </h3>
-                    <h5>software</h5>
-                  </div>
-                  <div>
-                    <div class="buttons">
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary"
-                        id="videobtn"
-                      >
-                        Watch Video
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-                  <div class="tas-column2">
-                    <img src="./images/homepage/tas-image.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- * * * * * * * * * * * * * * * * * TAS Carousel two * * * * * * * * * * * * * * * *  -->
-
-            <div class="carousel-item" data-bs-interval="1800">
-              <div class="carousel-height row flex-column-reverse flex-lg-row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
-                  <div class="tas-column1">
-                    <h6>The complete</h6>
-                    <h3>
-                      Attandence
-                      <br />
-                    </h3>
-                    <h5>software</h5>
-                  </div>
-                  <div>
-                    <div class="buttons">
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary"
-                        id="videobtn"
-                      >
-                        Watch Video
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-                  <div class="tas-column2">
-                    <img src="./images/homepage/tas-attendance.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- * * * * * * * * * * * * * * * * * TAS Carousel three * * * * * * * * * * * * * * * *  -->
-
-            <div class="carousel-item" data-bs-interval="1800">
-              <div class="carousel-height row flex-column-reverse flex-lg-row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
-                  <div class="tas-column1">
-                    <h6>The complete</h6>
-                    <h3>
-                      Video Class
-                      <br />
-                    </h3>
-                    <h5>software</h5>
-                  </div>
-                  <div>
-                    <div class="buttons">
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary"
-                        id="videobtn"
-                      >
-                        Watch Video
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-                  <div class="tas-column2">
-                    <img src="./images/homepage/tas-videoclass.png" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- * * * * * * * * * * * * * * * * * TAS Carousel four* * * * * * * * * * * * * * * *  -->
-
-            <div class="carousel-item" data-bs-interval="1800">
-              <div class="carousel-height row flex-column-reverse flex-lg-row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5">
-                  <div class="tas-column1">
-                    <h6>The complete</h6>
-                    <h3>
-                      End to End Management system
-                      <br />
-                    </h3>
-                    <h5>software</h5>
-                  </div>
-                  <div>
-                    <div class="buttons">
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary"
-                        id="videobtn"
-                      >
-                        Watch Video
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-                  <div class="tas-column2">
-                    <img src="./images/homepage/tas-management-system.png" />
-                  </div>
-                </div>
+                  Register for Access
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="videobtn"
+                >
+                  Watch Video
+                </button>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span
-              class="vertical-carousel carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span
-              class="vertical-carousel carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
+            <div class="image-container"></div>
+          </div>
         </div>
       </div>
-      <!-- * * * * * * * * * * * * * * * * *  User experience  * * * * * * * * * * * * * * * -->
-
+    </div>
+    <!-- * * * * * * * * * * * * * * * * *  User experience  * * * * * * * * * * * * * * * -->
+    <div class="total container">
       <div class="row">
         <div id="about">
           <div class="user">

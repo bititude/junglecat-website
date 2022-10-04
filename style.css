@@ -100,7 +100,7 @@ nav ul li {
   box-shadow: none;
 }
 .user h6 {
-  margin-top: 100px;
+  margin-top: 50px;
   font-weight: 600;
   color: #40a1ff;
   font-family: 'Gilroy-Regular';
@@ -1293,77 +1293,160 @@ h4 {
   box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ------------------------- TAS-Main content-home page ---------------------------- */
-.main-content {
-  margin-top: 114px;
+/* ------------------------- Main content-home page ---------------------------- */
+.main {
+  background: linear-gradient(180deg, #fefbf7 0%, #fff7ed 100%);
 }
-.main-content .carousel-item-next:not(.carousel-item-start),
-.main-content .active.carousel-item-end {
-  transform: translateY(100%);
+.home {
+  overflow: hidden;
+  height: 300px;
 }
-.main-content .carousel-item-prev:not(.carousel-item-end),
-.main-content .active.carousel-item-start {
-  transform: translateY(-100%);
-}
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 55%;
-  left: -107%;
-  transform: rotate(90deg);
-}
-.carousel-indicators .active {
-  opacity: 1;
-  background-image: url('./images/homepage/active-indicator.png') !important;
-  width: 24px !important;
-  height: 5px !important;
-}
-.carousel-indicators .indicators {
-  margin-left: 6px;
-  width: 6px;
-  height: 5px;
-  border-radius: 43%;
-  background-color: #40a1ff !important;
-}
-.tas-column1 {
-  margin-top: 100px;
-}
-.tas-column1 h6 {
+#title-one {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #80bffb;
+  color: #40a1ff;
   font-family: 'Inter';
 }
-.tas-column1 h3 {
+.buttons {
+  margin-top: 31px;
+}
+
+.image-container {
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+  height: 720px;
+  width: 100%;
+  background-size: 95%;
+  animation: 20s change infinite ease-in-out;
+  background-image: url('./images/homepage/slider-one.png');
+  background-repeat: no-repeat;
+}
+.text-container {
+  position: relative;
+  height: 300px;
+  width: 500px;
+  left: -10px;
+  margin-top: 50px;
+}
+.text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.text-box div:after {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 45px;
   line-height: 60px;
   text-transform: capitalize;
   color: #091018;
   font-family: 'Quicksand';
+  content: 'Training &\A Assesment strategy';
+  white-space: pre;
+  animation: text 20s infinite ease-out;
 }
-.tas-column1 h5 {
+#title-two {
+  position: absolute;
+  left: 0;
+  bottom: 400px;
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
   text-transform: capitalize;
-  color: #80bffb;
+  color: #40a1ff;
   font-family: 'inter';
 }
-.buttons {
-  margin-top: 31px;
+.buttons-group {
+  position: absolute;
+  left: 0;
+  bottom: 320px;
 }
-.tas-column2 img {
-  max-width: 100%;
-  height: auto;
+.text-change {
+  position: relative;
+  left: 10px;
 }
-.vertical-carousel {
-  display: none;
+@keyframes text {
+  0% {
+    content: 'Training &\A Assesment strategy';
+    white-space: pre;
+  }
+  10% {
+    content: 'Training &\A Assesment strategy';
+    white-space: pre;
+  }
+  20% {
+    content: 'Attandence';
+  }
+  30% {
+    content: 'Attandence';
+  }
+  40% {
+    content: 'Video Class';
+  }
+  50% {
+    content: 'Video Class';
+  }
+  60% {
+    content: 'End to End\A Management system';
+    white-space: pre;
+  }
+  70% {
+    content: 'End to End\A Management system';
+    white-space: pre;
+  }
+  80% {
+    content: 'End to End\A Management system';
+    white-space: pre;
+  }
+  90% {
+    content: 'Training &\A Assesment strategy';
+    white-space: pre;
+  }
+  100% {
+    content: 'Training &\A Assesment strategy';
+    white-space: pre;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-image: url('./images/homepage/slider-one.png');
+  }
+  10% {
+    background-image: url('./images/homepage/slider-one.png');
+  }
+  20% {
+    background-image: url('./images/homepage/slider-two.png');
+  }
+  30% {
+    background-image: url('./images/homepage/slider-two.png');
+  }
+  40% {
+    background-image: url('./images/homepage/slider-three.png');
+  }
+  50% {
+    background-image: url('./images/homepage/slider-three.png');
+  }
+  60% {
+    background-image: url('./images/homepage/slider-fourr.png');
+  }
+  70% {
+    background-image: url('./images/homepage/slider-fourr.png');
+  }
+  80% {
+    background-image: url('./images/homepage/slider-fourr.png');
+  }
+  90% {
+    background-image: url('./images/homepage/slider-one.png');
+  }
+  100% {
+    background-image: url('./images/homepage/slider-one.png');
+  }
 }
 /* ------------------------ Responsive ----------------------------- */
 
@@ -1781,11 +1864,32 @@ h4 {
 /* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
 
 @media screen and (min-width: 511px) and (max-width: 1000px) {
+  #title-two {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+  }
+  .buttons-group {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+  }
+  .text-container {
+    position: relative;
+    bottom: 150px;
+  }
   .boxtwo img {
     padding-top: 200px;
   }
   .for-carousal {
     height: 1000px;
+  }
+  .carousel-item {
+    /* border: 1px solid red; */
+    height: 1000px;
+  }
+  .buttons-group {
+    margin-top: -200px;
   }
   .carousel-container {
     height: 1000px;
