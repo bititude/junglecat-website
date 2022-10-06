@@ -1314,8 +1314,8 @@ h4 {
 #carouselExampleDark {
   height: 910px;
 }
-.carousel-item {
-  transition: transform 3s ease-in-out;
+.main-carousel {
+  transition: transform 2s ease-in-out;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
