@@ -25,9 +25,12 @@
   </head>
   <body>
     <div class="main container-fluid">
-      <div class="container">
+      <div class="home container">
         <!-- * * * * * * * * * * * * * * * * * * * * Header * * * * * * * * * * * * * * * * * * *  -->
         <header id="home">
+          <div class="grid-bg">
+            <img src="./images/homepage/grid-bg.svg" />
+          </div>
           <nav class="navbar navbar-expand-lg navbar-light" data-offset="500">
             <div class="heading container">
               <a class="navbar-brand">
@@ -105,41 +108,205 @@
         </header>
 
         <!-- * * * * * * * * * * * * * * * * * Home main-slides  * * * * * * * * * * * * * * * *  -->
-        <div class="row flex-column-reverse flex-lg-row">
-          <div
-            class="text-change col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5"
-          >
-            <div class="text-container">
-              <div class="text-box">
-                <h6 id="title-one">The complete</h6>
-                <div></div>
-              </div>
-            </div>
-            <h5 id="title-two">software</h5>
 
-            <div class="buttons-group">
-              <div class="buttons">
-                <button
+        <div class="container">
+          <div class="main-content">
+            <div
+              id="carouselExampleDark"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <div
                   type="button"
-                  class="btn btn-primary me-3"
-                  id="registerbtn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="indicators active"
+                  aria-current="true"
+                  aria-label="Slide 1"
                 >
-                  Register for Access
-                </button>
-                <button
+                  <div class="progress-value"></div>
+                </div>
+                <div
                   type="button"
-                  class="btn btn-outline-primary"
-                  id="videobtn"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  class="indicators"
+                  aria-label="Slide 2"
                 >
-                  Watch Video
-                </button>
+                  <div class="progress-value"></div>
+                </div>
+                <div
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  class="indicators"
+                  aria-label="Slide 3"
+                >
+                  <div class="progress-value"></div>
+                </div>
+                <div
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  class="indicators"
+                  aria-label="Slide 4"
+                >
+                  <div class="progress-value"></div>
+                </div>
               </div>
+              <div class="carousel-inner">
+                <!-- * * * * * * * * * * * * * * * * * TAS Carousel one * * * * * * * * * * * * * * * *  -->
+
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <div
+                    class="carousel-height row flex-column-reverse flex-lg-row"
+                  >
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+                    >
+                      <div class="tas-column1">
+                        <h3>
+                          Training &
+                          <br />
+                          Assesment strategy
+                          <br />
+                        </h3>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+                    >
+                      <div class="tas-column2">
+                        <img src="./images/homepage/slide-one.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * * * * * * * * * * * * * * * * * TAS Carousel two * * * * * * * * * * * * * * * *  -->
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div
+                    class="carousel-height row flex-column-reverse flex-lg-row"
+                  >
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5"
+                    >
+                      <div class="tas-column1">
+                        <h3 id="one-line">
+                          Attandence
+                          <br />
+                        </h3>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7"
+                    >
+                      <div class="tas-column2">
+                        <img src="./images/homepage/slider-two.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * * * * * * * * * * * * * * * * * TAS Carousel three * * * * * * * * * * * * * * * *  -->
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div
+                    class="carousel-height row flex-column-reverse flex-lg-row"
+                  >
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-5"
+                    >
+                      <div class="tas-column1">
+                        <h3 id="one-line">
+                          Video Class
+                          <br />
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7"
+                    >
+                      <div class="tas-column2">
+                        <img src="./images/homepage/slider-three.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- * * * * * * * * * * * * * * * * * TAS Carousel four* * * * * * * * * * * * * * * *  -->
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div
+                    class="carousel-height row flex-column-reverse flex-lg-row"
+                  >
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+                    >
+                      <div class="tas-column1">
+                        <h3>
+                          End to End Management system
+                          <br />
+                        </h3>
+                      </div>
+                      <div></div>
+                    </div>
+                    <div
+                      class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"
+                    >
+                      <div class="tas-column2">
+                        <img src="./images/homepage/slide-four.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="vertical-carousel carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="vertical-carousel carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-7">
-            <div class="image-container"></div>
+            <h6 id="complete-title">The complete</h6>
+            <h5 id="software">software</h5>
+            <div class="buttons">
+              <button
+                type="button"
+                class="btn btn-primary me-3"
+                id="registerbtn"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Register for Access
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                id="videobtn"
+              >
+                Watch Video
+              </button>
+            </div>
           </div>
         </div>
       </div>

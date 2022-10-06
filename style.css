@@ -19,6 +19,10 @@
   font-family: 'Quicksand';
   src: url(/fonts/Quicksand-Medium.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'poppins-semiBold';
+  src: url(/fonts/Poppins-SemiBold.ttf) format('truetype');
+}
 /* -------------- Navbar-------------- */
 
 .logo1 {
@@ -103,7 +107,7 @@ nav ul li {
   margin-top: 50px;
   font-weight: 600;
   color: #40a1ff;
-  font-family: 'Gilroy-Regular';
+  font-family: 'poppins-semiBold';
   font-size: 1.1875em;
   vertical-align: top;
   letter-spacing: 0.2em;
@@ -113,7 +117,7 @@ nav ul li {
   margin-top: 250px;
   font-weight: 600;
   color: #40a1ff;
-  font-family: 'Gilroy-Regular';
+  font-family: 'poppins-semiBold';
   font-size: 1.1875em;
   vertical-align: top;
   letter-spacing: 0.2em;
@@ -124,7 +128,7 @@ nav ul li {
   padding-top: 150px;
   font-weight: 600;
   color: #40a1ff;
-  font-family: 'Gilroy-Regular';
+  font-family: 'poppins-semiBold';
   font-size: 19px;
   vertical-align: top;
   letter-spacing: 0.2em;
@@ -173,7 +177,7 @@ nav ul li {
 .title p {
   margin-top: 24px;
   font-weight: lighter;
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'poppins-semiBold';
   font-size: 3em;
   color: #091018;
   line-height: 72px;
@@ -202,7 +206,7 @@ nav ul li {
   border: 1px solid #ebebeb;
 }
 .card-title {
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'poppins-semiBold';
   font-size: 28px;
   color: #252525;
   line-height: 32px;
@@ -223,7 +227,7 @@ nav ul li {
 }
 .boxtwo h5,
 .feature-desc-box-carousel h5 {
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'poppins-semiBold';
   font-size: 28px;
   color: #343434;
   line-height: 42px;
@@ -576,7 +580,7 @@ nav ul li {
   margin-top: 50px;
 }
 .form-title h3 {
-  font-family: 'Gilroy-Bold';
+  font-family: 'poppins-semiBold';
   font-size: 35px;
   line-height: 72px;
   color: #091018;
@@ -678,12 +682,11 @@ textarea:focus {
 
 /* * * * * * * * * Product feature page  * * * * * * * * */
 
-/* ------------- Home ----------- */
 .firstimage {
   margin-top: 100px;
 }
 .first-title h3 {
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'poppins-semiBold';
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -738,12 +741,11 @@ textarea:focus {
   position: absolute;
   top: 18%;
   left: 90px;
-  /* border-radius: 15px; */
   width: 73%;
 }
 .feature-desc-box h5,
 .descripton-box h5 {
-  font-family: 'Gilroy-Regular';
+  font-family: 'poppins-semiBold';
   font-weight: 600;
   font-size: 42px;
   line-height: 63px;
@@ -800,7 +802,6 @@ textarea:focus {
   position: absolute;
   top: 18%;
   right: 90px;
-  /* border-radius: 15px; */
   width: 68%;
 }
 /* ------------- Instant & scheduled real time video classes ----------- */
@@ -1024,7 +1025,7 @@ textarea:focus {
 
 .price-title h3,
 h4 {
-  font-family: 'Gilroy-Bold';
+  font-family: 'poppins-semiBold';
   font-size: 48px;
   line-height: 72px;
   text-align: center;
@@ -1190,10 +1191,10 @@ h4 {
 .pricepage-bluebox {
   margin-top: 250px;
 }
-/* * * * * * * * * * * *  privacy page styles * * * * * * * * * * * * */
+/* * * * * * * * * * * *  privacy-policy page styles * * * * * * * * * * * * */
 .privacy-title h3 {
   margin-top: 100px;
-  font-family: 'Gilroy-Bold';
+  font-family: 'poppins-semiBold';
   font-size: 48px;
   line-height: 72px;
   text-align: center;
@@ -1211,7 +1212,7 @@ h4 {
 .privacy-page-titles h4 {
   text-align: left;
   margin-top: 50px;
-  font-family: 'Gilroy-SemiBold';
+  font-family: 'poppins-semiBold';
   font-size: 28px;
   line-height: 42px;
   text-transform: capitalize;
@@ -1293,38 +1294,97 @@ h4 {
   box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ------------------------- Main content-home page ---------------------------- */
+/* ------------------------- Main content-home page-modifications ---------------------------- */
 .main {
   background: linear-gradient(180deg, #fefbf7 0%, #fff7ed 100%);
 }
-.home {
-  overflow: hidden;
-  height: 300px;
+.main-content {
+  height: 910px;
+  position: relative;
 }
-#title-one {
+.grid-bg {
+  position: absolute;
+  height: 1000px;
+  width: 700px;
+  overflow: hidden;
+  margin-left: -150px;
+  /* border: 1px solid red; */
+}
+
+#carouselExampleDark {
+  height: 910px;
+}
+.carousel-item {
+  transition: transform 3s ease-in-out;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 0.2s;
+}
+.carousel-indicators {
+  bottom: 520px;
+  position: absolute;
+  left: -107%;
+  transform: rotate(90deg);
+}
+
+.tas-column1 {
+  margin-top: 300px;
+}
+#complete-title {
+  position: absolute;
+  bottom: 610px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: #2f80ed;
+  font-family: 'poppins-semiBold';
+}
+.tas-column1 h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #091018;
+  font-family: 'poppins-semiBold';
+}
+#software {
+  bottom: 420px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: capitalize;
   color: #40a1ff;
-  font-family: 'Inter';
+  font-family: 'inter';
+}
+#one-line {
+  margin-top: 330px;
+}
+.tas-column2 img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 150px;
 }
 .buttons {
-  margin-top: 31px;
+  position: absolute;
+  left: 0;
+  bottom: 340px;
+  z-index: 9 !important;
 }
-
-.image-container {
-  margin-top: 100px;
-  overflow: hidden;
-  position: relative;
-  height: 720px;
-  width: 100%;
-  background-size: 95%;
-  animation: 20s change infinite ease-in-out;
-  background-image: url('./images/homepage/slider-one.png');
-  background-repeat: no-repeat;
+#title-one {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2f80ed;
+  font-family: 'poppins-semiBold';
 }
 .text-container {
   position: relative;
@@ -1338,18 +1398,7 @@ h4 {
   bottom: 0;
   left: 0;
 }
-.text-box div:after {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 60px;
-  text-transform: capitalize;
-  color: #091018;
-  font-family: 'Quicksand';
-  content: 'Training &\A Assesment strategy';
-  white-space: pre;
-  animation: text 20s infinite ease-out;
-}
+
 #title-two {
   position: absolute;
   left: 0;
@@ -1358,96 +1407,47 @@ h4 {
   font-weight: 400;
   font-size: 45px;
   text-transform: capitalize;
-  color: #40a1ff;
-  font-family: 'inter';
+  color: #2f80ed;
+  font-family: 'poppins-semiBold';
 }
-.buttons-group {
-  position: absolute;
-  left: 0;
-  bottom: 320px;
-}
+
 .text-change {
   position: relative;
   left: 10px;
 }
-@keyframes text {
+.carousel-indicators .indicators {
+  margin-left: 6px;
+  width: 6px;
+  height: 5px;
+  border-radius: 50% !important;
+  background-color: #cdcdcd !important;
+}
+.carousel-indicators .active {
+  height: 6px !important;
+  width: 30px !important;
+  background-size: 30px !important;
+  justify-content: flex-start;
+  border-radius: 11px !important;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+.carousel-indicators .active .progress-value {
+  animation: load 4s normal;
+  border-radius: 100px;
+  background: #40a1ff;
+  height: 6px;
+  width: 0;
+}
+@keyframes load {
   0% {
-    content: 'Training &\A Assesment strategy';
-    white-space: pre;
-  }
-  10% {
-    content: 'Training &\A Assesment strategy';
-    white-space: pre;
-  }
-  20% {
-    content: 'Attandence';
-  }
-  30% {
-    content: 'Attandence';
-  }
-  40% {
-    content: 'Video Class';
-  }
-  50% {
-    content: 'Video Class';
-  }
-  60% {
-    content: 'End to End\A Management system';
-    white-space: pre;
-  }
-  70% {
-    content: 'End to End\A Management system';
-    white-space: pre;
-  }
-  80% {
-    content: 'End to End\A Management system';
-    white-space: pre;
-  }
-  90% {
-    content: 'Training &\A Assesment strategy';
-    white-space: pre;
+    width: 0;
   }
   100% {
-    content: 'Training &\A Assesment strategy';
-    white-space: pre;
+    width: 100%;
   }
 }
 
-@keyframes change {
-  0% {
-    background-image: url('./images/homepage/slider-one.png');
-  }
-  10% {
-    background-image: url('./images/homepage/slider-one.png');
-  }
-  20% {
-    background-image: url('./images/homepage/slider-two.png');
-  }
-  30% {
-    background-image: url('./images/homepage/slider-two.png');
-  }
-  40% {
-    background-image: url('./images/homepage/slider-three.png');
-  }
-  50% {
-    background-image: url('./images/homepage/slider-three.png');
-  }
-  60% {
-    background-image: url('./images/homepage/slider-fourr.png');
-  }
-  70% {
-    background-image: url('./images/homepage/slider-fourr.png');
-  }
-  80% {
-    background-image: url('./images/homepage/slider-fourr.png');
-  }
-  90% {
-    background-image: url('./images/homepage/slider-one.png');
-  }
-  100% {
-    background-image: url('./images/homepage/slider-one.png');
-  }
-}
 /* ------------------------ Responsive ----------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 510px) {
@@ -1485,7 +1485,7 @@ h4 {
     display: block;
     margin-top: 50px;
     margin-bottom: -30px;
-    font-family: 'Gilroy-SemiBold';
+    font-family: 'poppins-semiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
@@ -1501,14 +1501,14 @@ h4 {
     font-size: 14px;
     line-height: 27px;
     color: #40a1ff;
-    font-family: 'Gilroy-Regular';
+    font-family: 'poppins-semiBold';
     letter-spacing: 0.095em;
     line-height: 27px;
   }
   .virtualPlatform-column2 h4 {
     text-align: center;
     display: block;
-    font-family: 'Gilroy-Semibold';
+    font-family: 'poppins-semiBold';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -1804,7 +1804,7 @@ h4 {
     font-size: 25px;
     line-height: 30px;
     color: #3e3e3e;
-    font-size: 'Gilroy-SemiBold';
+    /* font-size: 'Gilroy-SemiBold'; */
   }
   #login {
     margin-top: 10px;
@@ -1828,7 +1828,7 @@ h4 {
   }
   .price-title h3,
   h4 {
-    font-family: 'Gilroy-SemiBold' !important;
+    font-family: 'poppins-semiBold' !important;
     font-size: 32px !important;
     line-height: 48px !important;
     text-align: center;
@@ -1845,7 +1845,7 @@ h4 {
   }
   .privacy-title h3 {
     margin-top: 50px;
-    font-family: 'Gilroy-SemiBold';
+    font-family: 'poppins-semiBold';
     font-size: 32px;
     line-height: 48px;
     text-align: center;
@@ -1862,18 +1862,63 @@ h4 {
 }
 
 /* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  #software {
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #40a1ff;
+    font-family: 'inter';
+  }
+  .tas-column1 h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #091018;
+    font-family: 'poppins-semiBold';
+  }
+  #complete-title {
+    font-size: 15px;
+  }
+}
 
 @media screen and (min-width: 511px) and (max-width: 1000px) {
+  #software {
+    bottom: 140px;
+  }
+  .tas-column1 h3 {
+    bottom: 470px;
+  }
+  #complete-title {
+    bottom: 400px;
+  }
   #title-two {
     position: absolute;
     left: 0;
     bottom: 80px;
   }
-  .buttons-group {
+  .main-content {
+    height: 1200px;
+    position: relative;
+  }
+  .grid-bg {
+    display: none;
+  }
+  .buttons {
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: 90px;
+    z-index: 9 !important;
   }
+  #carouselExampleDark {
+    height: 1200px;
+    border: 1px solid red;
+  }
+
   .text-container {
     position: relative;
     bottom: 150px;
@@ -1887,9 +1932,6 @@ h4 {
   .carousel-item {
     /* border: 1px solid red; */
     height: 1000px;
-  }
-  .buttons-group {
-    margin-top: -200px;
   }
   .carousel-container {
     height: 1000px;
@@ -1963,12 +2005,5 @@ h4 {
   .first-image,
   .white-rectangle {
     display: none;
-  }
-  .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 17%;
-    left: -107%;
-    transform: rotate(90deg);
   }
 }
