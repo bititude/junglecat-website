@@ -1308,11 +1308,10 @@ h4 {
   width: 700px;
   overflow: hidden;
   margin-left: -235px;
-  /* border: 1px solid red; */
 }
-
+/* ------------- home-first carousel------------ */
 #carouselExampleDark {
-  height: 910px;
+  height: 30px;
 }
 .main-carousel {
   transition: transform 2s ease-in-out;
@@ -1322,13 +1321,12 @@ h4 {
   transition: opacity 0s 0.2s;
 }
 .carousel-indicators {
-  bottom: 520px;
+  bottom: -350px;
   position: absolute;
   left: -107%;
   transform: rotate(90deg);
 }
-
-.tas-column1 {
+.carousel-column1 {
   margin-top: 300px;
 }
 #complete-title {
@@ -1343,7 +1341,7 @@ h4 {
   color: #2f80ed;
   font-family: 'poppins-semiBold';
 }
-.tas-column1 h3 {
+.carousel-column1 h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 45px;
@@ -1365,7 +1363,10 @@ h4 {
 #one-line {
   margin-top: 330px;
 }
-.tas-column2 img {
+.carousel-column2 {
+  margin-top: 50px;
+}
+.carousel-column2 img {
   max-width: 100%;
   height: auto;
   margin-top: 150px;
@@ -1375,45 +1376,6 @@ h4 {
   left: 0;
   bottom: 340px;
   z-index: 9 !important;
-}
-#title-one {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #2f80ed;
-  font-family: 'poppins-semiBold';
-}
-.text-container {
-  position: relative;
-  height: 300px;
-  width: 500px;
-  left: -10px;
-  margin-top: 50px;
-}
-.text-box {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-#title-two {
-  position: absolute;
-  left: 0;
-  bottom: 400px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45px;
-  text-transform: capitalize;
-  color: #2f80ed;
-  font-family: 'poppins-semiBold';
-}
-
-.text-change {
-  position: relative;
-  left: 10px;
 }
 .carousel-indicators .indicators {
   margin-left: 6px;
@@ -1446,6 +1408,43 @@ h4 {
   100% {
     width: 100%;
   }
+}
+/* ------------------attendance ------------*/
+.attendance-bg {
+  position: relative;
+  margin-top: 100px;
+  height: 600px;
+}
+.attendance-circle-one {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -100px;
+}
+.attendance-circle-two {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -80px;
+}
+.grid {
+  position: absolute;
+  margin-top: -80px;
+}
+.attendance-pic {
+  position: absolute;
+  margin-top: -150px;
+}
+.video-pic {
+  position: absolute;
+  margin-top: -100px;
+}
+.tas-pic {
+  position: absolute;
+  margin-top: -170px;
+  margin-left: 50px;
+}
+.management-pic {
+  position: absolute;
+  margin-top: -120px;
 }
 
 /* ------------------------ Responsive ----------------------------- */
@@ -1872,7 +1871,7 @@ h4 {
     color: #40a1ff;
     font-family: 'inter';
   }
-  .tas-column1 h3 {
+  .carousel-column1 h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -1890,16 +1889,11 @@ h4 {
   #software {
     bottom: 140px;
   }
-  .tas-column1 h3 {
+  .carousel-column1 h3 {
     bottom: 470px;
   }
   #complete-title {
     bottom: 400px;
-  }
-  #title-two {
-    position: absolute;
-    left: 0;
-    bottom: 80px;
   }
   .main-content {
     height: 1200px;
@@ -1917,11 +1911,6 @@ h4 {
   #carouselExampleDark {
     height: 1200px;
     border: 1px solid red;
-  }
-
-  .text-container {
-    position: relative;
-    bottom: 150px;
   }
   .boxtwo img {
     padding-top: 200px;
