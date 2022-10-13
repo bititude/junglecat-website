@@ -1407,6 +1407,9 @@ h4 {
   0% {
     width: 0;
   }
+  30% {
+    width: 0;
+  }
   100% {
     width: 100%;
   }
@@ -1471,16 +1474,37 @@ h4 {
   20% {
     opacity: 0;
   }
-  40% {
-    opacity: 0.1;
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
   }
 }
 .carousel-column1 h3 {
-  animation: cssAnimation 4s forwards;
+  animation: textAnimation 5s forwards;
   opacity: 0;
+}
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#carouselExampleDark .carousel-control-prev,
+#carouselExampleDark .carousel-control-next {
+  display: none;
 }
 /* ------------------------ Responsive ----------------------------- */
 
@@ -1893,10 +1917,19 @@ h4 {
     font-size: 16px !important;
     line-height: 27px !important;
   }
+  .grid-bg {
+    display: none;
+  }
+  .main-content {
+    height: 1200px;
+    position: relative;
+  }
 }
-
-/* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
+/* -------------------------------------------------------------- */
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .carousel-indicators .indicators {
+    display: none;
+  }
   #software {
     position: absolute;
     font-style: normal;
@@ -1918,14 +1951,29 @@ h4 {
   #complete-title {
     font-size: 15px;
   }
+  .attendance-circle-one {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -90px;
+  }
+  .attendance-circle-two {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -70px;
+  }
 }
 
+/* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
+
 @media screen and (min-width: 511px) and (max-width: 1000px) {
-  #software {
-    bottom: 140px;
+  .carousel-indicators .indicators {
+    display: none;
   }
-  .carousel-column1 h3 {
-    bottom: 470px;
+  #software {
+    bottom: 160px;
+  }
+  .carousel-column1 {
+    margin-top: 100px;
   }
   #complete-title {
     bottom: 400px;
@@ -1945,7 +1993,6 @@ h4 {
   }
   #carouselExampleDark {
     height: 1200px;
-    border: 1px solid red;
   }
   .boxtwo img {
     padding-top: 200px;
@@ -1956,6 +2003,9 @@ h4 {
   .carousel-item {
     /* border: 1px solid red; */
     height: 1000px;
+  }
+  #one-line {
+    margin-top: 150px;
   }
   .carousel-container {
     height: 1000px;
