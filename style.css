@@ -1314,12 +1314,14 @@ h4 {
   height: 30px;
 }
 .main-carousel {
-  transition: transform 2s ease-in-out;
+  transition-duration: 2s;
+  transition-timing-function: linear;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 0s 0.2s;
+  transition: opacity 0.2s 1s;
 }
+
 .carousel-indicators {
   bottom: -350px;
   position: absolute;
@@ -1446,7 +1448,40 @@ h4 {
   position: absolute;
   margin-top: -120px;
 }
-
+.carousel-column2 .tas-pic {
+  animation: cssAnimation 3s forwards;
+  opacity: 0;
+}
+.carousel-column2 .attendance-pic {
+  animation: cssAnimation 3s forwards;
+  opacity: 0;
+}
+.carousel-column2 .video-pic {
+  animation: cssAnimation 3s forwards;
+  opacity: 0;
+}
+.carousel-column2 .management-pic {
+  animation: cssAnimation 3s forwards;
+  opacity: 0;
+}
+@keyframes cssAnimation {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carousel-column1 h3 {
+  animation: cssAnimation 4s forwards;
+  opacity: 0;
+}
 /* ------------------------ Responsive ----------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 510px) {
