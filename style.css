@@ -1299,17 +1299,67 @@ h4 {
   background: linear-gradient(180deg, #fefbf7 0%, #fff7ed 100%);
 }
 .main-content {
-  height: 910px;
+  height: 810px;
   position: relative;
 }
 .grid-bg {
   position: absolute;
-  height: 1000px;
-  width: 700px;
+  height: 910px;
+  width: 500px;
   overflow: hidden;
   margin-left: -235px;
 }
-/* ------------- home-first carousel------------ */
+
+/* --------------------Text carousel------------ */
+.text-inner {
+  height: 700px;
+}
+.text-carousel .carousel-item-next:not(.carousel-item-start),
+.text-carousel .active.carousel-item-end {
+  transform: translateY(100%);
+}
+.text-carousel .carousel-item-prev:not(.carousel-item-end),
+.text-carousel .active.carousel-item-start {
+  transform: translateY(-100%);
+}
+.text-one {
+  margin-top: 250px;
+}
+.carousel .active.carousel-item-start,
+.carousel .active.carousel-item-end {
+  transition: opacity 0s 0s;
+}
+.text-one h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #2f80ed;
+  font-family: 'poppins-semiBold';
+}
+.text-one h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #091018;
+  font-family: 'poppins-semiBold';
+}
+.text-one h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: capitalize;
+  color: #40a1ff;
+  font-family: 'inter';
+}
+.buttons {
+  margin-top: 20px;
+}
+/* ------------- image carousel------------ */
 #carouselExampleDark {
   height: 30px;
 }
@@ -1331,40 +1381,6 @@ h4 {
 .carousel-column1 {
   margin-top: 300px;
 }
-#complete-title {
-  position: absolute;
-  bottom: 610px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #2f80ed;
-  font-family: 'poppins-semiBold';
-}
-.carousel-column1 h3 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 60px;
-  text-transform: capitalize;
-  color: #091018;
-  font-family: 'poppins-semiBold';
-}
-#software {
-  bottom: 420px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 45px;
-  text-transform: capitalize;
-  color: #40a1ff;
-  font-family: 'inter';
-}
-#one-line {
-  margin-top: 330px;
-}
 .carousel-column2 {
   margin-top: 50px;
 }
@@ -1373,12 +1389,7 @@ h4 {
   height: auto;
   margin-top: 150px;
 }
-.buttons {
-  position: absolute;
-  left: 0;
-  bottom: 340px;
-  z-index: 9 !important;
-}
+
 .carousel-indicators .indicators {
   margin-left: 6px;
   width: 6px;
@@ -1452,19 +1463,19 @@ h4 {
   margin-top: -120px;
 }
 .carousel-column2 .tas-pic {
-  animation: cssAnimation 3s forwards;
+  animation: cssAnimation 2s forwards;
   opacity: 0;
 }
 .carousel-column2 .attendance-pic {
-  animation: cssAnimation 3s forwards;
+  animation: cssAnimation 2s forwards;
   opacity: 0;
 }
 .carousel-column2 .video-pic {
-  animation: cssAnimation 3s forwards;
+  animation: cssAnimation 2s forwards;
   opacity: 0;
 }
 .carousel-column2 .management-pic {
-  animation: cssAnimation 3s forwards;
+  animation: cssAnimation 2s forwards;
   opacity: 0;
 }
 @keyframes cssAnimation {
@@ -1475,33 +1486,16 @@ h4 {
     opacity: 0;
   }
   30% {
-    opacity: 0.3;
+    opacity: 0;
   }
-  50% {
-    opacity: 0.7;
+  70% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
   }
 }
-.carousel-column1 h3 {
-  animation: textAnimation 5s forwards;
-  opacity: 0;
-}
-@keyframes textAnimation {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 #carouselExampleDark .carousel-control-prev,
 #carouselExampleDark .carousel-control-next {
   display: none;
@@ -1921,13 +1915,76 @@ h4 {
     display: none;
   }
   .main-content {
-    height: 1200px;
+    height: 220px !important;
     position: relative;
+  }
+  .text-one h6 {
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.095em;
+    /* font-weight: '400'; */
+  }
+  .text-one h3 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .text-one h5 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .main {
+    padding: 0px;
+    background: white;
+  }
+  .text-inner {
+    margin-top: 230px;
+    height: 350px;
+  }
+  .text-one {
+    margin-top: 0px;
+  }
+  .buttons {
+    margin-top: -30px;
+  }
+  .carousel-column2 {
+    margin-top: -20px;
+  }
+  .attendance-circle-one {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: -120px;
+    max-width: 70%;
+  }
+  .attendance-circle-two {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -110px;
+    max-width: 70%;
+  }
+  .tas-pic {
+    margin-left: 0px;
+  }
+  .attendance-pic {
+    margin-top: -150px;
+    margin-left: 0px;
+  }
+  .video-pic {
+    margin-top: -120px;
   }
 }
 /* -------------------------------------------------------------- */
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .carousel-indicators .indicators {
+  .text-one h3 {
+    font-size: 40px;
+  }
+  .text-one h5 {
+    font-size: 40px;
+  }
+  .attendance-circle-one {
+    margin-left: 150px;
+    margin-top: -100px;
+  }
+  /* .carousel-indicators .indicators {
     display: none;
   }
   #software {
@@ -1960,7 +2017,7 @@ h4 {
     position: absolute;
     margin-left: 30px;
     margin-top: -70px;
-  }
+  } */
 }
 
 /* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
@@ -1978,21 +2035,21 @@ h4 {
   #complete-title {
     bottom: 400px;
   }
-  .main-content {
+  /* .main-content {
     height: 1200px;
     position: relative;
-  }
+  } */
   .grid-bg {
     display: none;
   }
-  .buttons {
+  /* .buttons {
     position: absolute;
     left: 0;
     bottom: 90px;
     z-index: 9 !important;
-  }
+  } */
   #carouselExampleDark {
-    height: 1200px;
+    /* height: 1200px; */
   }
   .boxtwo img {
     padding-top: 200px;
@@ -2079,5 +2136,22 @@ h4 {
   .first-image,
   .white-rectangle {
     display: none;
+  }
+  .attendance-circle-one {
+    margin-left: 200px;
+  }
+  .main-carousel {
+    height: 680px !important;
+    /* border: 1px solid red; */
+  }
+  #carouselExampleSlidesOnly {
+    margin-top: -150px;
+    height: 400px !important;
+  }
+  .text-inner {
+    height: 400px;
+  }
+  .text-one {
+    margin-top: 0px;
   }
 }

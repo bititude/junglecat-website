@@ -96,7 +96,8 @@ function debounce(func, wait, immediate) {
 
 // -------------------------scroll slides-------------------
 
-var slider = document.getElementById('carouselExampleDark')
+var sliderOne = document.getElementById('carouselExampleDark')
+var sliderTwo = document.getElementById('carouselExampleSlidesOnly')
 var onScroll = debounce(
   function (direction) {
     //console.log(direction);
@@ -110,7 +111,7 @@ var onScroll = debounce(
   true,
 )
 
-slider.addEventListener('wheel', function (e) {
+sliderOne.addEventListener('wheel', function (e) {
   e.preventDefault()
   var delta
   if (event.wheelDelta) {
@@ -120,4 +121,33 @@ slider.addEventListener('wheel', function (e) {
   }
 
   onScroll(delta >= 0)
+})
+sliderTwo.addEventListener('wheel', function (e) {
+  e.preventDefault()
+  var delta
+  if (event.wheelDelta) {
+    delta = event.wheelDelta
+  } else {
+    delta = -1 * event.deltaY
+  }
+
+  onScroll(delta >= 0)
+})
+
+// go to another section when reach at last slide
+
+$('#carouselExampleDark').bind('slide.bs.carousel', function (e) {
+  var index = $(e.target).find('.active').index()
+  if (index === 3) document.getElementById('about').scrollIntoView()
+})
+
+$('.carousel-sync').on('slide.bs.carousel', function (ev) {
+  // get the direction, based on the event which occurs
+  var dir = ev.direction == 'right' ? 'prev' : 'next'
+  // get synchronized non-sliding carousels, and make'em sliding
+  $('.carousel-sync').not('.sliding').addClass('sliding').carousel(dir)
+})
+$('.carousel-sync').on('slid.bs.carousel', function (ev) {
+  // remove .sliding class, to allow the next move
+  $('.carousel-sync').removeClass('sliding')
 })
