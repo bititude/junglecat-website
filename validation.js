@@ -136,7 +136,7 @@ sliderTwo.addEventListener('wheel', function (e) {
 
 // go to another section when reach at last slide
 
-$('#carouselExampleDark').bind('slide.bs.carousel', function (e) {
+$('#carouselExampleSlidesOnly').bind('slide.bs.carousel', function (e) {
   var index = $(e.target).find('.active').index()
   if (index === 3) document.getElementById('about').scrollIntoView()
 })
