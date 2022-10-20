@@ -1,3 +1,4 @@
+// validation
 const name = document.form.name
 const email = document.form.email
 const message = document.form.message
@@ -96,47 +97,38 @@ function debounce(func, wait, immediate) {
 
 // -------------------------scroll slides-------------------
 
-var sliderOne = document.getElementById('carouselExampleDark')
-var sliderTwo = document.getElementById('carouselExampleSlidesOnly')
+var sliderOne = document.getElementById('carouselExampleControls')
 var onScroll = debounce(
   function (direction) {
-    //console.log(direction);
     if (direction == false) {
       $('.carousel-control-next').click()
+      // $('.carousel-control-next').click(function () {
+      //   e1 = $('#img')
+      //   e1.addClass('animate')
+      // })
     } else {
-      $('.carousel-control-prev').click()
+      // $('.carousel-control-prev').click()
     }
   },
   100,
   true,
 )
 
-sliderOne.addEventListener('wheel', function (e) {
-  e.preventDefault()
-  var delta
-  if (event.wheelDelta) {
-    delta = event.wheelDelta
-  } else {
-    delta = -1 * event.deltaY
-  }
+// sliderOne.addEventListener('wheel', function (e) {
+//   e.preventDefault()
+//   var delta
+//   if (event.wheelDelta) {
+//     delta = event.wheelDelta
+//   } else {
+//     delta = -1 * event.deltaY
+//   }
 
-  onScroll(delta >= 0)
-})
-sliderTwo.addEventListener('wheel', function (e) {
-  e.preventDefault()
-  var delta
-  if (event.wheelDelta) {
-    delta = event.wheelDelta
-  } else {
-    delta = -1 * event.deltaY
-  }
-
-  onScroll(delta >= 0)
-})
+//   onScroll(delta >= 0)
+// })
 
 // go to another section when reach at last slide
 
-$('#carouselExampleSlidesOnly').bind('slide.bs.carousel', function (e) {
+$('#carouselExampleControls').bind('slide.bs.carousel', function (e) {
   var index = $(e.target).find('.active').index()
   if (index === 3) document.getElementById('about').scrollIntoView()
 })
