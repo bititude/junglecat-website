@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JungleCat - all your learning in one jungle</title>
+    <title>JungleCat - Training and Assesment Strategy Software</title>
     <link
       rel="icon"
       href="./images/homepage/ms-icon-310x310.png"
@@ -106,169 +106,291 @@
       </header>
       <!-- * * * * * * * * * * * * * * * * * Home main-slides  * * * * * * * * * * * * * * * *  -->
 
-      <div>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide carousel-fade color-carousel"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="slideOne carousel-item active">
-              <div
-                class="slide-container container"
-                style="position: relative;"
-              >
-                <div class="image-class">
-                  <img
-                    id="img"
-                    src="./images/homepage/tass.png"
-                    class="d-block w-100 images"
-                    alt="..."
-                  />
-                </div>
-                <div class="text-class">
-                  <h1 class="textblind">
-                    <span class="complete">
-                      The complete
-                    </span>
-                    <span class="title-middle">
-                      Training &
-                      <br />
-                      Assesment strategy
-                    </span>
-                    <span class="title-last">software</span>
-                    <span>
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                    </span>
-                  </h1>
-                </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide carousel-fade color-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="0"
+            class="indicators active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="indicators"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class="indicators"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+            class="indicators"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="slideOne carousel-item active">
+            <div class="slide-container container">
+              <div class="text-class">
+                <h1 class="textblind">
+                  <span class="complete">
+                    The complete
+                  </span>
+                  <span class="title-middle">
+                    Training &
+                    <br />
+                    Assesment strategy
+                  </span>
+                  <span class="title-last">software</span>
+                  <span>
+                    <button
+                      type="button"
+                      class="btn btn-primary me-3"
+                      id="registerbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Register for Access
+                    </button>
+                  </span>
+                </h1>
               </div>
-            </div>
-
-            <div class="slideTwo carousel-item">
-              <div
-                class="slide-container container"
-                style="position: relative;"
-              >
-                <div class="image-class">
-                  <img
-                    id="img"
-                    src="./images/homepage/attend-picc.png"
-                    class="d-block w-100 images"
-                    alt="..."
-                  />
-                </div>
-                <div class="text-class">
-                  <h1 class="textblind" style="margin-top: 350px;">
-                    <span class="complete">
-                      complete
-                    </span>
-                    <span class="title-middle">
-                      Attendance
-                    </span>
-                    <span class="title-last">software</span>
-
-                    <span>
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                    </span>
-                  </h1>
-                </div>
+              <div class="image-class">
+                <img
+                  id="img"
+                  src="./images/homepage/tas-circle.png"
+                  class="d-block images"
+                  alt="..."
+                />
               </div>
-            </div>
-            <div class="slideThree carousel-item">
-              <div
-                class="slide-container container"
-                style="position: relative;"
+              <button
+                class="button-prev carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
               >
-                <div class="image-class">
-                  <img
-                    id="img"
-                    src="./images/homepage/videoclass-picc.png"
-                    class="d-block w-100 images"
-                    alt="..."
-                  />
-                </div>
-                <div class="text-class" style="margin-top: 350px;">
-                  <h1 class="textblind">
-                    <span class="complete">
-                      complete
-                    </span>
-                    <span class="title-middle">
-                      video class
-                    </span>
-                    <span class="title-last">software</span>
-                    <span>
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                    </span>
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div class="slideFour carousel-item">
-              <div
-                class="slide-container container"
-                style="position: relative;"
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">
+                  Previous
+                </span>
+              </button>
+              <button
+                class="button-next carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
               >
-                <div class="image-class">
-                  <img
-                    id="img"
-                    src="./images/homepage/end-to-end.png"
-                    class="d-block w-100 images"
-                    alt="..."
-                  />
-                </div>
-                <div class="text-class">
-                  <h1 class="textblind">
-                    <span class="complete">
-                      complete
-                    </span>
-                    <span class="title-middle">
-                      End to End
-                      <br />
-                      Management system
-                    </span>
-                    <span class="title-last">software</span>
-                    <span>
-                      <button
-                        type="button"
-                        class="btn btn-primary me-3"
-                        id="registerbtn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                      >
-                        Register for Access
-                      </button>
-                    </span>
-                  </h1>
-                </div>
-              </div>
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-          <button
+
+          <div class="slideTwo carousel-item">
+            <div class="slide-container container">
+              <div class="text-class">
+                <h1 class="textblind" style="margin-top: 350px;">
+                  <span class="complete">
+                    complete
+                  </span>
+                  <span class="title-middle">
+                    Attendance
+                  </span>
+                  <span class="title-last">software</span>
+
+                  <span>
+                    <button
+                      type="button"
+                      class="btn btn-primary me-3"
+                      id="registerbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Register for Access
+                    </button>
+                  </span>
+                </h1>
+              </div>
+              <div class="image-class">
+                <img
+                  id="img-two"
+                  src="./images/homepage/attendance-circle.png"
+                  class="d-block images"
+                  alt="..."
+                />
+              </div>
+              <button
+                class="button-prev carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">
+                  Previous
+                </span>
+              </button>
+              <button
+                class="button-next carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="slideThree carousel-item">
+            <div class="slide-container container" style="position: relative;">
+              <div class="text-class" style="margin-top: 350px;">
+                <h1 class="textblind">
+                  <span class="complete">
+                    complete
+                  </span>
+                  <span class="title-middle">
+                    video class
+                  </span>
+                  <span class="title-last">software</span>
+                  <span>
+                    <button
+                      type="button"
+                      class="btn btn-primary me-3"
+                      id="registerbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Register for Access
+                    </button>
+                  </span>
+                </h1>
+              </div>
+              <div class="image-class">
+                <img
+                  id="img-three"
+                  src="./images/homepage/video-circle.png"
+                  class="d-block images"
+                  alt="..."
+                />
+              </div>
+              <button
+                class="button-prev carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">
+                  Previous
+                </span>
+              </button>
+              <button
+                class="button-next carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="slideFour carousel-item">
+            <div class="slide-container container" style="position: relative;">
+              <div class="text-class">
+                <h1 class="textblind">
+                  <span class="complete">
+                    complete
+                  </span>
+                  <span class="title-middle">
+                    End to End
+                    <br />
+                    Management system
+                  </span>
+                  <span class="title-last">software</span>
+                  <span>
+                    <button
+                      type="button"
+                      class="btn btn-primary me-3"
+                      id="registerbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Register for Access
+                    </button>
+                  </span>
+                </h1>
+              </div>
+              <div class="image-class">
+                <img
+                  id="img-four"
+                  src="./images/homepage/management-circle.png"
+                  class="d-block images"
+                  alt="..."
+                />
+              </div>
+              <button
+                class="button-prev carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">
+                  Previous
+                </span>
+              </button>
+              <button
+                class="button-next carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <button
             class="button-prev carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleControls"
@@ -287,8 +409,7 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+          </button> -->
       </div>
     </div>
     <!-- * * * * * * * * * * * * * * * * *  User experience  * * * * * * * * * * * * * * * -->
