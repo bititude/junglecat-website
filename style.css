@@ -1492,16 +1492,21 @@ h4 {
     transform: translateY(0);
   }
 }
-/* .carousel-indicators .indicators {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+.carousel-indicators .indicators {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 10px;
+  color: transparent;
 }
 .carousel-indicators .active {
-  width: 24px;
-  height: 6px;
-  border-radius: 100px;
-} */
+  width: 50px;
+  height: 8px;
+  border-radius: 11px;
+  background-color: white;
+}
 
 /* ------------------------ Responsive ----------------------------- */
 
