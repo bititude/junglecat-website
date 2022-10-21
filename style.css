@@ -1300,7 +1300,7 @@ h4 {
   height: 900px !important;
 }
 .slideOne {
-  background-image: url('./images/homepage/background-grid.svg'),
+  background-image: url('./images/homepage/bg.svg'),
     linear-gradient(90deg, #6685f4 0%, #ad9ffa 100%);
 }
 .slideTwo {
