@@ -76,7 +76,7 @@ nav ul li {
 .signup-home {
   background-color: #f7faff;
   border-color: #f7faff;
-  color: #16171a;
+  color: #40a1ff;
 }
 .login-button {
   border-color: #40a1ff !important;
@@ -96,14 +96,14 @@ nav ul li {
   border-radius: 12px;
 }
 .login-home:hover {
-  background: #16171a;
-  color: white;
-  border: #16171a;
+  background: #ffffff;
+  color: #16171a;
+  border-color: #f7faff;
 }
 .signup-home:hover {
-  background: #16171a;
-  color: white;
-  border: #16171a;
+  background: #ffffff;
+  color: #16171a;
+  border-color: #f7faff;
 }
 .login-button:hover {
   background: #deecfc !important;
@@ -1314,7 +1314,6 @@ h4 {
 /* ------------------------- Main content-home page-modifications ---------------------------- */
 .main {
   background: linear-gradient(180deg, #fefbf7 0%, #fff7ed 100%);
-  height: 900px !important;
   padding: 0;
   position: relative;
 }
@@ -1324,28 +1323,23 @@ h4 {
 }
 .color-carousel {
   margin-top: -80px;
-  height: 900px !important;
 }
 .slideOne {
   background-image: url('./images/homepage/grid-g.png'),
     linear-gradient(90deg, #6685f4 0%, #ad9ffa 100%);
-  height: 930px !important;
 }
 .slideTwo {
   background-image: url('./images/homepage/grid-g.png'),
     linear-gradient(90deg, #f3aa99 0%, #b45a85 100%);
-  height: 930px !important;
 }
 .slideThree {
   background-image: url('./images/homepage/grid-g.png'),
     linear-gradient(89.44deg, #6785f3 1.64%, #a1ecec 99.38%);
-  height: 930px !important;
 }
 .slideFour {
   background-image: url('./images/homepage/grid-g.png'),
     linear-gradient(123.23deg, #ff82a0 12.72%, rgba(255, 249, 191, 0.96) 88.47%),
     linear-gradient(90deg, #2c8eec 0%, #8ba3f7 100%);
-  height: 930px !important;
 }
 .image-class img {
   position: absolute;
@@ -1374,7 +1368,7 @@ h4 {
 .slide-container {
   position: relative;
   border: 1px solid transparent;
-  height: 800px;
+  /* height: 1010px; */
 }
 .text-class {
   margin-top: 350px;
@@ -1402,9 +1396,9 @@ h4 {
 .title-last {
   margin-top: 2px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
   text-transform: capitalize;
   /* color: #f7faff; */
   font-family: 'poppins-semiBold';
@@ -1418,7 +1412,7 @@ h4 {
 .slideThree {
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  height: 1000px;
+  height: 1010px;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
@@ -1533,7 +1527,7 @@ h4 {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 0%;
+  bottom: 5%;
 }
 .navbar-icon-two {
   display: none;
@@ -1947,10 +1941,6 @@ h4 {
     font-size: 16px !important;
     line-height: 27px !important;
   }
-  .main-content {
-    height: 930px !important;
-    position: relative;
-  }
   .image-class img,
   #img-two,
   #img-three,
@@ -2018,22 +2008,20 @@ h4 {
   .carousel-fade .active.carousel-item-end .image-class img {
     animation: none;
   }
-  button.collapsed.navbar-toggler-icon {
-  }
+  /* button.collapsed.navbar-toggler {
+    border: 1px solid red;
+  } */
   .login-signup {
     margin-bottom: 150px;
   }
   .slideOne {
     background: linear-gradient(90deg, #6685f4 0%, #ad9ffa 100%);
-    height: 930px !important;
   }
   .slideTwo {
     background: linear-gradient(90deg, #f3aa99 0%, #b45a85 100%);
-    height: 930px !important;
   }
   .slideThree {
     background: linear-gradient(89.44deg, #6785f3 1.64%, #a1ecec 99.38%);
-    height: 930px !important;
   }
   .slideFour {
     background: linear-gradient(
@@ -2042,7 +2030,6 @@ h4 {
         rgba(255, 249, 191, 0.96) 88.47%
       ),
       linear-gradient(90deg, #2c8eec 0%, #8ba3f7 100%);
-    height: 930px !important;
   }
   .navbar-icon-two {
     display: block;
@@ -2054,16 +2041,26 @@ h4 {
     position: absolute;
     bottom: 7%;
   }
+  .home-navlink {
+    color: #3e3e3e !important;
+  }
+  .login-home {
+    border-color: #40a1ff !important;
+    color: #40a1ff !important;
+  }
+  .signup-home {
+    border-color: #40a1ff !important;
+    color: #f7faff !important;
+    background-color: #40a1ff !important;
+  }
+  .slideOne,
+  .slideFour,
+  .slideTwo,
+  .slideThree {
+    height: 900px;
+  }
 }
-/* -------------------------------------------------------------- */
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-}
-/* position: absolute;
-margin: auto;
-left: 0;
-right: 0;
-text-align: center;
-z-index: 1; */
+
 /* * * * * * * * * * * *  media-tablet * * * * * * * * * * * * */
 
 @media screen and (min-width: 511px) and (max-width: 1000px) {
@@ -2166,19 +2163,6 @@ z-index: 1; */
   #complete-title {
     bottom: 400px;
   }
-  /* .main-content {
-    height: 1200px;
-    position: relative;
-  } */
-  /* .buttons {
-    position: absolute;
-    left: 0;
-    bottom: 90px;
-    z-index: 9 !important;
-  } */
-  #carouselExampleDark {
-    /* height: 1200px; */
-  }
   .boxtwo img {
     padding-top: 200px;
   }
@@ -2231,6 +2215,27 @@ z-index: 1; */
     display: block;
   }
   .navbar-icon {
+    display: none;
+  }
+  .home-navlink {
+    color: #3e3e3e !important;
+  }
+  .login-home {
+    border-color: #40a1ff !important;
+    color: #40a1ff !important;
+  }
+  .signup-home {
+    border-color: #40a1ff !important;
+    color: #f7faff !important;
+    background-color: #40a1ff !important;
+  }
+  .login-signup {
+    margin-bottom: 150px;
+  }
+  .navbar-toggler:not(.collapsed) .navbar-close p {
+    display: block;
+  }
+  .navbar-toggler:not(.collapsed) .navbar-icon img {
     display: none;
   }
 }
