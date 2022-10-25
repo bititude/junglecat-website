@@ -1406,8 +1406,11 @@ h4 {
   font-size: 32px;
   line-height: 48px;
   text-transform: capitalize;
-  color: #f7faff;
-  font-family: 'poppins-regular';
+  /* color: #f7faff; */
+  font-family: 'poppins-semiBold';
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f7faff;
 }
 .slideOne,
 .slideFour,
