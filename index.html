@@ -29,7 +29,10 @@
       <!-- * * * * * * * * * * * * * * * * * * * * Header * * * * * * * * * * * * * * * * * * *  -->
 
       <header>
-        <nav class="my-nav navbar navbar-expand-lg" data-offset="500">
+        <nav
+          class="my-nav navbar navbar-light navbar-expand-lg"
+          data-offset="500"
+        >
           <div class="heading container">
             <a class="navbar-brand">
               <img
@@ -37,11 +40,7 @@
                 alt=""
                 class="logo1"
               />
-              <img
-                src="./images/homepage/responsive-icon.svg"
-                alt=""
-                class="logo2"
-              />
+              <img src="./images/homepage/logo-two.svg" alt="" class="logo2" />
             </a>
             <button
               class="collapsed navbar-toggler"
@@ -55,6 +54,9 @@
               <span class="navbar-icon">
                 <img src="./images/homepage/Frame.svg" />
               </span>
+              <span class="navbar-icon-two">
+                <img src="./images/homepage/icon-two.svg" />
+              </span>
               <span class="navbar-close"><p>close x</p></span>
             </button>
             <div
@@ -63,20 +65,20 @@
             >
               <ul class="navbar-nav">
                 <li class="about nav-item active">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="home-navlink nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/features">Features</a>
+                  <a class="home-navlink nav-link" href="/features">Features</a>
                 </li>
                 <!-- <li class="nav-item">
-                  <a class="nav-link" href="/pricing">Pricing</a>
+                  <a class="home-navlink nav-link" href="/pricing">Pricing</a>
                 </li> -->
                 <!-- <li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="home-navlink nav-link" href="#faq">FAQ</a>
               </li> -->
                 <li class="nav-item">
                   <a
-                    class="nav-link"
+                    class="home-navlink nav-link"
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
                   >
@@ -87,14 +89,18 @@
                   <a href="https://app.junglecat.com/login">
                     <button
                       type="button"
-                      class="btn btn-outline-primary"
+                      class="login-home btn btn-outline-primary"
                       id="login"
                     >
                       Login
                     </button>
                   </a>
                   <a href="https://app.junglecat.com/register">
-                    <button type="button" class="btn btn-primary" id="signup">
+                    <button
+                      type="button"
+                      class="signup-home btn btn-primary"
+                      id="signup"
+                    >
                       Sign Up
                     </button>
                   </a>
@@ -111,7 +117,7 @@
         class="carousel slide carousel-fade color-carousel"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators" style="margin-bottom: -50px;">
+        <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleControls"
@@ -177,32 +183,6 @@
                   alt="..."
                 />
               </div>
-              <button
-                class="button-prev carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">
-                  Previous
-                </span>
-              </button>
-              <button
-                class="button-next carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
 
@@ -239,38 +219,12 @@
                   alt="..."
                 />
               </div>
-              <button
-                class="button-prev carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">
-                  Previous
-                </span>
-              </button>
-              <button
-                class="button-next carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
           <div class="slideThree carousel-item">
             <div class="slide-container container" style="position: relative;">
-              <div class="text-class" style="margin-top: 350px;">
-                <h1 class="textblind">
+              <div class="text-class">
+                <h1 class="textblind" style="margin-top: 350px;">
                   <span class="complete">
                     The complete
                   </span>
@@ -299,32 +253,6 @@
                   alt="..."
                 />
               </div>
-              <button
-                class="button-prev carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">
-                  Previous
-                </span>
-              </button>
-              <button
-                class="button-next carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
           <div class="slideFour carousel-item">
@@ -361,32 +289,6 @@
                   alt="..."
                 />
               </div>
-              <button
-                class="button-prev carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">
-                  Previous
-                </span>
-              </button>
-              <button
-                class="button-next carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControls"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
