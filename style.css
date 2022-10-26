@@ -1368,7 +1368,6 @@ h4 {
 .slide-container {
   position: relative;
   border: 1px solid transparent;
-  /* height: 1010px; */
 }
 .text-class {
   margin-top: 350px;
@@ -1532,9 +1531,15 @@ h4 {
 .navbar-icon-two {
   display: none;
 }
+.navbar-icon-b {
+  display: none;
+}
 /* ------------------------ Responsive ----------------------------- */
 
 @media screen and (min-width: 320px) and (max-width: 510px) {
+  .navbar-icon-b {
+    display: block;
+  }
   .logo1 {
     display: none;
   }
@@ -1551,6 +1556,9 @@ h4 {
     display: block;
   }
   .navbar-toggler:not(.collapsed) .navbar-icon img {
+    display: none;
+  }
+  .navbar-toggler:not(.collapsed) .navbar-icon-b img {
     display: none;
   }
   .firstimage {
@@ -2008,9 +2016,6 @@ h4 {
   .carousel-fade .active.carousel-item-end .image-class img {
     animation: none;
   }
-  /* button.collapsed.navbar-toggler {
-    border: 1px solid red;
-  } */
   .login-signup {
     margin-bottom: 150px;
   }
@@ -2229,9 +2234,9 @@ h4 {
     color: #f7faff !important;
     background-color: #40a1ff !important;
   }
-  .login-signup {
+  /* .login-signup {
     margin-bottom: 150px;
-  }
+  } */
   .navbar-toggler:not(.collapsed) .navbar-close p {
     display: block;
   }
