@@ -1314,5 +1314,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="validation.js"></script>
+    <script>
+      $(document).ready(function () {
+        if (window.location.href.indexOf('#staticBackdrop') != -1) {
+          $('#staticBackdrop').modal('show');
+        }
+      });
+    </script>
+    
   </body>
 </html>
