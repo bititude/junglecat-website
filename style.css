@@ -584,6 +584,9 @@ nav ul li {
 .modal-header {
   border-bottom: 0 none;
 }
+.modal-dialog {
+  max-width: 800px;
+}
 .btn-close {
   font-size: 11px;
   text-shadow: 0 1px 0 #fff;
