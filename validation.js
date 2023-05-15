@@ -62,7 +62,7 @@ thisForm.addEventListener('submit', async function (e) {
     return
   }
   const response = await fetch(
-    'https://api-v2.junglecat.com/api/contact/insert',
+    'https://api.junglecat.com/api/contact/insert',
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
