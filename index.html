@@ -1284,7 +1284,7 @@
       <div class="container">
         <div class="copyright row">
           <div class="p1 col-md-8 col-sm-12">
-            Copyright © 2022 JungleCat All rights reserved.
+            Copyright © 2023 JungleCat All rights reserved.
           </div>
           <div class="p2 col-md-4 col-sm-6">
             <a href="./policy">Privacy Policy & Terms of Use</a>
@@ -1316,9 +1316,38 @@
       $(document).ready(function () {
         if (window.location.href.indexOf('#contact') != -1) {
           $('#contact').modal('show');
+
+          let paramString = (window.location.href).split("?")[1];
+          const urlParams = new URLSearchParams(paramString);
+
+          let firstName = urlParams.get('first_name');
+          let lastName = urlParams.get('last_name');
+          const email = urlParams.get('email');
+          
+          firstName = firstName ? firstName : '';
+          lastName = lastName ? " " + lastName : '';
+          const fullName = firstName + lastName;
+
+          if (fullName || email) {
+            if (fullName) {
+              $("#name").val(fullName);
+              setTimeout(function () { $('#email').focus(); }, 500);
+            }
+            else if (email) {
+              $("#email").val(email);
+              if (fullName) {
+                setTimeout(function () { $('#message').focus(); }, 500);
+              }
+              else {
+                setTimeout(function () { $('#name').focus(); }, 500);
+              }
+            }
+          }
+          else {
+            setTimeout(function () { $('#name').focus(); }, 500);
+          }
         }
       });
-    </script>
-    
+    </script>    
   </body>
 </html>
