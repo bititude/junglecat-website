@@ -8,7 +8,9 @@ const captchaError = document.getElementById('captcha-error')
 const myModalEl = document.querySelector('.mymodal')
 const modal = new window.bootstrap.Modal(myModalEl)
 
+
 function validated() {
+ 
   if (name.value == '') {
     name.nextElementSibling.style.display = 'block'
     return false
