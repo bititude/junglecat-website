@@ -1324,7 +1324,8 @@
       $(document).ready(function () {
         if (window.location.href.indexOf('#contact') != -1) {
           $('#contact').modal('show');
-
+          
+          // autofill contact form details if its existts in url and autofocusing fields 
           let paramString = (window.location.href).split("?")[1];
           const urlParams = new URLSearchParams(paramString);
 
