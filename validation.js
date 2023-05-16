@@ -37,7 +37,7 @@ function validated() {
   //   message.nextElementSibling.style.display = 'none'
   // }
 
-  //reCaptcha  verifications
+  // reCaptcha  verifications
   var response = grecaptcha.getResponse()
   if (response.length == 0) {
     captchaError.style.display = 'block'
@@ -55,8 +55,23 @@ function fun() {
   name.nextElementSibling.style.display = 'none'
   email.nextElementSibling.style.display = 'none'
   // message.nextElementSibling.style.display = 'none';
-  document.getElementById("success-message").style.display = "none";
+  toggleButton(true);
+ 
 } 
+
+function toggleButton(value){
+  if(value){
+    document.getElementById("success-message").style.display = "none";
+    document.getElementById("submit-button").style.display = "block";
+    document.getElementById("submit-button-loading").style.display = "none";
+  }
+  else{
+    document.getElementById("success-message").style.display = "block";
+    document.getElementById("submit-button").style.display = "block";
+    document.getElementById("submit-button-loading").style.display = "none";
+  }
+ 
+}
 
 const thisForm = document.getElementById('customerform')
 thisForm.addEventListener('submit', async function (e) {
@@ -67,8 +82,7 @@ thisForm.addEventListener('submit', async function (e) {
   if (validated() === false) {
     return
   }
-  document.getElementById("submit-button").style.display = "none";
-  document.getElementById("submit-button-loading").style.display = "block";
+  toggleButton(true);
  
   const response = await fetch(
     'https://api.junglecat.com/api/contact/insert',
@@ -84,12 +98,11 @@ thisForm.addEventListener('submit', async function (e) {
     },
   )
   const result = await response.json();
-  
+
   if(result.status){
-    document.getElementById("submit-button-loading").style.display = "none";
-    document.getElementById("success-message").style.display = "block";
-    document.getElementById("submit-button").style.display = "block";
+    toggleButton(false);
   }
+ 
 
   captchaResponseKey = '';
   setTimeout(()=>{modal.hide();},500);
