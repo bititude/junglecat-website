@@ -38,14 +38,14 @@ function validated() {
   // }
 
   // reCaptcha  verifications
-  // var response = grecaptcha.getResponse()
-  // if (response.length == 0) {
-  //   captchaError.style.display = 'block'
-  //   return false
-  // } else {
-  //   captchaResponseKey = response
-  //   captchaError.style.display = 'none'
-  // }
+  var response = grecaptcha.getResponse()
+  if (response.length == 0) {
+    captchaError.style.display = 'block'
+    return false
+  } else {
+    captchaResponseKey = response
+    captchaError.style.display = 'none'
+  }
 }
 
 function fun() {
@@ -85,7 +85,7 @@ thisForm.addEventListener('submit', async function (e) {
   toggleButton(true);
  
   const response = await fetch(
-    'http://127.0.0.1:9000/api/contact/insert',
+    'https://api.junglecat.com/api/contact/insert',
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -93,7 +93,7 @@ thisForm.addEventListener('submit', async function (e) {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value,
-        // captchaResponseKey: captchaResponseKey,
+        captchaResponseKey: captchaResponseKey,
       }),
     },
   )
