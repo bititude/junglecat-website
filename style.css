@@ -2254,10 +2254,16 @@ h4 {
 
 /* ------------------------- contact submit button ---------------------- */
 
-#submit-button-loading,#success-message{
+#submit-button-loading,#success-message {
   display:none;
 }
-#success-message{text-align: center;
+
+#success-message {
+  text-align: center;
   color:#75cb77;
   margin-top:2rem;
+}
+
+#contact-nav {
+  cursor:pointer;
 }
