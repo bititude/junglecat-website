@@ -2250,3 +2250,11 @@ h4 {
     display: none;
   }
 }
+
+#submit-button-loading,#success-message{
+  display:none;
+}
+#success-message{text-align: center;
+  color:#75cb77;
+  margin-top:2rem;
+}
