@@ -30,12 +30,12 @@ function validated() {
     email.nextElementSibling.style.display = 'none'
   }
 
-  if (message.value == '') {
-    message.nextElementSibling.style.display = 'block'
-    return false
-  } else {
-    message.nextElementSibling.style.display = 'none'
-  }
+  // if (message.value === '') {
+  //   message.nextElementSibling.style.display = 'block'
+  //   return false
+  // } else {
+  //   message.nextElementSibling.style.display = 'none'
+  // }
 
   //reCaptcha  verifications
   var response = grecaptcha.getResponse()
@@ -54,15 +54,22 @@ function fun() {
   document.getElementById('message').value = ''
   name.nextElementSibling.style.display = 'none'
   email.nextElementSibling.style.display = 'none'
-  message.nextElementSibling.style.display = 'none'
-}
+  // message.nextElementSibling.style.display = 'none';
+  document.getElementById("success-message").style.display = "none";
+} 
 
 const thisForm = document.getElementById('customerform')
 thisForm.addEventListener('submit', async function (e) {
-  e.preventDefault()
+  console.log(document.getElementsByClassName("send-btn"))
+ 
+  
+  e.preventDefault();
   if (validated() === false) {
     return
   }
+  document.getElementById("submit-button").style.display = "none";
+  document.getElementById("submit-button-loading").style.display = "block";
+ 
   const response = await fetch(
     'https://api.junglecat.com/api/contact/insert',
     {
@@ -76,9 +83,17 @@ thisForm.addEventListener('submit', async function (e) {
       }),
     },
   )
-  const result = await response.json()
-  captchaResponseKey = ''
-  modal.hide()
+  const result = await response.json();
+  
+  if(result.status){
+    document.getElementById("submit-button-loading").style.display = "none";
+    document.getElementById("success-message").style.display = "block";
+    document.getElementById("submit-button").style.display = "block";
+  }
+
+  captchaResponseKey = '';
+  setTimeout(()=>{modal.hide();},500);
+  
 })
 
 function debounce(func, wait, immediate) {

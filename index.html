@@ -81,6 +81,7 @@
                     class="home-navlink nav-link"
                     data-bs-toggle="modal"
                     data-bs-target="#contact"
+                    onclick="fun()"
                   >
                     Contact
                   </a>
@@ -1180,7 +1181,7 @@
                   </div>
                   <div class="mb-1">
                     <label for="message" class="form-label mt-3">
-                      What about your organisation and details?
+                      Enter an optional message
                     </label>
                     <textarea
                       type="text"
@@ -1189,7 +1190,7 @@
                       name="message"
                       placeholder="Message"
                     ></textarea>
-                    <div id="message-error">Add Your Message</div>
+                    <!-- <div id="message-error">Add Your Message</div> -->
                   </div>
 
                   <!-- * * * * * * * * * * * * * * * * * * * Captcha generation * * * * * * * * * * * * * * * * * * *  -->
@@ -1206,13 +1207,20 @@
 
                   <!-- * * * * * * * * * * * * * * * * * * * Captcha generation end * * * * * * * * * * * * * * * * * * *  -->
 
-                  <button
-                    type="submit"
-                    class="submit-btn btn btn-primary mt-5 mb-5"
-                  >
-                    Send
-                    <span class="ms-2">&#8594;</span>
+                  <div id="success-message">Thanks for showing interest. We will get you back very soon.</div>
+
+                  <button type="submit" class="submit-btn btn btn-primary mt-4 mb-5">
+                    <div id="submit-button">
+                      <span class="send-btn">Send</span>
+                      <span class="ms-2">&#8594;</span>
+                    </div>
+                    <div id="submit-button-loading">
+                      <span class="send-btn">Sending</span>
+                      <div class="spinner-border spinner-border-sm" role="status">
+                      </div>
+                    </div>
                   </button>
+                
                 </form>
               </div>
             </div>
