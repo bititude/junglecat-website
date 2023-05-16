@@ -59,6 +59,8 @@ function fun() {
  
 } 
 
+
+// toggiling send button in contact form and showing success message
 function toggleButton(value){
   if(value){
     document.getElementById("success-message").style.display = "none";
@@ -74,9 +76,7 @@ function toggleButton(value){
 }
 
 const thisForm = document.getElementById('customerform')
-thisForm.addEventListener('submit', async function (e) {
-  console.log(document.getElementsByClassName("send-btn"))
- 
+thisForm.addEventListener('submit', async function (e) { 
   
   e.preventDefault();
   if (validated() === false) {
