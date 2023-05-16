@@ -55,20 +55,19 @@ function fun() {
   name.nextElementSibling.style.display = 'none'
   email.nextElementSibling.style.display = 'none'
   // message.nextElementSibling.style.display = 'none';
-  toggleButton(true);
+  toggleButton(false);
+  document.getElementById("success-message").style.display = "none";
  
 } 
 
 
 // toggiling send button in contact form and showing success message
 function toggleButton(value){
-  if(value){
-    document.getElementById("success-message").style.display = "none";
-    document.getElementById("submit-button").style.display = "block";
-    document.getElementById("submit-button-loading").style.display = "none";
+  if(value){  
+    document.getElementById("submit-button").style.display = "none";
+    document.getElementById("submit-button-loading").style.display = "block";
   }
   else{
-    document.getElementById("success-message").style.display = "block";
     document.getElementById("submit-button").style.display = "block";
     document.getElementById("submit-button-loading").style.display = "none";
   }
@@ -101,9 +100,12 @@ thisForm.addEventListener('submit', async function (e) {
 
   if(result.status){
     toggleButton(false);
+    document.getElementById("success-message").style.display = "block";
+  }
+  else{
+    document.getElementById("success-message").style.display = "none";
   }
  
-
   captchaResponseKey = '';
   setTimeout(()=>{modal.hide();},500);
   
