@@ -127,3 +127,44 @@ function debounce(func, wait, immediate) {
     if (callNow) func.apply(context, args)
   }
 }
+
+
+// when clicking contact in navbar
+function onContactClick() {
+  window.history.pushState({}, '', '#contact');
+  fun();
+  autoFillContactForm();
+}
+
+// autofill contact form details
+function autoFillContactForm() {
+  let paramString = (window.location.href).split("?")[1];
+  const urlParams = new URLSearchParams(paramString);
+
+  let firstName = urlParams.get('first_name');
+  let lastName = urlParams.get('last_name');
+  const email = urlParams.get('email');
+  
+  firstName = firstName ? firstName : '';
+  lastName = lastName ? " " + lastName : '';
+  const fullName = firstName + lastName;
+
+  if (fullName || email) {
+    if (fullName) {
+      document.getElementById('name').value = fullName;
+      setTimeout(function () { document.getElementById('email').focus(); }, 500);
+    }
+    if (email) {
+      document.getElementById('email').value = email;
+      if (fullName) {
+        setTimeout(function () { document.getElementById('message').focus(); }, 500);
+      }
+      else {
+        setTimeout(function () {  document.getElementById('name').focus(); }, 500);
+      }
+    }
+  }
+  else {
+    setTimeout(function () { document.getElementById('name').focus(); }, 500);
+  }
+}
