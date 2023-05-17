@@ -99,6 +99,7 @@ thisForm.addEventListener('submit', async function (e) {
   const result = await response.json();
 
   if(result.status){
+    fun();
     toggleButton(false);
     document.getElementById("success-message").style.display = "block";
   }
@@ -107,7 +108,7 @@ thisForm.addEventListener('submit', async function (e) {
   }
  
   captchaResponseKey = '';
-  setTimeout(()=>{modal.hide();},500);
+  // setTimeout(()=>{modal.hide();},500);
   
 })
 
