@@ -101,6 +101,7 @@ thisForm.addEventListener('submit', async function (e) {
   if(result.status){
     fun();
     toggleButton(false);
+    grecaptcha.reset();
     document.getElementById("success-message").style.display = "block";
   }
   else{
